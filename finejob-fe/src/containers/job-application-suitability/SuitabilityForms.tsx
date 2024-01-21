@@ -79,7 +79,7 @@ function CertificateForm() {
       <h4>자격증</h4>
       <form>
         <fieldset>
-          <input placeholder="자격증명 *" type="text" name="qualification" />
+          <input placeholder="자격증 명 *" type="text" name="qualification" />
           <input placeholder="발행처" type="text" name="issued" />
           <input
             placeholder="취득년월 *"

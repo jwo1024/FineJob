@@ -1,0 +1,18 @@
+$borderGray: #e0e0e0;
+
+.page {
+  width: 100%;
+  background-color: #fcfcfc;
+  box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.1);
+
+  padding-top: 62px;
+  padding-bottom: 240px;
+
+  main {
+    width: 1280px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 32px;
+    border: 1px solid $borderGray;
+  }
+}
