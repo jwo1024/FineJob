@@ -1,0 +1,301 @@
+[
+  {
+    "id": 1,
+    "name": "작물 재배업",
+    "relatedMajorCategory": {
+      "id": 1,
+      "name": "농업",
+      "relatedMainCategory": {
+        "id": 1,
+        "typeOfBusinessCode": "A",
+        "typeOfBusiness": "농업 임업 및 어업"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "name": "축산업",
+    "relatedMajorCategory": {
+      "id": 1,
+      "name": "농업",
+      "relatedMainCategory": {
+        "id": 1,
+        "typeOfBusinessCode": "A",
+        "typeOfBusiness": "농업 임업 및 어업"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "name": "작물재배 및 축산 복합농업",
+    "relatedMajorCategory": {
+      "id": 1,
+      "name": "농업",
+      "relatedMainCategory": {
+        "id": 1,
+        "typeOfBusinessCode": "A",
+        "typeOfBusiness": "농업 임업 및 어업"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "name": "작물재배 및 축산 관련 서비스업",
+    "relatedMajorCategory": {
+      "id": 1,
+      "name": "농업",
+      "relatedMainCategory": {
+        "id": 1,
+        "typeOfBusinessCode": "A",
+        "typeOfBusiness": "농업 임업 및 어업"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "name": "수렵 및 관련 서비스업",
+    "relatedMajorCategory": {
+      "id": 1,
+      "name": "농업",
+      "relatedMainCategory": {
+        "id": 1,
+        "typeOfBusinessCode": "A",
+        "typeOfBusiness": "농업 임업 및 어업"
+      }
+    }
+  },
+  {
+    "id": 6,
+    "name": "임업",
+    "relatedMajorCategory": {
+      "id": 2,
+      "name": "임업",
+      "relatedMainCategory": {
+        "id": 1,
+        "typeOfBusinessCode": "A",
+        "typeOfBusiness": "농업 임업 및 어업"
+      }
+    }
+  },
+  {
+    "id": 7,
+    "name": "어로 어업",
+    "relatedMajorCategory": {
+      "id": 3,
+      "name": "어업",
+      "relatedMainCategory": {
+        "id": 1,
+        "typeOfBusinessCode": "A",
+        "typeOfBusiness": "농업 임업 및 어업"
+      }
+    }
+  },
+  {
+    "id": 8,
+    "name": "양식어업 및 어업관련 서비스업",
+    "relatedMajorCategory": {
+      "id": 3,
+      "name": "어업",
+      "relatedMainCategory": {
+        "id": 1,
+        "typeOfBusinessCode": "A",
+        "typeOfBusiness": "농업 임업 및 어업"
+      }
+    }
+  },
+  {
+    "id": 9,
+    "name": "석탄 광업",
+    "relatedMajorCategory": {
+      "id": 4,
+      "name": "석탄 원유 및 천연가스 광업",
+      "relatedMainCategory": {
+        "id": 2,
+        "typeOfBusinessCode": "B",
+        "typeOfBusiness": "광업"
+      }
+    }
+  },
+  {
+    "id": 10,
+    "name": "원유 및 천연가스 채굴업",
+    "relatedMajorCategory": {
+      "id": 4,
+      "name": "석탄 원유 및 천연가스 광업",
+      "relatedMainCategory": {
+        "id": 2,
+        "typeOfBusinessCode": "B",
+        "typeOfBusiness": "광업"
+      }
+    }
+  },
+  {
+    "id": 11,
+    "name": "철 광업",
+    "relatedMajorCategory": {
+      "id": 5,
+      "name": "금속 광업",
+      "relatedMainCategory": {
+        "id": 2,
+        "typeOfBusinessCode": "B",
+        "typeOfBusiness": "광업"
+      }
+    }
+  },
+  {
+    "id": 12,
+    "name": "비철금속 광업",
+    "relatedMajorCategory": {
+      "id": 5,
+      "name": "금속 광업",
+      "relatedMainCategory": {
+        "id": 2,
+        "typeOfBusinessCode": "B",
+        "typeOfBusiness": "광업"
+      }
+    }
+  },
+  {
+    "id": 13,
+    "name": "토사석 광업",
+    "relatedMajorCategory": {
+      "id": 6,
+      "name": "비금속광물 광업; 연료용 제외",
+      "relatedMainCategory": {
+        "id": 2,
+        "typeOfBusinessCode": "B",
+        "typeOfBusiness": "광업"
+      }
+    }
+  },
+  {
+    "id": 14,
+    "name": "기타 비금속광물 광업",
+    "relatedMajorCategory": {
+      "id": 6,
+      "name": "비금속광물 광업; 연료용 제외",
+      "relatedMainCategory": {
+        "id": 2,
+        "typeOfBusinessCode": "B",
+        "typeOfBusiness": "광업"
+      }
+    }
+  },
+  {
+    "id": 15,
+    "name": "광업 지원 서비스업",
+    "relatedMajorCategory": {
+      "id": 7,
+      "name": "광업 지원 서비스업",
+      "relatedMainCategory": {
+        "id": 2,
+        "typeOfBusinessCode": "B",
+        "typeOfBusiness": "광업"
+      }
+    }
+  },
+  {
+    "id": 16,
+    "name": "도축 육류 가공 및 저장 처리업",
+    "relatedMajorCategory": {
+      "id": 8,
+      "name": "식료품 제조업",
+      "relatedMainCategory": {
+        "id": 3,
+        "typeOfBusinessCode": "C",
+        "typeOfBusiness": "제조업"
+      }
+    }
+  },
+  {
+    "id": 17,
+    "name": "수산물 가공 및 저장 처리업",
+    "relatedMajorCategory": {
+      "id": 8,
+      "name": "식료품 제조업",
+      "relatedMainCategory": {
+        "id": 3,
+        "typeOfBusinessCode": "C",
+        "typeOfBusiness": "제조업"
+      }
+    }
+  },
+  {
+    "id": 18,
+    "name": "과실 채소 가공 및 저장 처리업",
+    "relatedMajorCategory": {
+      "id": 8,
+      "name": "식료품 제조업",
+      "relatedMainCategory": {
+        "id": 3,
+        "typeOfBusinessCode": "C",
+        "typeOfBusiness": "제조업"
+      }
+    }
+  },
+  {
+    "id": 19,
+    "name": "동물성 및 식물성 유지 제조업",
+    "relatedMajorCategory": {
+      "id": 8,
+      "name": "식료품 제조업",
+      "relatedMainCategory": {
+        "id": 3,
+        "typeOfBusinessCode": "C",
+        "typeOfBusiness": "제조업"
+      }
+    }
+  },
+  {
+    "id": 20,
+    "name": "낙농제품 및 식용 빙과류 제조업",
+    "relatedMajorCategory": {
+      "id": 8,
+      "name": "식료품 제조업",
+      "relatedMainCategory": {
+        "id": 3,
+        "typeOfBusinessCode": "C",
+        "typeOfBusiness": "제조업"
+      }
+    }
+  },
+  {
+    "id": 21,
+    "name": "곡물 가공품 전분 및 전분제품 제조업",
+    "relatedMajorCategory": {
+      "id": 8,
+      "name": "식료품 제조업",
+      "relatedMainCategory": {
+        "id": 3,
+        "typeOfBusinessCode": "C",
+        "typeOfBusiness": "제조업"
+      }
+    }
+  },
+  {
+    "id": 22,
+    "name": "기타 식품 제조업",
+    "relatedMajorCategory": {
+      "id": 8,
+      "name": "식료품 제조업",
+      "relatedMainCategory": {
+        "id": 3,
+        "typeOfBusinessCode": "C",
+        "typeOfBusiness": "제조업"
+      }
+    }
+  },
+  {
+    "id": 23,
+    "name": "동물용 사료 및 조제식품 제조업",
+    "relatedMajorCategory": {
+      "id": 8,
+      "name": "식료품 제조업",
+      "relatedMainCategory": {
+        "id": 3,
+        "typeOfBusinessCode": "C",
+        "typeOfBusiness": "제조업"
+      }
+    }
+  }
+]

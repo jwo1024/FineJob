@@ -1,0 +1,18 @@
+.mainSection {
+  padding: 32px 58px;
+  background-color: aquamarine;
+  
+  display: flex;
+  flex-direction: column;
+  h3 {
+    padding: 16px 0px;
+	border-bottom: 1px solid black;
+    font-size: x-large;
+	justify-self: center;
+  }
+  div {
+	align-self: center;
+	margin: 16px 0px;
+  }
+
+}

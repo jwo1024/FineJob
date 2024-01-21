@@ -5,10 +5,10 @@
    viewBox="0 0 470.55078 294.27347"
    version="1.1"
    id="svg29"
-   sodipodi:docname="공모전 로고 최종.svg"
+   sodipodi:docname="FineJob-logo-simple.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -20,7 +20,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="pt" />
+     inkscape:document-units="pt"
+     inkscape:zoom="0.60148134"
+     inkscape:cx="-7.4815288"
+     inkscape:cy="700.76987"
+     inkscape:window-width="1536"
+     inkscape:window-height="816"
+     inkscape:window-x="341"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="surface1" />
   <defs
      id="defs9">
     <g
@@ -102,121 +111,6 @@
   <g
      id="surface1"
      transform="translate(-280.44922,-153.6367)">
-    <g
-       style="fill:#9e9e9e;fill-opacity:1"
-       id="g10">
-      <use
-         xlink:href="#glyph0-1"
-         x="446.276"
-         y="853.75598"
-         id="use9" />
-    </g>
-    <g
-       style="fill:#9e9e9e;fill-opacity:1"
-       id="g16">
-      <use
-         xlink:href="#glyph0-2"
-         x="508.43427"
-         y="853.75598"
-         id="use10" />
-      <use
-         xlink:href="#glyph0-3"
-         x="535.49335"
-         y="853.75598"
-         id="use11" />
-      <use
-         xlink:href="#glyph0-4"
-         x="600.25781"
-         y="853.75598"
-         id="use12" />
-      <use
-         xlink:href="#glyph0-5"
-         x="663.13696"
-         y="853.75598"
-         id="use13" />
-      <use
-         xlink:href="#glyph0-6"
-         x="689.5307"
-         y="853.75598"
-         id="use14" />
-      <use
-         xlink:href="#glyph0-7"
-         x="749.08295"
-         y="853.75598"
-         id="use15" />
-      <use
-         xlink:href="#glyph0-8"
-         x="831.591"
-         y="853.75598"
-         id="use16" />
-    </g>
-    <path
-       style="fill:#0063f8;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       d="m 142.44922,745.125 h 79.25 v 18.72266 h -57.01953 v 33.85156 h 51.54687 V 816.25 h -51.54687 v 52.66016 h -22.23047"
-       id="path16" />
-    <path
-       style="fill:#0063f8;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       d="m 340.17969,868.91016 h -19.7461 L 261.875,784.36328 h -1.11328 v 84.54688 H 238.53516 V 745.125 h 20.0039 l 58.39063,84.63281 h 1.10937 V 745.125 h 22.14063"
-       id="path17" />
-    <path
-       style="fill:#0063f8;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       d="m 322.21484,745.125 h 80.44141 v 18.72266 h -58.21484 v 33.85156 h 54.02734 V 816.25 h -54.02734 v 33.9375 H 403 v 18.72266 h -80.78516"
-       id="path18" />
-    <path
-       style="fill:#0063f8;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       d="m 261.72266,720.41797 c 0,7.41015 -6.00782,13.42187 -13.41797,13.42187 -7.41407,0 -13.42188,-6.01172 -13.42188,-13.42187 0,-7.41016 6.00781,-13.41797 13.42188,-13.41797 7.41015,0 13.41797,6.00781 13.41797,13.41797"
-       id="path19" />
-    <g
-       style="fill:#9e9e9e;fill-opacity:1"
-       id="g19"
-       inkscape:export-filename="../test-1.svg"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96">
-      <use
-         xlink:href="#glyph0-1"
-         x="287.276"
-         y="585.75598"
-         id="use19" />
-    </g>
-    <g
-       style="fill:#9e9e9e;fill-opacity:1"
-       id="g26">
-      <use
-         xlink:href="#glyph0-2"
-         x="349.43427"
-         y="585.75598"
-         id="use20" />
-      <use
-         xlink:href="#glyph0-3"
-         x="376.49338"
-         y="585.75598"
-         id="use21" />
-      <use
-         xlink:href="#glyph0-4"
-         x="441.25781"
-         y="585.75598"
-         id="use22" />
-      <use
-         xlink:href="#glyph0-5"
-         x="504.13696"
-         y="585.75598"
-         id="use23" />
-      <use
-         xlink:href="#glyph0-6"
-         x="530.5307"
-         y="585.75598"
-         id="use24" />
-      <use
-         xlink:href="#glyph0-7"
-         x="590.08295"
-         y="585.75598"
-         id="use25" />
-      <use
-         xlink:href="#glyph0-8"
-         x="672.591"
-         y="585.75598"
-         id="use26" />
-    </g>
     <path
        style="fill:#0063f8;fill-opacity:1;fill-rule:nonzero;stroke:none"
        d="m 280.44922,222.92969 h 144.03125 v 34.02734 H 320.84766 v 61.52734 h 93.6914 v 33.71485 h -93.6914 v 95.71094 h -40.39844"

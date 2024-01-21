@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  /* border: 1px solid red; */
+}
+
+:root {
+  /* background-image: url(../../public/png/헤커톤_design_main.jpeg); */
+  /* rgba(255, 255, 255, 0.1); */
+  background-size: cover;
+}
+
+body {
+  justify-items:  center;
+  /* margin : 0 24px; */
+}
+
+header {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+main {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+footer {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +55,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */

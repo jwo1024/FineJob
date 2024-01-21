@@ -1,0 +1,34 @@
+$breakpoint: 1280px;
+
+.homeBanner {
+  background-color: bisque;
+  //   width: 99vw;
+  width: 100%;
+  min-width: 100%;
+  height: 420px;
+  left: 0%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  right: 0px;
+}
+
+.bannerCard {
+  background: white;
+  height: 300px;
+}
+
+
+.swiper-button-next {
+  color : red;
+}
+.swiper-button-prev {
+  color : red;
+}
+
+.swiper-rtl .swiper-button-next {
+  color : red;
+}
