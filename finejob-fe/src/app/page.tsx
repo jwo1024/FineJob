@@ -3,9 +3,11 @@ import HomeBanner from "@/containers/main/HomeBanner";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <HomeBanner />
-      <RecruitmentInfo />
-    </main>
+      <main>
+        <RecruitmentInfo />
+      </main>
+    </>
   );
 }

@@ -1,34 +1,54 @@
-$breakpoint: 1280px;
+$screen-width: 1280px;
+
+.homeBannerContainer {
+  background-color: #eef7ff;
+  display: flex;
+  height: 420px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
 
 .homeBanner {
-  background-color: bisque;
-  //   width: 99vw;
-  width: 100%;
-  min-width: 100%;
-  height: 420px;
-  left: 0%;
+  width: $screen-width;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
+  justify-items: center;
   overflow: hidden;
-  right: 0px;
 }
 
 .bannerCard {
-  background: white;
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url("../../public/png/FineJob-card-bg-sqaure.png");
+  background-size: cover;
+  padding: 62px;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-size: xx-large;
+    line-height: 1.3;
+    strong {
+      font-weight: 600;
+    }
+  }
+  p {
+    line-height: 3;
+  }
+  button {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.mySwiperslide {
   height: 300px;
-}
-
-
-.swiper-button-next {
-  color : red;
-}
-.swiper-button-prev {
-  color : red;
-}
-
-.swiper-rtl .swiper-button-next {
-  color : red;
+  width: 640px;
+  overflow: hidden;
+  border-radius: 20px;
 }

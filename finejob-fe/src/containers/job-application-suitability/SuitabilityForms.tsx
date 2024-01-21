@@ -50,6 +50,8 @@ function CareerForm() {
   );
 }
 
+
+
 function EducationForm() {
   return (
     <section className={styles.educationForm}>
@@ -68,6 +70,8 @@ function EducationForm() {
     </section>
   );
 }
+
+
 
 function CertificateForm() {
   return (
@@ -90,6 +94,8 @@ function CertificateForm() {
   );
 }
 
+
+
 function SkillForm() {
   return (
     <section className={styles.skillForm}>
@@ -108,7 +114,12 @@ function SkillForm() {
   );
 }
 
+
+
 export { CareerForm, EducationForm, CertificateForm, SkillForm };
+
+
+
 
 // utils
 function AddButton({ onClick, text }: { onClick?: () => void; text?: string }) {
