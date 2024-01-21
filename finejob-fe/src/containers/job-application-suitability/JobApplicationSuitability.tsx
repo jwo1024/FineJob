@@ -1,10 +1,8 @@
 import styles from "@/styles/JobApplicationSuitability.module.scss";
-import {
-  CareerForm,
-  EducationForm,
-  CertificateForm,
-  SkillForm,
-} from "./SuitabilityForms";
+import CareerForm from "./CarrerForm";
+import EducationForm from "./EducationForm";
+import CertificateForm from "./CertificateForm";
+import SkillForm from "./SkillForm";
 import dynamic from "next/dynamic";
 const SuitabilityChart = dynamic(() => import("./SuitabilityChart"), {
   ssr: false,
@@ -23,7 +21,13 @@ export default function JobApplicationSuitability() {
           width={1100}
           height={180}
         />
-        <ChartCaption width={1100} />
+        <ChartCaption
+          width={1100}
+          careerStatus={undefined}
+          educationStatus={undefined}
+          certificateStatus={85}
+          skillStatus={70}
+        />
       </div>
 
       <div className={styles.forms}>
@@ -36,7 +40,21 @@ export default function JobApplicationSuitability() {
   );
 }
 
-function ChartCaption({ width, height }: { width?: number; height?: number }) {
+function ChartCaption({
+  width,
+  height,
+  careerStatus,
+  educationStatus,
+  certificateStatus,
+  skillStatus,
+}: {
+  width?: number;
+  height?: number;
+  careerStatus?: number;
+  educationStatus?: number;
+  certificateStatus?: number;
+  skillStatus?: number;
+}) {
   return (
     <div
       className={styles.chartCaption}
@@ -45,19 +63,19 @@ function ChartCaption({ width, height }: { width?: number; height?: number }) {
     >
       <span>
         <div>경력</div>
-        <div>무관</div>
+        <div>{careerStatus ? `${careerStatus}% 달성` : "무관"}</div>
       </span>
       <span>
         <div>학력</div>
-        <div>무관</div>
+        <div>{educationStatus ? `${educationStatus}% 달성` : "무관"}</div>
       </span>
       <span>
         <div>자격증</div>
-        <div>85% 달성</div>
+        <div>{certificateStatus ? `${certificateStatus}% 달성` : "무관"}</div>
       </span>
       <span>
         <div>스킬</div>
-        <div>70% 달성</div>
+        <div>{skillStatus ? `${skillStatus}% 달성` : "무관"}</div>
       </span>
     </div>
   );
