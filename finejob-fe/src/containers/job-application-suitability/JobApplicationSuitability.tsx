@@ -1,6 +1,11 @@
 import styles from "@/styles/JobApplicationSuitability.module.scss";
+import {
+  CareerForm,
+  EducationForm,
+  CertificateForm,
+  SkillForm,
+} from "./SuitabilityForms";
 import dynamic from "next/dynamic";
-
 const SuitabilityChart = dynamic(() => import("./SuitabilityChart"), {
   ssr: false,
 });
@@ -8,60 +13,52 @@ const SuitabilityChart = dynamic(() => import("./SuitabilityChart"), {
 export default function JobApplicationSuitability() {
   return (
     <section className={styles.mainSection}>
-      <h3>지원적합도</h3>
+      <h3>지원 적합도</h3>
       <div>
         <SuitabilityChart
           valueCarrer={0}
           valueEducation={0}
           valueCertificate={80}
           valueSkill={70}
+          width={1100}
+          height={180}
         />
+        <ChartCaption width={1100} />
       </div>
-      <form>
-        <h4>경력</h4>
-        <fieldset>
-          <input placeholder="회사명 *" type="text" id="username" name="username" />
-          <input placeholder="부서명" type="text" id="username" name="username" />
-        </fieldset>
-        <fieldset>
-          <input placeholder="학급/직책" type="text" id="username" name="username" />
-          <input placeholder="담당직무 *" type="text" id="username" name="username" />
-        </fieldset>
-        <fieldset>
-          <input placeholder="입사년월 *" type="text" id="username" name="username" />
-          <input placeholder="퇴사년월 *" type="text" id="username" name="username" />
-        </fieldset>
-        <fieldset>
-          <input placeholder="연봉" type="text" id="username" name="username" />
-        </fieldset>
-        <fieldset>
-          <input placeholder="담당직무" type="text" id="username" name="username" />
-        </fieldset>
-      </form>
+
+      <div className={styles.forms}>
+        <CareerForm />
+        <EducationForm />
+        <CertificateForm />
+        <SkillForm />
+      </div>
     </section>
   );
 }
 
-{
-  /* <form>
-  <fieldset>
-    <legend>User Information</legend>
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" />
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" />
-  </fieldset>
-
-  <fieldset>
-    <legend>Contact Information</legend>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" />
-
-    <label for="phone">Phone:</label>
-    <input type="tel" id="phone" name="phone" />
-  </fieldset>
-
-  <button type="submit">Submit</button>
-</form> */
+function ChartCaption({ width, height }: { width?: number; height?: number }) {
+  return (
+    <div
+      className={styles.chartCaption}
+      data-width={width}
+      data-height={height}
+    >
+      <span>
+        <div>경력</div>
+        <div>무관</div>
+      </span>
+      <span>
+        <div>학력</div>
+        <div>무관</div>
+      </span>
+      <span>
+        <div>자격증</div>
+        <div>85% 달성</div>
+      </span>
+      <span>
+        <div>스킬</div>
+        <div>70% 달성</div>
+      </span>
+    </div>
+  );
 }

@@ -6,11 +6,15 @@ export default function SuitabilityChart({
   valueEducation,
   valueCertificate,
   valueSkill,
+  width,
+  height,
 }: {
   valueCarrer?: number;
   valueEducation?: number;
   valueCertificate?: number;
   valueSkill?: number;
+  width?: number;
+  height?: number;
 }) {
   const data01 = valueCarrer
     ? [
@@ -40,11 +44,11 @@ export default function SuitabilityChart({
     : [{ name: "Group A", value: 100 }];
 
   return (
-    <PieChart width={1100} height={180}>
+    <PieChart width={width ? width : 1100} height={height ? height : 180}>
       <Pie
         data={data01}
         dataKey="value"
-        cx="12%"
+        cx="12.5%"
         cy="50%"
         innerRadius={55}
         outerRadius={80}
@@ -62,7 +66,7 @@ export default function SuitabilityChart({
         data={data02}
         dataKey="value"
         nameKey="name"
-        cx="37%"
+        cx="37.5%"
         cy="50%"
         innerRadius={55}
         outerRadius={80}
@@ -79,7 +83,7 @@ export default function SuitabilityChart({
         data={data03}
         dataKey="value"
         nameKey="name"
-        cx="62%"
+        cx="62.5%"
         cy="50%"
         innerRadius={55}
         outerRadius={80}
@@ -96,7 +100,7 @@ export default function SuitabilityChart({
         data={data04}
         dataKey="value"
         nameKey="name"
-        cx="87%"
+        cx="88%"
         cy="50%"
         innerRadius={55}
         outerRadius={80}
