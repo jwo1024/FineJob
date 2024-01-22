@@ -7,13 +7,17 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header className={styles.header}>
-      <Image src={LogoHorizontal} alt="FineJob Logo" />
+      <Link href="/">
+        <Image src={LogoHorizontal} alt="FineJob Logo" />
+      </Link>
       <SearchBar />
       <div>
         <Link href="/">로그인</Link>
         <span>|</span>
-        <Link href={"/"}>회원가입</Link>
-        <IconUser />
+        <Link href="/">회원가입</Link>
+        <Link href="/">
+          <IconUser />
+        </Link>
       </div>
     </header>
   );
