@@ -3,16 +3,10 @@
 import styles from "@/styles/JobSearchFilter.module.scss";
 import CheckBox from "@/components/CheckBox";
 
-import {
-  IconMap,
-  IconBuilding,
-  IconBriefCase,
-  IconStack,
-  IconToggleDown,
-  IconToogleRight,
-} from "@/components/Icons";
+import {IconBriefCase, IconBuilding, IconMap, IconStack, IconToggleDown, IconToogleRight,} from "@/components/Icons";
 
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
+
 
 export default function JobSearchFilter() {
   const normalClassName = `${styles.categoryType}`;
@@ -25,7 +19,10 @@ export default function JobSearchFilter() {
 
   const [category, setCategory] = useState("산업");
 
+  const [selectedData, setSelectedData] = useState<any[]>([]);
+
   const handleClick = (nowCategory: string) => {
+
     setCategory((category) => {
       if (category === nowCategory) nowCategory;
       if (category === "지역") setRigionClassName(normalClassName);
@@ -41,6 +38,9 @@ export default function JobSearchFilter() {
       return nowCategory;
     });
   };
+  function searchHandler() {
+    //이 부분 에서 데이터 보내기
+  }
 
   return (
     <section className={styles.jobSearchFilter}>
@@ -66,19 +66,17 @@ export default function JobSearchFilter() {
           <IconToggleDown />
         </li>
       </ul>
-      <FilterLists category={category} />
+
+      <FilterLists category={category} setSelectedData={setSelectedData}  />
       <div className={styles.searchButton}>
-        <button> 선택된 62,272건 검색하기</button>
+        <button onClick={searchHandler}> 선택된 62,272건 검색하기</button>
+        {/*검색 동작 설정*/}
       </div>
     </section>
   );
 }
 
 // FilterLists
-
-import mainCategorylist from "@/data/main-categorylist.json";
-import majorCategorylist from "@/data/major-categorylist.json";
-import subCategoryList from "@/data/sub-categorylist.json";
 
 interface IMainCategory {
   id: number;
@@ -88,46 +86,90 @@ interface IMainCategory {
 
 interface IMajorCategory {
   id: number;
-  name: string;
+  typeOfBusiness: string; //이부분 변경
   relatedMainCategory: IMainCategory;
 }
 
 interface ISubCategory {
   id: number;
-  name: string;
-  relatedMajorCategory: IMajorCategory;
+  typeOfBusiness: string;
+  relatedMaJorCategory: IMajorCategory;
 }
 
-function FilterLists({ category }: { category: string }) {
+function FilterLists({ category , setSelectedData }: { category: string , setSelectedData: React.Dispatch<React.SetStateAction<any[]>> }) {
   const [mainList, setMainList] = useState<IMainCategory[]>([]);
   const [majorList, setMajorList] = useState<IMajorCategory[]>([]);
   const [subList, setSubList] = useState<ISubCategory[]>([]);
 
   const [checkedMainId, setCheckedMainId] = useState<number | null>(0);
   const [checkedMajorId, setCheckedMajorId] = useState<number[] | null>(null);
+  const [checkedSubId, setCheckedSubId] = useState<number[] | null>(null);
 
-  useEffect(() => {
-    // 임시 json 파일 연결
-    setMainList(mainCategorylist);
-    setMajorList(majorCategorylist);
-    setSubList(subCategoryList);
-    setCheckedMainId(0);
-    setCheckedMajorId([0]);
-  }, []);
+  // useEffect(() => {
+  //   // 임시 json 파일 연결
+  //   setMainList(mainCategorylist);
+  //   setMajorList(majorCategorylist);
+  //   setSubList(subCategoryList);
+  //   setCheckedMainId(0);
+  //   setCheckedMajorId([0]);
+  // }, []);
 
   useEffect(() => {
     // TODO : BE api 연결
     // category : "지역", "산업", "직업", "상세"
-    /* ex) 
+    /* ex) */
+    category = "mainCategories";
     fetch(`http://localhost:8080/api/${category}`)
       .then((res) => res.json())
       .then((data) => {
         // mainList, majorList, subList json 파일 연결
-        setMainList(data.mainList);
-        setMajorList(data.majorList);
-        setSubList(data.subList);
+        setMainList(data);
+        console.log(data)
       });
-    */
+  }, [category]);
+
+  useEffect(() => {
+    // TODO : BE api 연결
+    // category : "지역", "산업", "직업", "상세"
+    /* ex) */
+    category = "majorCategories";
+
+    fetch(`http://localhost:8080/api/${category}`)
+        .then((res) => res.json())
+        .then((data) => {
+          // mainList, majorList, subList json 파일 연결
+          setMajorList(data);
+          // setMajorList(data.majorList);
+          // setSubList(data.subList);
+          console.log(data)
+        });
+  }, [category]);
+  useEffect(() => {
+    // TODO : BE api 연결
+    // category : "지역", "산업", "직업", "상세"
+    /* ex) */
+    category = "majorCategories";
+
+    fetch(`http://localhost:8080/api/${category}`)
+        .then((res) => res.json())
+        .then((data) => {
+          // mainList, majorList, subList json 파일 연결
+          setMajorList(data);
+          console.log(data)
+        });
+  }, [category]);
+  useEffect(() => {
+    // TODO : BE api 연결
+    // category : "지역", "산업", "직업", "상세"
+    /* ex) */
+    category = "subCategories";
+
+    fetch(`http://localhost:8080/api/${category}`)
+        .then((res) => res.json())
+        .then((data) => {
+          setSubList(data);
+          console.log(data)
+        });
   }, [category]);
 
   const handleMainClick = (id: number) => {
@@ -147,6 +189,9 @@ function FilterLists({ category }: { category: string }) {
         return checkedMajorId ? [...checkedMajorId, id] : [id];
       }
     });
+  };
+  const handleSubClick = (id: number) => {
+
   };
 
   return (
@@ -180,7 +225,7 @@ function FilterLists({ category }: { category: string }) {
                 checked={checkedMajorId?.includes(major.id)}
                 id={`major.${major.id}`}
               >
-                <span className={styles.name}>{major.name}</span>
+                <span className={styles.name}>{major.typeOfBusiness}</span>
                 <span className={styles.number}>(54,232)</span>
               </CheckBox>
             </li>
@@ -192,18 +237,20 @@ function FilterLists({ category }: { category: string }) {
         {checkedMajorId &&
           subList
             ?.filter((sub) =>
-              checkedMajorId.includes(sub.relatedMajorCategory.id)
+              checkedMajorId.includes(sub.relatedMaJorCategory.id)
             )
             .map((sub) => (
               <li key={sub.id}>
                 {/* checked={true} */}
                 <CheckBox  id={`sub${sub.id}`}>
-                  <span className={styles.name}>{sub.name}</span>
+                  <span className={styles.name}>{sub.typeOfBusiness}</span>
                   <span className={styles.number}>(54,232)</span>
                 </CheckBox>
               </li>
             ))}
       </ul>
+
+
     </section>
   );
 }
