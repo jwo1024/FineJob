@@ -24,11 +24,11 @@ $fontGray: #828282;
   }
 
   li {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
+    align-items: center;
     height: 160px;
-    padding: 32px;
-    padding-bottom: 28px;
+    padding: 24px 32px;
     border: 1px solid $borderGray;
     border-right: none;
     border-left: none;
@@ -36,11 +36,18 @@ $fontGray: #828282;
     gap: 32px;
 
     &:hover {
-      cursor: pointer;
+      // cursor: pointer;
     }
 
     section {
-      flex-grow: 1;
+      // &:first-child {
+      // }
+      // &:nth-child(2) {
+      // }
+      // &:nth-child(3) {
+      // }
+      // &:nth-child(4) {
+      // }
     }
     h5 {
       font-size: x-large;
@@ -53,7 +60,7 @@ $fontGray: #828282;
     }
 
     :nth-child(2) {
-      flex-grow: 1;
+      flex-grow: 1fr;
       svg {
         color: $fontGray;
       }

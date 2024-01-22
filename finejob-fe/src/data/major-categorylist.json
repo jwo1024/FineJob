@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "농업",
+    "typeOfBusiness": "농업",
     "relatedMainCategory": {
       "id": 1,
       "typeOfBusinessCode": "A",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "name": "임업",
+    "typeOfBusiness": "임업",
     "relatedMainCategory": {
       "id": 1,
       "typeOfBusinessCode": "A",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "name": "어업",
+    "typeOfBusiness": "어업",
     "relatedMainCategory": {
       "id": 1,
       "typeOfBusinessCode": "A",
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "name": "석탄 원유 및 천연가스 광업",
+    "typeOfBusiness": "석탄 원유 및 천연가스 광업",
     "relatedMainCategory": {
       "id": 2,
       "typeOfBusinessCode": "B",
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "name": "금속 광업",
+    "typeOfBusiness": "금속 광업",
     "relatedMainCategory": {
       "id": 2,
       "typeOfBusinessCode": "B",
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "name": "비금속광물 광업; 연료용 제외",
+    "typeOfBusiness": "비금속광물 광업; 연료용 제외",
     "relatedMainCategory": {
       "id": 2,
       "typeOfBusinessCode": "B",
@@ -55,7 +55,7 @@
   },
   {
     "id": 7,
-    "name": "광업 지원 서비스업",
+    "typeOfBusiness": "광업 지원 서비스업",
     "relatedMainCategory": {
       "id": 2,
       "typeOfBusinessCode": "B",
@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "name": "식료품 제조업",
+    "typeOfBusiness": "식료품 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -73,7 +73,7 @@
   },
   {
     "id": 9,
-    "name": "음료 제조업",
+    "typeOfBusiness": "음료 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -82,7 +82,7 @@
   },
   {
     "id": 10,
-    "name": "담배 제조업",
+    "typeOfBusiness": "담배 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -91,7 +91,7 @@
   },
   {
     "id": 11,
-    "name": "섬유제품 제조업; 의복 제외",
+    "typeOfBusiness": "섬유제품 제조업; 의복 제외",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -100,7 +100,7 @@
   },
   {
     "id": 12,
-    "name": "의복 의복 액세서리 및 모피제품 제조업",
+    "typeOfBusiness": "의복 의복 액세서리 및 모피제품 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -109,7 +109,7 @@
   },
   {
     "id": 13,
-    "name": "가죽 가방 및 신발 제조업",
+    "typeOfBusiness": "가죽 가방 및 신발 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -118,7 +118,7 @@
   },
   {
     "id": 14,
-    "name": "목재 및 나무제품 제조업; 가구 제외",
+    "typeOfBusiness": "목재 및 나무제품 제조업; 가구 제외",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -127,7 +127,7 @@
   },
   {
     "id": 15,
-    "name": "펄프 종이 및 종이제품 제조업",
+    "typeOfBusiness": "펄프 종이 및 종이제품 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -136,7 +136,7 @@
   },
   {
     "id": 16,
-    "name": "인쇄 및 기록매체 복제업",
+    "typeOfBusiness": "인쇄 및 기록매체 복제업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -145,7 +145,7 @@
   },
   {
     "id": 17,
-    "name": "코크스 연탄 및 석유정제품 제조업",
+    "typeOfBusiness": "코크스 연탄 및 석유정제품 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -154,7 +154,7 @@
   },
   {
     "id": 18,
-    "name": "화학 물질 및 화학제품 제조업; 의약품 제외",
+    "typeOfBusiness": "화학 물질 및 화학제품 제조업; 의약품 제외",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -163,7 +163,7 @@
   },
   {
     "id": 19,
-    "name": "의료용 물질 및 의약품 제조업",
+    "typeOfBusiness": "의료용 물질 및 의약품 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -172,7 +172,7 @@
   },
   {
     "id": 20,
-    "name": "고무 및 플라스틱제품 제조업",
+    "typeOfBusiness": "고무 및 플라스틱제품 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -181,7 +181,7 @@
   },
   {
     "id": 21,
-    "name": "비금속 광물제품 제조업",
+    "typeOfBusiness": "비금속 광물제품 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -190,7 +190,7 @@
   },
   {
     "id": 22,
-    "name": "1차 금속 제조업",
+    "typeOfBusiness": "1차 금속 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -199,7 +199,7 @@
   },
   {
     "id": 23,
-    "name": "금속 가공제품 제조업; 기계 및 가구 제외",
+    "typeOfBusiness": "금속 가공제품 제조업; 기계 및 가구 제외",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -208,7 +208,7 @@
   },
   {
     "id": 24,
-    "name": "전자 부품 컴퓨터 영상 음향 및 통신장비 제조업",
+    "typeOfBusiness": "전자 부품 컴퓨터 영상 음향 및 통신장비 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -217,7 +217,7 @@
   },
   {
     "id": 25,
-    "name": "의료 정밀 광학 기기 및 시계 제조업",
+    "typeOfBusiness": "의료 정밀 광학 기기 및 시계 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -226,7 +226,7 @@
   },
   {
     "id": 26,
-    "name": "전기장비 제조업",
+    "typeOfBusiness": "전기장비 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -235,7 +235,7 @@
   },
   {
     "id": 27,
-    "name": "기타 기계 및 장비 제조업",
+    "typeOfBusiness": "기타 기계 및 장비 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -244,7 +244,7 @@
   },
   {
     "id": 28,
-    "name": "자동차 및 트레일러 제조업",
+    "typeOfBusiness": "자동차 및 트레일러 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -253,7 +253,7 @@
   },
   {
     "id": 29,
-    "name": "기타 운송장비 제조업",
+    "typeOfBusiness": "기타 운송장비 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -262,7 +262,7 @@
   },
   {
     "id": 30,
-    "name": "가구 제조업",
+    "typeOfBusiness": "가구 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -271,7 +271,7 @@
   },
   {
     "id": 31,
-    "name": "기타 제품 제조업",
+    "typeOfBusiness": "기타 제품 제조업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -280,7 +280,7 @@
   },
   {
     "id": 32,
-    "name": "산업용 기계 및 장비 수리업",
+    "typeOfBusiness": "산업용 기계 및 장비 수리업",
     "relatedMainCategory": {
       "id": 3,
       "typeOfBusinessCode": "C",
@@ -289,7 +289,7 @@
   },
   {
     "id": 33,
-    "name": "전기 가스 증기 및 공기 조절 공급업",
+    "typeOfBusiness": "전기 가스 증기 및 공기 조절 공급업",
     "relatedMainCategory": {
       "id": 4,
       "typeOfBusinessCode": "D",
@@ -298,7 +298,7 @@
   },
   {
     "id": 34,
-    "name": "수도업",
+    "typeOfBusiness": "수도업",
     "relatedMainCategory": {
       "id": 5,
       "typeOfBusinessCode": "E",
@@ -307,7 +307,7 @@
   },
   {
     "id": 35,
-    "name": "하수 폐수 및 분뇨 처리업",
+    "typeOfBusiness": "하수 폐수 및 분뇨 처리업",
     "relatedMainCategory": {
       "id": 5,
       "typeOfBusinessCode": "E",
@@ -316,7 +316,7 @@
   },
   {
     "id": 36,
-    "name": "폐기물 수집 운반 처리 및 원료 재생업",
+    "typeOfBusiness": "폐기물 수집 운반 처리 및 원료 재생업",
     "relatedMainCategory": {
       "id": 5,
       "typeOfBusinessCode": "E",
@@ -325,7 +325,7 @@
   },
   {
     "id": 37,
-    "name": "환경 정화 및 복원업",
+    "typeOfBusiness": "환경 정화 및 복원업",
     "relatedMainCategory": {
       "id": 5,
       "typeOfBusinessCode": "E",
@@ -334,7 +334,7 @@
   },
   {
     "id": 38,
-    "name": "종합 건설업",
+    "typeOfBusiness": "종합 건설업",
     "relatedMainCategory": {
       "id": 6,
       "typeOfBusinessCode": "F",
@@ -343,7 +343,7 @@
   },
   {
     "id": 39,
-    "name": "전문직별 공사업",
+    "typeOfBusiness": "전문직별 공사업",
     "relatedMainCategory": {
       "id": 6,
       "typeOfBusinessCode": "F",
@@ -352,7 +352,7 @@
   },
   {
     "id": 40,
-    "name": "자동차 및 부품 판매업",
+    "typeOfBusiness": "자동차 및 부품 판매업",
     "relatedMainCategory": {
       "id": 7,
       "typeOfBusinessCode": "G",
@@ -361,7 +361,7 @@
   },
   {
     "id": 41,
-    "name": "도매 및 상품 중개업",
+    "typeOfBusiness": "도매 및 상품 중개업",
     "relatedMainCategory": {
       "id": 7,
       "typeOfBusinessCode": "G",
@@ -370,7 +370,7 @@
   },
   {
     "id": 42,
-    "name": "소매업; 자동차 제외",
+    "typeOfBusiness": "소매업; 자동차 제외",
     "relatedMainCategory": {
       "id": 7,
       "typeOfBusinessCode": "G",
@@ -379,7 +379,7 @@
   },
   {
     "id": 43,
-    "name": "육상 운송 및 파이프라인 운송업",
+    "typeOfBusiness": "육상 운송 및 파이프라인 운송업",
     "relatedMainCategory": {
       "id": 8,
       "typeOfBusinessCode": "H",
@@ -388,7 +388,7 @@
   },
   {
     "id": 44,
-    "name": "수상 운송업",
+    "typeOfBusiness": "수상 운송업",
     "relatedMainCategory": {
       "id": 8,
       "typeOfBusinessCode": "H",

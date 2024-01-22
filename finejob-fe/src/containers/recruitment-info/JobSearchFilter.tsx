@@ -2,13 +2,24 @@
 
 import styles from "@/styles/JobSearchFilter.module.scss";
 import CheckBox from "@/components/CheckBox";
+import {
+  IconBriefCase,
+  IconBuilding,
+  IconMap,
+  IconStack,
+  IconToggleDown,
+  IconToogleRight,
+} from "@/components/Icons";
+import { useEffect, useState } from "react";
+import { ISearchResult } from "./JobSearch";
 
-import {IconBriefCase, IconBuilding, IconMap, IconStack, IconToggleDown, IconToogleRight,} from "@/components/Icons";
-
-import {useEffect, useState} from "react";
-
-
-export default function JobSearchFilter() {
+export default function JobSearchFilter({
+  setSearchResultList,
+  setSearchResultCnt,
+}: {
+  setSearchResultList: React.Dispatch<React.SetStateAction<ISearchResult[]>>;
+  setSearchResultCnt: React.Dispatch<React.SetStateAction<number>>;
+}) {
   const normalClassName = `${styles.categoryType}`;
   const activeClassName = `${styles.categoryType} ${styles.active}`;
 
@@ -19,10 +30,9 @@ export default function JobSearchFilter() {
 
   const [category, setCategory] = useState("산업");
 
-  const [selectedData, setSelectedData] = useState<any[]>([]);
+  const [selectedData, setSelectedData] = useState<ISubCategory[]>([]);
 
   const handleClick = (nowCategory: string) => {
-
     setCategory((category) => {
       if (category === nowCategory) nowCategory;
       if (category === "지역") setRigionClassName(normalClassName);
@@ -39,7 +49,32 @@ export default function JobSearchFilter() {
     });
   };
   function searchHandler() {
+    console.log(selectedData);
     //이 부분 에서 데이터 보내기
+    // fetch(`http://localhost:8080/api/selectCompany`, {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(selectedData),
+    // })
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     data.map((item: any) => {
+    //       // 결과 데이터 형식에 맞게 수정
+    //       item.companyName = item.companyName;
+    //       item.companyGroup = item.companyGroup;
+    //       item.jobTitle = item.jobTitle;
+    //       item.jobTag = item.jobTag;
+    //       item.region = item.region;
+    //       item.career = item.career;
+    //       item.education = item.education;
+    //       item.date = item.date;
+    //       item.tag = item.tag;
+    //     });
+    //     setSearchResultList(data);
+    //     setSearchResultCnt(data.length); // 혹은 총 검색 결과 개수
+    //   });
   }
 
   return (
@@ -67,16 +102,20 @@ export default function JobSearchFilter() {
         </li>
       </ul>
 
-      <FilterLists category={category} setSelectedData={setSelectedData}  />
+      <FilterLists category={category} setSelectedData={setSelectedData} />
       <div className={styles.searchButton}>
-        <button onClick={searchHandler}> 선택된 62,272건 검색하기</button>
-        {/*검색 동작 설정*/}
+        <button onClick={searchHandler}>
+          선택된 조건의 채용공고 검색하기
+        </button>
       </div>
     </section>
   );
 }
 
 // FilterLists
+import mainCategorylist from "@/data/main-categorylist.json";
+import majorCategorylist from "@/data/major-categorylist.json";
+import subCategoryList from "@/data/sub-categorylist.json";
 
 interface IMainCategory {
   id: number;
@@ -93,10 +132,16 @@ interface IMajorCategory {
 interface ISubCategory {
   id: number;
   typeOfBusiness: string;
-  relatedMaJorCategory: IMajorCategory;
+  relatedMaJorCategory: IMajorCategory; // MaJor 일부로 이렇게 수정하신건지 확인하기
 }
 
-function FilterLists({ category , setSelectedData }: { category: string , setSelectedData: React.Dispatch<React.SetStateAction<any[]>> }) {
+function FilterLists({
+  category,
+  setSelectedData,
+}: {
+  category: string;
+  setSelectedData: React.Dispatch<React.SetStateAction<ISubCategory[]>>;
+}) {
   const [mainList, setMainList] = useState<IMainCategory[]>([]);
   const [majorList, setMajorList] = useState<IMajorCategory[]>([]);
   const [subList, setSubList] = useState<ISubCategory[]>([]);
@@ -105,72 +150,73 @@ function FilterLists({ category , setSelectedData }: { category: string , setSel
   const [checkedMajorId, setCheckedMajorId] = useState<number[] | null>(null);
   const [checkedSubId, setCheckedSubId] = useState<number[] | null>(null);
 
+  useEffect(() => {
+    // 임시 json 파일 연결
+    setMainList(mainCategorylist);
+    setMajorList(majorCategorylist);
+    setSubList(subCategoryList);
+    setCheckedMainId(0);
+    setCheckedMajorId([0]);
+    setCheckedSubId([0]);
+  }, []);
+
   // useEffect(() => {
-  //   // 임시 json 파일 연결
-  //   setMainList(mainCategorylist);
-  //   setMajorList(majorCategorylist);
-  //   setSubList(subCategoryList);
-  //   setCheckedMainId(0);
-  //   setCheckedMajorId([0]);
-  // }, []);
+  //   // TODO : BE api 연결
+  //   // category : "지역", "산업", "직업", "상세"
+  //   /* ex) */
+  //   category = "mainCategories";
+  //   fetch(`http://localhost:8080/api/${category}`)
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       // mainList, majorList, subList json 파일 연결
+  //       setMainList(data);
+  //       console.log(data)
+  //     });
+  // }, [category]);
 
-  useEffect(() => {
-    // TODO : BE api 연결
-    // category : "지역", "산업", "직업", "상세"
-    /* ex) */
-    category = "mainCategories";
-    fetch(`http://localhost:8080/api/${category}`)
-      .then((res) => res.json())
-      .then((data) => {
-        // mainList, majorList, subList json 파일 연결
-        setMainList(data);
-        console.log(data)
-      });
-  }, [category]);
+  // useEffect(() => {
+  //   // TODO : BE api 연결
+  //   // category : "지역", "산업", "직업", "상세"
+  //   /* ex) */
+  //   category = "majorCategories";
 
-  useEffect(() => {
-    // TODO : BE api 연결
-    // category : "지역", "산업", "직업", "상세"
-    /* ex) */
-    category = "majorCategories";
+  //   fetch(`http://localhost:8080/api/${category}`)
+  //       .then((res) => res.json())
+  //       .then((data) => {
+  //         // mainList, majorList, subList json 파일 연결
+  //         setMajorList(data);
+  //         // setMajorList(data.majorList);
+  //         // setSubList(data.subList);
+  //         console.log(data)
+  //       });
+  // }, [category]);
+  // useEffect(() => {
+  //   // TODO : BE api 연결
+  //   // category : "지역", "산업", "직업", "상세"
+  //   /* ex) */
+  //   category = "majorCategories";
 
-    fetch(`http://localhost:8080/api/${category}`)
-        .then((res) => res.json())
-        .then((data) => {
-          // mainList, majorList, subList json 파일 연결
-          setMajorList(data);
-          // setMajorList(data.majorList);
-          // setSubList(data.subList);
-          console.log(data)
-        });
-  }, [category]);
-  useEffect(() => {
-    // TODO : BE api 연결
-    // category : "지역", "산업", "직업", "상세"
-    /* ex) */
-    category = "majorCategories";
+  //   fetch(`http://localhost:8080/api/${category}`)
+  //       .then((res) => res.json())
+  //       .then((data) => {
+  //         // mainList, majorList, subList json 파일 연결
+  //         setMajorList(data);
+  //         console.log(data)
+  //       });
+  // }, [category]);
+  // useEffect(() => {
+  //   // TODO : BE api 연결
+  //   // category : "지역", "산업", "직업", "상세"
+  //   /* ex) */
+  //   category = "subCategories";
 
-    fetch(`http://localhost:8080/api/${category}`)
-        .then((res) => res.json())
-        .then((data) => {
-          // mainList, majorList, subList json 파일 연결
-          setMajorList(data);
-          console.log(data)
-        });
-  }, [category]);
-  useEffect(() => {
-    // TODO : BE api 연결
-    // category : "지역", "산업", "직업", "상세"
-    /* ex) */
-    category = "subCategories";
-
-    fetch(`http://localhost:8080/api/${category}`)
-        .then((res) => res.json())
-        .then((data) => {
-          setSubList(data);
-          console.log(data)
-        });
-  }, [category]);
+  //   fetch(`http://localhost:8080/api/${category}`)
+  //       .then((res) => res.json())
+  //       .then((data) => {
+  //         setSubList(data);
+  //         console.log(data)
+  //       });
+  // }, [category]);
 
   const handleMainClick = (id: number) => {
     setCheckedMainId(id);
@@ -191,7 +237,14 @@ function FilterLists({ category , setSelectedData }: { category: string , setSel
     });
   };
   const handleSubClick = (id: number) => {
-
+    setCheckedSubId((checkedSubid) => {
+      if (checkedSubId?.includes(id)) {
+        return checkedSubId.filter((checkedId) => checkedId !== id);
+      } else {
+        return checkedSubId ? [...checkedSubId, id] : [id];
+      }
+    });
+    setSelectedData(subList.filter((sub) => checkedSubId?.includes(sub.id)));
   };
 
   return (
@@ -240,17 +293,18 @@ function FilterLists({ category , setSelectedData }: { category: string , setSel
               checkedMajorId.includes(sub.relatedMaJorCategory.id)
             )
             .map((sub) => (
-              <li key={sub.id}>
+              <li key={sub.id} onClick={() => handleSubClick(sub.id)}>
                 {/* checked={true} */}
-                <CheckBox  id={`sub${sub.id}`}>
+                <CheckBox
+                  checked={checkedSubId?.includes(sub.id)}
+                  id={`sub${sub.id}`}
+                >
                   <span className={styles.name}>{sub.typeOfBusiness}</span>
                   <span className={styles.number}>(54,232)</span>
                 </CheckBox>
               </li>
             ))}
       </ul>
-
-
     </section>
   );
 }
