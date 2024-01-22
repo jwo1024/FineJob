@@ -41,11 +41,15 @@ const dummyData: ISearchResult[] = [
 ];
 
 export default function JobSearch() {
+  // const [searchResultList, setSearchResultList] = useState<ISearchResult[]>([]);
+  // const [searchResultCnt, setSearchResultCnt] = useState<number>(0);
+  
+  //dummyData 적용
   const [searchResultList, setSearchResultList] =
-    useState<ISearchResult[]>(dummyData); // any 타입으로 임시로 설정
+    useState<ISearchResult[]>(dummyData);
   const [searchResultCnt, setSearchResultCnt] = useState<number>(
     dummyData.length
-  ); // any 타입으로 임시로 설정
+  );
 
   return (
     <>
@@ -53,7 +57,7 @@ export default function JobSearch() {
         setSearchResultList={setSearchResultList}
         setSearchResultCnt={setSearchResultCnt}
       />
-      {searchResultCnt > 0 ? (
+      {searchResultCnt ? (
         <JobSearchResult
           searchResultList={searchResultList}
           searchResultCnt={searchResultCnt}

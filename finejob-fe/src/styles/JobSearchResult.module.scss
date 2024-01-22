@@ -4,6 +4,27 @@ $fontGray: #828282;
 
 .jobSearchResult {
   padding-top: 92px;
+  .pagenationButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    color: $fontGray;
+    button {
+      margin: 0px 8px;
+      padding: 0px 8px;
+      border: none;
+      background-color: transparent;
+      font-size: large;
+      &:hover {
+        cursor: pointer;
+        // color: $activeTextBlue;
+      }
+    }
+    .clicked {
+      color: $activeTextBlue;
+      border: 1px solid $activeTextBlue;
+    }
+  }
 }
 
 .resultText {

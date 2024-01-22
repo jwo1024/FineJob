@@ -49,32 +49,36 @@ export default function JobSearchFilter({
     });
   };
   function searchHandler() {
-    console.log(selectedData);
-    //이 부분 에서 데이터 보내기
-    // fetch(`http://localhost:8080/api/selectCompany`, {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(selectedData),
-    // })
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     data.map((item: any) => {
-    //       // 결과 데이터 형식에 맞게 수정
-    //       item.companyName = item.companyName;
-    //       item.companyGroup = item.companyGroup;
-    //       item.jobTitle = item.jobTitle;
-    //       item.jobTag = item.jobTag;
-    //       item.region = item.region;
-    //       item.career = item.career;
-    //       item.education = item.education;
-    //       item.date = item.date;
-    //       item.tag = item.tag;
-    //     });
-    //     setSearchResultList(data);
-    //     setSearchResultCnt(data.length); // 혹은 총 검색 결과 개수
-    //   });
+    // console.log(selectedData);
+    // 이 부분 에서 데이터 보내기
+    // TODO BE api 연결
+    fetch(`http://localhost:8080/api/selectCompany`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(selectedData),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        const resultData = data.map((item: any) => {
+          // 결과 데이터 형식에 맞게 수정
+          item.companyName = item.companyName;
+          item.companyGroup = item.companyGroup;
+          item.jobTitle = item.jobTitle;
+          item.jobTag = item.jobTag;
+          item.region = item.region;
+          item.career = item.career;
+          item.education = item.education;
+          item.date = item.date;
+          item.tag = item.tag;
+        });
+        setSearchResultList(resultData);
+        setSearchResultCnt(resultData.length); // 총 검색 결과 개수
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   return (
@@ -104,18 +108,16 @@ export default function JobSearchFilter({
 
       <FilterLists category={category} setSelectedData={setSelectedData} />
       <div className={styles.searchButton}>
-        <button onClick={searchHandler}>
-          선택된 조건의 채용공고 검색하기
-        </button>
+        <button onClick={searchHandler}>선택된 조건의 채용공고 검색하기</button>
       </div>
     </section>
   );
 }
 
 // FilterLists
-import mainCategorylist from "@/data/main-categorylist.json";
-import majorCategorylist from "@/data/major-categorylist.json";
-import subCategoryList from "@/data/sub-categorylist.json";
+// import mainCategorylist from "@/data/main-categorylist.json";
+// import majorCategorylist from "@/data/major-categorylist.json";
+// import subCategoryList from "@/data/sub-categorylist.json";
 
 interface IMainCategory {
   id: number;
@@ -132,7 +134,7 @@ interface IMajorCategory {
 interface ISubCategory {
   id: number;
   typeOfBusiness: string;
-  relatedMaJorCategory: IMajorCategory; // MaJor 일부로 이렇게 수정하신건지 확인하기
+  relatedMaJorCategory: IMajorCategory; // TODO MaJor 일부로 이렇게 수정하신건지 확인하기
 }
 
 function FilterLists({
@@ -150,73 +152,50 @@ function FilterLists({
   const [checkedMajorId, setCheckedMajorId] = useState<number[] | null>(null);
   const [checkedSubId, setCheckedSubId] = useState<number[] | null>(null);
 
+  // useEffect(() => {
+  //   // 임시 json 파일 연결
+  //   setMainList(mainCategorylist);
+  //   setMajorList(majorCategorylist);
+  //   setSubList(subCategoryList);
+  //   setCheckedMainId(0);
+  //   setCheckedMajorId([0]);
+  //   setCheckedSubId([0]);
+  // }, []);
+
   useEffect(() => {
-    // 임시 json 파일 연결
-    setMainList(mainCategorylist);
-    setMajorList(majorCategorylist);
-    setSubList(subCategoryList);
-    setCheckedMainId(0);
-    setCheckedMajorId([0]);
-    setCheckedSubId([0]);
-  }, []);
+    const mainCategories = "mainCategories";
+    fetch(`http://localhost:8080/api/${mainCategories}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setMainList(data);
+        console.log(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
 
-  // useEffect(() => {
-  //   // TODO : BE api 연결
-  //   // category : "지역", "산업", "직업", "상세"
-  //   /* ex) */
-  //   category = "mainCategories";
-  //   fetch(`http://localhost:8080/api/${category}`)
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       // mainList, majorList, subList json 파일 연결
-  //       setMainList(data);
-  //       console.log(data)
-  //     });
-  // }, [category]);
+    const majorCategories = "majorCategories";
+    fetch(`http://localhost:8080/api/${majorCategories}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setMajorList(data);
+        console.log(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
 
-  // useEffect(() => {
-  //   // TODO : BE api 연결
-  //   // category : "지역", "산업", "직업", "상세"
-  //   /* ex) */
-  //   category = "majorCategories";
-
-  //   fetch(`http://localhost:8080/api/${category}`)
-  //       .then((res) => res.json())
-  //       .then((data) => {
-  //         // mainList, majorList, subList json 파일 연결
-  //         setMajorList(data);
-  //         // setMajorList(data.majorList);
-  //         // setSubList(data.subList);
-  //         console.log(data)
-  //       });
-  // }, [category]);
-  // useEffect(() => {
-  //   // TODO : BE api 연결
-  //   // category : "지역", "산업", "직업", "상세"
-  //   /* ex) */
-  //   category = "majorCategories";
-
-  //   fetch(`http://localhost:8080/api/${category}`)
-  //       .then((res) => res.json())
-  //       .then((data) => {
-  //         // mainList, majorList, subList json 파일 연결
-  //         setMajorList(data);
-  //         console.log(data)
-  //       });
-  // }, [category]);
-  // useEffect(() => {
-  //   // TODO : BE api 연결
-  //   // category : "지역", "산업", "직업", "상세"
-  //   /* ex) */
-  //   category = "subCategories";
-
-  //   fetch(`http://localhost:8080/api/${category}`)
-  //       .then((res) => res.json())
-  //       .then((data) => {
-  //         setSubList(data);
-  //         console.log(data)
-  //       });
-  // }, [category]);
+    const subCategories = "subCategories";
+    fetch(`http://localhost:8080/api/${subCategories}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setSubList(data);
+        console.log(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [category]);
 
   const handleMainClick = (id: number) => {
     setCheckedMainId(id);
@@ -236,6 +215,7 @@ function FilterLists({
       }
     });
   };
+
   const handleSubClick = (id: number) => {
     setCheckedSubId((checkedSubid) => {
       if (checkedSubId?.includes(id)) {

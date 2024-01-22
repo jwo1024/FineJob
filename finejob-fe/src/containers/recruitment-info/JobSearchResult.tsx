@@ -1,11 +1,12 @@
 import { IconStar, IconCircleCheck } from "@/components/Icons";
 import styles from "@/styles/JobSearchResult.module.scss";
+import { ISearchResult } from "./JobSearch";
 
 export default function JobSearchResult({
   searchResultList,
   searchResultCnt,
 }: {
-  searchResultList: any[]; // any 타입으로 임시로 설정
+  searchResultList: ISearchResult[]; // any 타입으로 임시로 설정
   searchResultCnt: number; // any 타입으로 임시로 설정
 }) {
   return (
@@ -14,24 +15,26 @@ export default function JobSearchResult({
         <span>{searchResultCnt}</span>건의 검색 결과
       </div>
       <ul className={styles.cardContainer}>
-        {searchResultList.map((cardData, key) => {
+        {searchResultList.slice(0, 12).map((cardData, key) => {
           return <RecruimentCard key={key} cardData={cardData} />;
         })}
       </ul>
-      <div>
-        <button>1</button>
+      <div className={styles.pagenationButtons}>
+        <button className={styles.clicked}>1</button>
         <button>2</button>
         <button>3</button>
         <button>4</button>
         <button>5</button>
-
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>10</button>
         <button>{"다음 >"}</button>
       </div>
     </section>
   );
 }
-
-import { ISearchResult } from "./JobSearch";
 
 function RecruimentCard({ cardData }: { cardData: ISearchResult }) {
   return (
@@ -66,7 +69,7 @@ function RecruimentCard({ cardData }: { cardData: ISearchResult }) {
       </section>
       <section>
         <button>입사지원</button>
-        <div>{`${cardData.date ? cardData.date : "date"} 까지`}</div>
+        <div>{`${cardData.date ? cardData.date : "date"}`}</div>
       </section>
     </li>
   );

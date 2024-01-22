@@ -2,28 +2,53 @@
 import styles from "@/styles/SuitabilityForms.module.scss";
 import { useRef } from "react";
 import AddButton from "./AddButton";
+import { ICertificateData } from "./JobApplicationSuitability";
 
-export default function CertificateForm() {
+export default function CertificateForm({
+  certificateData,
+  setCertificateData,
+}: {
+  certificateData: ICertificateData[];
+  setCertificateData: React.Dispatch<React.SetStateAction<ICertificateData[]>>;
+}) {
   const qualificationRef = useRef<HTMLInputElement>(null);
   const issuedRef = useRef<HTMLInputElement>(null);
   const dateOfAcquisitionRef = useRef<HTMLInputElement>(null);
 
   const handleSubmit = () => {
-    // get value
-    const qualification = qualificationRef.current?.value;
-    const issued = issuedRef.current?.value;
-    const dateOfAcquisition = dateOfAcquisitionRef.current?.value;
-    // clear ref
+    const isAdded = addCertificateData();
+    if (!isAdded) return;
+    clearRef();
+  };
+
+  const addCertificateData = () => {
+    if (!qualificationRef.current?.value || !dateOfAcquisitionRef.current?.value)
+      return false;
+    const newCertificateData = {
+      qualification: qualificationRef.current?.value,
+      issued: issuedRef.current?.value,
+      dateOfAcquisition: new Date(dateOfAcquisitionRef.current?.value || ""),
+    };
+    setCertificateData([...certificateData, newCertificateData]);
+    return true;
+  };
+
+  const clearRef = () => {
     if (qualificationRef.current) qualificationRef.current.value = "";
     if (issuedRef.current) issuedRef.current.value = "";
     if (dateOfAcquisitionRef.current) dateOfAcquisitionRef.current.value = "";
-    // log
-    console.log(qualification, issued, dateOfAcquisition);
   };
 
   return (
     <section className={styles.certificateForm}>
       <h4>자격증</h4>
+      {certificateData.map((data, index) => (
+        <div key={index}>
+          <p>{`자격증명 ${data.qualification}`}</p>
+          <p>{`발행처 ${data.issued}`}</p>
+          <p>{`취득년월 ${data.dateOfAcquisition}`}</p>
+        </div>
+      ))}
       <form>
         <fieldset>
           <input
