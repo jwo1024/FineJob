@@ -9,7 +9,8 @@ import dynamic from "next/dynamic";
 const SuitabilityChart = dynamic(() => import("./SuitabilityChart"), {
   ssr: false,
 });
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 
 export interface ICareerData {
   companyName: string; // 회사명
@@ -51,10 +52,21 @@ export default function JobApplicationSuitability() {
     skillData?: number;
   } | null>(null);
 
-  const handleSubmit = () => {
+  const [companyRecruitmentId, setCompanyRecruitmentId] = useState<
+    number | null
+  >(null);
+  const searchParam = useSearchParams();
 
+  useEffect(() => {
+    const param = searchParam.get("companyRecruitmentId");
+    console.log(param);
+    setCompanyRecruitmentId(param ? Number(param) : null);
+  }, []);
+
+  const handleSubmit = () => {
     // TODO : BE api 연결
     const requestData = {
+      companyRecruitmentId, // TODO id 추가
       careerData,
       educationData,
       certificateData,
@@ -94,6 +106,8 @@ export default function JobApplicationSuitability() {
   return (
     <section className={styles.mainSection}>
       <h3>지원 적합도</h3>
+
+      {companyRecruitmentId ? undefined : <p>companyRecruitmentId 존재하지 않음</p>}
       {chartData ? (
         <div>
           <SuitabilityChart
@@ -106,10 +120,10 @@ export default function JobApplicationSuitability() {
           />
           <ChartCaption
             width={1100}
-            careerStatus={undefined}
-            educationStatus={undefined}
-            certificateStatus={85}
-            skillStatus={70}
+            careerStatus={chartData?.careerData}
+            educationStatus={chartData?.educationData}
+            certificateStatus={chartData?.certificateData}
+            skillStatus={chartData?.skillData}
           />
         </div>
       ) : undefined}

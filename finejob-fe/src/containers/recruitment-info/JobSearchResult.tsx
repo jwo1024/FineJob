@@ -1,6 +1,7 @@
 import { IconStar, IconCircleCheck } from "@/components/Icons";
 import styles from "@/styles/JobSearchResult.module.scss";
 import { ISearchResult } from "./JobSearch";
+import Link from "next/link";
 
 export default function JobSearchResult({
   searchResultList,
@@ -69,6 +70,10 @@ function RecruimentCard({ cardData }: { cardData: ISearchResult }) {
       </section>
       <section>
         <button>입사지원</button>
+        <Link
+          href={`/job-application-suitability?companyRecruitmentId=${cardData.companyRecruitmentId}`}
+        >{`지원 적합도 검사 >`}</Link>{" "}
+        {/* 버튼 추가 쿼리로 넘김 */}
         <div>{`${cardData.date ? cardData.date : "date"}`}</div>
       </section>
     </li>

@@ -48,13 +48,17 @@ $fontGray: #828282;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 1fr;
     align-items: center;
-    height: 160px;
+    min-height: 160px;
+    max-height: fit-content;
     padding: 24px 32px;
     border: 1px solid $borderGray;
     border-right: none;
     border-left: none;
     color: $fontGray;
     gap: 32px;
+    // white-space: nowrap;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
 
     &:hover {
       // cursor: pointer;
@@ -72,6 +76,8 @@ $fontGray: #828282;
     }
     h5 {
       font-size: x-large;
+      // font-size: 1rem;
+      // font-size: 100%;
       margin-bottom: 8px;
       color: $activeTextBlue;
       display: flex;
@@ -101,18 +107,33 @@ $fontGray: #828282;
       line-height: 1.7;
       display: flex;
       flex-direction: column;
-      button {
-        width: auto;
-        font-size: x-large;
-        border: 1px solid $activeTextBlue;
-        border-radius: 8px;
-        color: $activeTextBlue;
-        padding: 4px 32px;
-        margin-top: 14px;
-        white-space: nowrap;
+      button,
+      a {
+        &:first-child {
+          width: auto;
+          font-size: x-large;
+          border: 1px solid $activeTextBlue;
+          border-radius: 8px;
+          color: $activeTextBlue;
+          padding: 4px 32px;
+          margin-top: 14px;
+          white-space: nowrap;
+        }
+        &:nth-child(2) {
+          width: auto;
+          font-size: medium;
+          // border: 1px solid $borderGray;
+          color: $fontGray;
+          border-radius: 8px;
+          color: $fontGray;
+          margin-top: 14px;
+          white-space: nowrap;
+          align-self: flex-end;
+        }
       }
       div {
-        margin-top: 18px;
+        margin-top: 8px;
+        align-self: flex-end;
       }
     }
   }

@@ -27,7 +27,8 @@ $backgroundBlue: #eef7ff;
     display: flex;
     align-items: center;
     justify-items: center;
-    width: 210px;
+    min-width: 210px;
+    width: fit-content;
     span,
     a {
       font-size: 14px;

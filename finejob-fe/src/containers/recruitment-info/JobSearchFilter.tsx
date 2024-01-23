@@ -49,8 +49,6 @@ export default function JobSearchFilter({
     });
   };
   function searchHandler() {
-    // console.log(selectedData);
-    // 이 부분 에서 데이터 보내기
     // TODO BE api 연결
     fetch(`http://localhost:8080/api/selectCompany`, {
       method: "POST",
@@ -63,6 +61,7 @@ export default function JobSearchFilter({
       .then((data) => {
         const resultData = data.map((item: any) => {
           // 결과 데이터 형식에 맞게 수정
+          item.companyRecruitmentId = item.companyRecruitmentId; // TODO id 추가
           item.companyName = item.companyName;
           item.companyGroup = item.companyGroup;
           item.jobTitle = item.jobTitle;
