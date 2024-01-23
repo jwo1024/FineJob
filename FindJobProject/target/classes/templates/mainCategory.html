@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page</title>
+</head>
+<body>
+
+<h1>카테고리 선택</h1>
+
+<form>
+    <!-- 메인 카테고리를 선택할 수 있는 드롭다운 리스트 -->
+    <label for="mainCategory">메인 카테고리:</label>
+    <select id="mainCategory" name="mainCategory" onchange="formDataChangeHandler()">
+
+    </select>
+    <label for="majorCategory">메이저 카테고리:</label>
+    <select id="majorCategory" name="majorCategory">
+
+    </select>
+</form>
+
+<script>
+    // 서버에서 데이터를 비동기적으로 가져오는 함수
+    async function fetchData(apiUrl) {
+        try {
+            const response = await fetch(apiUrl)
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            // JSON 형태로 변환하여 반환
+            return await response.json();
+        } catch (error) {
+            // 에러 발생 시 콘솔에 에러 메시지 출력
+            console.error('There was a problem with the fetch operation:', error);
+        }
+    }
+    async function fetchDataByPathVariable(apiUrl) {
+        try {
+            const response = await fetch(apiUrl)
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            // JSON 형태로 변환하여 반환
+            return await response.json();
+        } catch (error) {
+            // 에러 발생 시 콘솔에 에러 메시지 출력
+            console.error('There was a problem with the fetch operation:', error);
+        }
+    }
+    // 받아온 데이터로 옵션값을 동적으로 생성하는 함수
+    function renderOptions(data, selectElement) {
+        data.forEach(category => {
+            const option = document.createElement("option");
+            option.value = category.id;
+            option.text = category.typeOfBusiness;
+            selectElement.appendChild(option);
+        });
+    }
+
+    // 페이지 초기화 함수
+    async function initializePage() {
+        const apiUrl = "http://localhost:8080/job/mainCategories";
+
+        // fetchData 함수를 통해 데이터를 받아옴
+        const data = await fetchData(apiUrl);
+
+        if (data) {
+            // 받아온 데이터로 옵션값을 렌더링하는 함수 호출
+            const selectElement = document.getElementById("mainCategory");
+            renderOptions(data, selectElement);
+        }
+    }
+    initializePage();
+
+
+    function formDataChangeHandler(){
+        let mainCategoryID = document.getElementById("mainCategory").value ;
+        console.log(`Main Category ID : ${mainCategoryID}`);
+        initializeMajorPage();
+    }
+    async function getMajorCategoriesData(mainCategoryId) {
+        const apiUrl = `http://localhost:8080/job/majorCategories/${mainCategoryId}`;
+        try {
+            const response = await fetch(apiUrl);
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            const data = await response.json();
+
+            // 여기에 받아온 데이터를 활용하여 추가적인 동작 수행
+            console.log(data);
+
+        } catch (error) {
+            console.error('There was a problem with the fetch operation:', error);
+        }
+    }
+    function renderMajorOptions(data, selectElement) {
+        data.forEach(category => {
+            const option = document.createElement("option");
+            option.value = category.id;
+            option.text = category.typeOfBusiness;
+            selectElement.appendChild(option);
+        });
+    }
+    async function initializeMajorPage() {
+        let mainCategoryID = document.getElementById("mainCategory").value ;
+
+        // fetchData 함수를 통해 데이터를 받아옴
+        const data = await getMajorCategoriesData(mainCategoryID);
+
+        if (data) {
+            // 받아온 데이터로 옵션값을 렌더링하는 함수 호출
+            const selectElement = document.getElementById("majorCategory");
+            renderMajorOptions(data, selectElement);
+        }
+    }
+
+</script>
+
+</body>
+</html>
