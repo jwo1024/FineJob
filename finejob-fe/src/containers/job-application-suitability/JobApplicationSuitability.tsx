@@ -45,13 +45,14 @@ export default function JobApplicationSuitability() {
   const [skillData, setSkillData] = useState<ISkillData[]>([]);
 
   const [chartData, setChartData] = useState<{
-    valueCarrer?: number;
-    valueEducation?: number;
-    valueCertificate?: number;
-    valueSkill?: number;
+    careerData?: number;
+    educationData?: number;
+    certificateData?: number;
+    skillData?: number;
   } | null>(null);
 
   const handleSubmit = () => {
+
     // TODO : BE api 연결
     const requestData = {
       careerData,
@@ -59,6 +60,8 @@ export default function JobApplicationSuitability() {
       certificateData,
       skillData,
     };
+    console.log(requestData);
+
     setIsButtonDisabled(true);
     fetch(`http://localhost:8080/api/somewhere`, {
       method: "POST",
@@ -75,14 +78,15 @@ export default function JobApplicationSuitability() {
         // TODO : BE에서 받은 데이터 처리
         // value가 undefined 로 오면 "무관" 으로 출력됨
         setChartData({
-          valueCarrer: data?.valueCarrer,
-          valueEducation: data?.valueEducation,
-          valueCertificate: data?.valueCertificate,
-          valueSkill: data?.valueSkill,
+          careerData: data?.careerData,
+          educationData: data?.educationData,
+          certificateData: data?.certificateData,
+          skillData: data?.skillData,
         });
       })
       .catch((err) => {
         console.log(err);
+
         setIsButtonDisabled(false);
       });
   };
@@ -93,10 +97,10 @@ export default function JobApplicationSuitability() {
       {chartData ? (
         <div>
           <SuitabilityChart
-            valueCarrer={chartData?.valueCarrer}
-            valueEducation={chartData?.valueEducation}
-            valueCertificate={chartData?.valueCertificate}
-            valueSkill={chartData?.valueSkill}
+            valueCarrer={chartData?.careerData}
+            valueEducation={chartData?.educationData}
+            valueCertificate={chartData?.certificateData}
+            valueSkill={chartData?.skillData}
             width={1100}
             height={180}
           />
