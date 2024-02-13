@@ -1,4 +1,4 @@
-import RecruitmentInfo from "@/containers/main/RecruitmentInfo";
+import RecruitmentMain from "@/containers/main/RecruitmentMain";
 import HomeBanner from "@/containers/main/HomeBanner";
 import styles from "@/styles/PageMain.module.scss";
 
@@ -8,7 +8,7 @@ export default function Home() {
       <HomeBanner />
       <div className={styles.page}>
         <main>
-          <RecruitmentInfo />
+          <RecruitmentMain />
         </main>
       </div>
     </>
