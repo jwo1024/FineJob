@@ -108,7 +108,7 @@ val MajorCategoryList : List<MajorCategory> = listOf(
     MajorCategory(77, "국제 및 외국기관", MainCategoryList[20]),
 )
 
-val subCategoryList : List<SubCategory> = listOf(
+val SubCategoryList : List<SubCategory> = listOf(
     SubCategory(1, "작물 재배업", MajorCategoryList[0]),
     SubCategory(2, "축산업", MajorCategoryList[0]),
     SubCategory(3, "작물재배 및 축산 복합농업", MajorCategoryList[0]),
