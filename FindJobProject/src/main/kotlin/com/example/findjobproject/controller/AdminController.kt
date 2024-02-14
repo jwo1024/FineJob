@@ -34,7 +34,9 @@ class AdminController(
     fun saveAnnouncement(){
         announcementService.saveAnnouncementList(exAnnouncementList)
     }
-
-
-
+    
+    @GetMapping("/category/save")
+    fun saveCategory(){
+        categorySaveService.saveCategoryAllData()
+    }
 }
