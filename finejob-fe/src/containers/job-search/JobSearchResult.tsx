@@ -40,21 +40,27 @@ export default function JobSearchResult({
 function RecruimentCard({ cardData }: { cardData: ISearchResult }) {
   return (
     <li>
-      <section>
-        <h5>{cardData.companyName ? cardData.companyName : "companyName"}</h5>
+      <section className={styles.section}>
+        <h5 className={styles.title}>
+          {cardData.companyName ? cardData.companyName : "companyName"}
+        </h5>
         <div>
           {cardData.companyGroup ? cardData.companyGroup : "companyGroup"}
         </div>
       </section>
-      <section>
-        <h5>
-          <span>{cardData.jobTitle ? cardData.jobTitle : "jobTitle"}</span>
+      <section className={styles.section}>
+        <h5 className={styles.title}>
+          <Link
+            href={`company-recruitment?companyRecruitmentId=${cardData.companyRecruitmentId}`}
+          >
+            {cardData.jobTitle ? cardData.jobTitle : "jobTitle"}
+          </Link>
           <IconStar />
         </h5>
         <div>{cardData.jobTag ? cardData.jobTag : "jobTag"}</div>
         {cardData.tag ? <RedTag tag={cardData.tag} /> : undefined}
       </section>
-      <section>
+      <section className={styles.section}>
         <div>
           <IconCircleCheck />
           <span>{cardData.region ? cardData.region : "region"}</span>
@@ -68,7 +74,7 @@ function RecruimentCard({ cardData }: { cardData: ISearchResult }) {
           <span>{cardData.education ? cardData.education : "education"}</span>
         </div>
       </section>
-      <section>
+      <section className={styles.section}>
         <button>입사지원</button>
         <Link
           href={`/job-suitability?companyRecruitmentId=${cardData.companyRecruitmentId}`}

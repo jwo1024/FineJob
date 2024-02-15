@@ -1,0 +1,81 @@
+@import "../variables.scss";
+
+%box {
+  width: 100%;
+  padding-bottom: 32px;
+
+  border-bottom: 1px solid $borderGray;
+}
+
+.companyRecruitmentTitle {
+  @extend %box;
+  font-size: x-large;
+  font-weight: 600;
+  span {
+    font-size: large;
+    color: $fontGray;
+  }
+  h2 {
+	display: flex;
+	align-items: center;
+    font-size: x-large;
+    line-height: 2;
+    svg {
+      margin: 0px 10px;
+      display: inline;
+      color: $fontGray;
+    }
+  }
+}
+
+.discriptionList {
+  @extend %box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+
+  dl {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: start;
+    dt {
+      font-size: 100%;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .active {
+    dd {
+      color: $activeTextBlue;
+    }
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: large;
+  font-weight: 400;
+  :first-child {
+    padding: 8px 32px;
+    border: none;
+    border-radius: 8px;
+    background-color: $activeTextBlue;
+    color: white;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  :last-child {
+    padding: 8px 32px;
+    border: 1px solid $activeTextBlue;
+    border-radius: 8px;
+    background-color: white;
+    color: $activeTextBlue;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
