@@ -1,14 +1,14 @@
-import RecruitmentMain from "@/containers/main/RecruitmentMain";
-import HomeBanner from "@/containers/main/HomeBanner";
-import styles from "@/styles/PageMain.module.scss";
+import HomePage from "@/containers/home/HomePage";
+import HomeBanner from "@/containers/home/HomeBanner";
+import styles from "@/styles/layout/pageLayout.module.scss";
 
 export default function Home() {
   return (
     <>
       <HomeBanner />
-      <div className={styles.page}>
-        <main>
-          <RecruitmentMain />
+      <div className={styles.outerPageLayout}>
+        <main className={styles.mainStyle}>
+          <HomePage />
         </main>
       </div>
     </>

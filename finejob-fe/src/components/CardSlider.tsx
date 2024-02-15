@@ -1,20 +1,10 @@
 "use client";
 
-import styles from "@/styles/_cardslider.module.scss";
-import {
-  useEffect,
-  useState,
-  useRef,
-  ReactNode,
-  useCallback,
-  useMemo,
-} from "react";
+import styles from "@/styles/components/Cardslider.module.scss";
+import { useState, useRef, ReactNode } from "react";
 
 export default function CardSlider({
   children,
-  scrollSize,
-  scrollCardNumber = 1,
-  gap = 20,
   width,
   height,
 }: {
@@ -46,13 +36,10 @@ export default function CardSlider({
   const defaultScrollSize = cardWidth + defaultgap;
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  // let currentSlide = 0;
 
   const showSlide = (slideIndex: number) => {
-    // console.log("slideIndex", slideIndex);
     cardRefs.current.forEach((cardRef, index) => {
       if (index === slideIndex) {
-        // console.log(cardRef.current!.classList);
         cardRef.current!.classList.add(styles.activeCard);
         cardRef.current!.classList.remove(styles.deactiveCard);
       } else {
@@ -78,7 +65,6 @@ export default function CardSlider({
 
   const handleRightClick = () => {
     if (isLastCard) return;
-
     showSlide(currentSlide + 1);
   };
 

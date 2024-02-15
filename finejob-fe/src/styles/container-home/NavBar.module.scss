@@ -1,0 +1,19 @@
+@import "../variables.scss";
+
+.navBar {
+  width: $screen-width;
+
+  display: flex;
+  justify-content: center;
+  margin: 24px auto;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 52px;
+  }
+
+  .active {
+    color: $activeTextBlue;
+  }
+}

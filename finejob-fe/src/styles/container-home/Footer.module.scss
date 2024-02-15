@@ -1,0 +1,26 @@
+@import "../variables.scss";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 62px;
+  padding-bottom: 100px;
+  background-color: #f4f4f4;
+  width: 100%;
+
+  ul {
+    width: $screen-width - 200px;
+    &:first-child {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 34px;
+    }
+    &:last-child {
+      color: $fontGray;
+    }
+  }
+}

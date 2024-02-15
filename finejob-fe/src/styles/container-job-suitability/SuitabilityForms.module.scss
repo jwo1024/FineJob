@@ -1,0 +1,153 @@
+@import "../variables.scss";
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+  width: 100%;
+  padding: 24px 32px;
+  border: 1px solid $borderGray;
+  background-color: white;
+
+  h4 {
+    grid-column: span 2;
+    border-bottom: 2px solid $borderGray;
+    font-size: large;
+    line-height: 2;
+  }
+
+  div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    border: 1px solid $borderGray;
+    // color: $fontGray;
+    p {
+      border: 1px solid $borderGray;
+    }
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    width: 100%;
+    padding: 16px 0;
+
+    fieldset {
+      display: flex;
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 8px 16px;
+        border: 1px solid $borderGray;
+        resize: none;
+        &[type="date"] {
+          width: 30%;
+        }
+        &[type="date"]::before {
+          content: attr(placeholder);
+          opacity: 0.5;
+          width: 100%;
+        }
+        &[type="date"]:focus::before,
+        &[type="date"]:valid::before {
+          display: none;
+        }
+      }
+      select {
+        color: $fontGray;
+      }
+    }
+  }
+
+  .addButton {
+    margin: 0;
+    padding-top: 24px;
+    width: 100%;
+    border-top: 1px solid $borderGray;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: $fontGray;
+    span {
+      padding-left: 8px;
+    }
+    svg {
+      color: $logoBlue;
+    }
+  }
+}
+
+.careerForm {
+  @extend .formContainer;
+
+  form {
+    fieldset {
+      input {
+        border-right: none;
+        &:last-child {
+          border-right: 1px solid $borderGray;
+        }
+      }
+      &:nth-child(4) {
+        input {
+          width: 30%;
+        }
+        select {
+          width: 30%;
+        }
+      }
+      &:nth-child(5) {
+        grid-column: span 2;
+      }
+    }
+  }
+}
+
+.educationForm {
+  @extend .formContainer;
+
+  form {
+    fieldset {
+      gap: 12px;
+      grid-column: span 2;
+      :first-child {
+        width: 15%;
+        color: $fontGray;
+      }
+      :nth-child(2) {
+        width: 30%;
+      }
+    }
+  }
+}
+
+.certificateForm {
+  @extend .formContainer;
+  form {
+    fieldset {
+      gap: 12px;
+      grid-column: span 2;
+
+      :first-child {
+        width: 30%;
+      }
+      :nth-child(2) {
+        width: 15%;
+      }
+      :nth-child(3) {
+        &[type="date"] {
+          width: 15%;
+        }
+      }
+    }
+  }
+}
+
+.skillForm {
+  @extend .formContainer;
+}

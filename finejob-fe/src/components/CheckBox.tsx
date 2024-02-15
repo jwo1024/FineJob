@@ -1,4 +1,4 @@
-import styles from "@/styles/CheckBox.module.scss";
+import styles from "@/styles/components/CheckBox.module.scss";
 
 export default function CheckBox({
   children,

@@ -1,0 +1,60 @@
+@import "../variables.scss";
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  > div {
+    align-self: center;
+    margin: 16px 0px;
+  }
+  .forms {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+  .submitButton {
+    padding: 8px 74px;
+    border-radius: 4px;
+    border: 1px solid $borderGray;
+    background-color: $logoBlue;
+    color: white;
+    font-size: x-large;
+    margin: 28px 0px;
+    margin-bottom: 48px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(0, 0, 228);
+    }
+    &:disabled {
+      background-color: $button-disabled-gray;
+      cursor: auto;
+    }
+  }
+}
+
+.chartCaption {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: attr(data-width);
+  padding: none;
+  padding-top: none;
+
+  span {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    div {
+      margin: 0px;
+      &:first-child {
+        color: black;
+      }
+      &:last-child {
+        color: $fontGray;
+      }
+    }
+  }
+}
