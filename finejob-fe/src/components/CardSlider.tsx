@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "@/styles/components/Cardslider.module.scss";
-import { useState, useRef, ReactNode } from "react";
+import { useState, useRef, ReactNode, useEffect } from "react";
 
 export default function CardSlider({
   children,
@@ -20,11 +20,17 @@ export default function CardSlider({
 
   const cardContainerRef = useRef<HTMLDivElement>(null);
 
-  const cardRefs = useRef(
-    Array(children.length)
-      .fill(null)
-      .map(() => useRef<HTMLDivElement>(null))
-  );
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+  useEffect(() => {
+    cardRefs.current = children.map(
+      (_, index) => cardRefs.current[index] || null
+    );
+  }, [children]);
+  // const cardRefs = useRef(
+  //   Array(children.length)
+  //     .fill(null)
+  //     .map(() => useRef<HTMLDivElement>(null))
+  // );
 
   const withStyle = {
     width: width ? width : "100%",
@@ -40,11 +46,11 @@ export default function CardSlider({
   const showSlide = (slideIndex: number) => {
     cardRefs.current.forEach((cardRef, index) => {
       if (index === slideIndex) {
-        cardRef.current!.classList.add(styles.activeCard);
-        cardRef.current!.classList.remove(styles.deactiveCard);
+        cardRef?.classList.add(styles.activeCard);
+        cardRef?.classList.remove(styles.deactiveCard);
       } else {
-        cardRef.current!.classList.remove(styles.activeCard);
-        cardRef.current!.classList.add(styles.deactiveCard);
+        cardRef?.classList.remove(styles.activeCard);
+        cardRef?.classList.add(styles.deactiveCard);
       }
     });
 
@@ -78,7 +84,8 @@ export default function CardSlider({
               <article
                 key={index}
                 className={styles.activeCard}
-                ref={cardRefs.current[index]}
+                // ref={cardRefs.current[index]}
+                ref={(el) => (cardRefs.current[index] = el as HTMLDivElement)}
               >
                 {child}
               </article>
@@ -88,7 +95,8 @@ export default function CardSlider({
             <article
               key={index}
               className={styles.deactiveCard}
-              ref={cardRefs.current[index]}
+              // ref={cardRefs.current[index]}
+              ref={(el) => (cardRefs.current[index] = el as HTMLDivElement)}
             >
               {child}
             </article>
