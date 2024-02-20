@@ -17,49 +17,46 @@
     line-height: 2;
   }
 
-  div {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    border: 1px solid $borderGray;
-    // color: $fontGray;
-    p {
-      border: 1px solid $borderGray;
-    }
-  }
-
-  form {
+  .form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
     width: 100%;
-    padding: 16px 0;
+    // padding: 16px 0;
 
-    fieldset {
+    .fieldset {
       display: flex;
-      input,
-      textarea,
-      select {
+      margin: 0;
+
+      .input,
+      .textarea,
+      .select {
         width: 100%;
+        min-height: 46px;
         padding: 8px 16px;
         border: 1px solid $borderGray;
         resize: none;
-        &[type="date"] {
+        &[type="date"], &[type="month"] {
           width: 30%;
         }
-        &[type="date"]::before {
+        &[type="date"]::before, &[type="month"]::before {
           content: attr(placeholder);
           opacity: 0.5;
           width: 100%;
         }
         &[type="date"]:focus::before,
-        &[type="date"]:valid::before {
+        &[type="date"]:valid::before,
+        &[type="month"]:focus::before,
+        &[type="month"]:valid::before {
           display: none;
         }
       }
-      select {
+      .select {
         color: $fontGray;
+      }
+      .label {
+        color: $fontGray;
+        margin-right: 0.5rem;
       }
     }
   }
@@ -79,25 +76,32 @@
     svg {
       color: $logoBlue;
     }
+    .active {
+      color: $activeTextBlue;
+    }
   }
+
+  .addedData {
+    @extend .form;
+    // background-color: rgba( $activeBgBlue, 0.5);
+    // border-bottom: 1px solid $borderGray;
+  }
+
 }
 
 .careerForm {
   @extend .formContainer;
 
-  form {
-    fieldset {
-      input {
+  .form {
+    .fieldset {
+      .input {
         border-right: none;
         &:last-child {
           border-right: 1px solid $borderGray;
         }
       }
       &:nth-child(4) {
-        input {
-          width: 30%;
-        }
-        select {
+        .input, .select {
           width: 30%;
         }
       }
@@ -111,8 +115,8 @@
 .educationForm {
   @extend .formContainer;
 
-  form {
-    fieldset {
+  .form {
+    .fieldset {
       gap: 12px;
       grid-column: span 2;
       :first-child {
@@ -128,8 +132,8 @@
 
 .certificateForm {
   @extend .formContainer;
-  form {
-    fieldset {
+  .form {
+    .fieldset {
       gap: 12px;
       grid-column: span 2;
 
@@ -140,6 +144,7 @@
         width: 15%;
       }
       :nth-child(3) {
+        width: 15%;
         &[type="date"] {
           width: 15%;
         }
@@ -150,4 +155,54 @@
 
 .skillForm {
   @extend .formContainer;
+    .fieldset {
+      grid-column : 1 / 2;
+      display: flex;
+      flex-direction: column;
+  }
+  .requirements {
+    margin : 0;
+    gap : 0.5rem;
+    .tagContainer {
+      margin : 0.2rem;
+      .tag {
+        margin : 0;
+        color: $fontGray;
+        border-color: $fontGray;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+
+// Tag
+.requirements {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+
+  .text{
+    color: $fontGray;
+  }
+}
+
+.tagContainer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-content: flex-start;
+  margin: 0;
+  gap : 0.5rem;
+
+  .tag {
+    height: fit-content;
+    color: $activeTextBlue;
+    padding: 0 1rem;
+    margin: 0;
+    width: fit-content;
+    border-radius: 99px;
+    border: 2px solid rgba($activeTextBlue, 0.5);
+  }
 }

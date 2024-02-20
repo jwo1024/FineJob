@@ -1,6 +1,6 @@
 import { IconStar, IconCircleCheck } from "@/components/Icons";
 import styles from "@/styles/container-job-search/JobSearchResult.module.scss";
-import { ISearchResult } from "./JobSearch";
+import { ISearchResult } from "./JobSearchPage";
 import Link from "next/link";
 
 export default function JobSearchResult({

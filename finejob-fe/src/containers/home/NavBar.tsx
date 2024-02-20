@@ -69,7 +69,8 @@ export default function NavBar() {
             className={active[5] ? activeClassName : undefined}
             onClick={() => setActive([false, false, false, false, false, true])}
           >
-            지원 적합도(tmp)
+            {/* 지원 적합도(tmp) */}
+            커뮤니티
           </Link>
         </li>
       </ul>

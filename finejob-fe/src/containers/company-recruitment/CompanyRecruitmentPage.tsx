@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { IconStar } from "@/components/Icons";
 
-export default function CompanyRecruitment() {
+export default function CompanyRecruitmentPage() {
   const [companyRecruitmentId, setCompanyRecruitmentId] = useState<
     number | null
   >(null);

@@ -36,8 +36,20 @@ export interface ISkillData {
   skill: string; // 스킬
 }
 
-export default function JobSuitability() {
+export interface IResultresultChartData {
+  careerData?: number;
+  educationData?: number;
+  certificateData?: number;
+  skillData?: number;
+  careerRequirements?: string[];
+  educationRequirements?: string[];
+  certificateRequirements?: string[];
+  skillRequirements?: string[];
+}
+
+export default function JobSuitabilityPage() {
   const [isButtonDisabled, setIsButtonDisabled] = useState<boolean>(false);
+  const [complete, setComplete] = useState<boolean>(false);
   const [careerData, setCareerData] = useState<ICareerData[]>([]);
   const [educationData, setEducationData] = useState<IEducationData[]>([]);
   const [certificateData, setCertificateData] = useState<ICertificateData[]>(
@@ -45,28 +57,27 @@ export default function JobSuitability() {
   );
   const [skillData, setSkillData] = useState<ISkillData[]>([]);
 
-  const [chartData, setChartData] = useState<{
-    careerData?: number;
-    educationData?: number;
-    certificateData?: number;
-    skillData?: number;
-  } | null>(null);
+  const [resultChartData, setResultChartData] =
+    useState<IResultresultChartData | null>(null);
 
   const [companyRecruitmentId, setCompanyRecruitmentId] = useState<
     number | null
   >(null);
   const searchParam = useSearchParams();
 
+  const [errMsg, setErrMsg] = useState<string>("");
   useEffect(() => {
     const param = searchParam.get("companyRecruitmentId");
     console.log(param);
     setCompanyRecruitmentId(param ? Number(param) : null);
+
+    if (!param) setErrMsg("companyRecruitmentId가 존재하지 않습니다.");
   }, []);
 
   const handleSubmit = () => {
     // TODO : BE api 연결
     const requestData = {
-      companyRecruitmentId, // TODO id 추가
+      companyRecruitmentId,
       careerData,
       educationData,
       certificateData,
@@ -89,66 +100,105 @@ export default function JobSuitability() {
       .then((data) => {
         // TODO : BE에서 받은 데이터 처리
         // value가 undefined 로 오면 "무관" 으로 출력됨
-        setChartData({
+        setResultChartData({
           careerData: data?.careerData,
           educationData: data?.educationData,
           certificateData: data?.certificateData,
           skillData: data?.skillData,
+          // careerRequirements: data?.careerRequirements,
+          // educationRequirements: data?.educationRequirements,
+          certificateRequirements: data?.certificateRequirements,
+          skillRequirements: data?.skillRequirements,
         });
+        setComplete(true);
       })
       .catch((err) => {
         console.log(err);
-
+        setErrMsg("서버 통신 오류");
         setIsButtonDisabled(false);
       });
+
+    // For Frontend test
+    setResultChartData({
+      careerData: 50,
+      educationData: 50,
+      certificateData: 50,
+      skillData: 100,
+      careerRequirements: ["경력1", "경력2"],
+      educationRequirements: ["학력1", "학력2"],
+      certificateRequirements: ["자격증1", "자격증2"],
+      skillRequirements: ["스킬1", "스킬2"],
+    });
+    setIsButtonDisabled(true);
+    setComplete(true);
   };
 
   return (
-    <div className={styles.container}>
-      {companyRecruitmentId ? undefined : (
-        <p>companyRecruitmentId 존재하지 않음</p>
-      )}
-      {chartData ? (
-        <div>
-          <SuitabilityChart
-            valueCarrer={chartData?.careerData}
-            valueEducation={chartData?.educationData}
-            valueCertificate={chartData?.certificateData}
-            valueSkill={chartData?.skillData}
-            width={1100}
-            height={180}
+    <>
+      {!complete ? <h3>지원 적합도</h3> : <h3>지원 적합도 결과</h3>}
+
+      {errMsg && <span>{errMsg}</span>}
+
+      <div className={styles.container}>
+        {resultChartData ? (
+          <div>
+            <SuitabilityChart
+              valueCarrer={resultChartData?.careerData}
+              valueEducation={resultChartData?.educationData}
+              valueCertificate={resultChartData?.certificateData}
+              valueSkill={resultChartData?.skillData}
+              width={1100}
+              height={180}
+            />
+            <ChartCaption
+              width={1100}
+              careerStatus={resultChartData?.careerData}
+              educationStatus={resultChartData?.educationData}
+              certificateStatus={resultChartData?.certificateData}
+              skillStatus={resultChartData?.skillData}
+            />
+          </div>
+        ) : undefined}
+      </div>
+      {!complete ? undefined : <h3>필요 요건 분석</h3>}
+      <div className={styles.container}>
+        <div className={styles.forms}>
+          <CareerForm
+            careerData={careerData}
+            setCareerData={setCareerData}
+            complete={complete}
+            resultChartData={resultChartData}
           />
-          <ChartCaption
-            width={1100}
-            careerStatus={chartData?.careerData}
-            educationStatus={chartData?.educationData}
-            certificateStatus={chartData?.certificateData}
-            skillStatus={chartData?.skillData}
+          <EducationForm
+            educationData={educationData}
+            setEducationData={setEducationData}
+            complete={complete}
+            resultChartData={resultChartData}
+          />
+          <CertificateForm
+            certificateData={certificateData}
+            setCertificateData={setCertificateData}
+            complete={complete}
+            resultChartData={resultChartData}
+          />
+          <SkillForm
+            skillData={skillData}
+            setSkillData={setSkillData}
+            complete={complete}
+            resultChartData={resultChartData}
           />
         </div>
-      ) : undefined}
-      <div className={styles.forms}>
-        <CareerForm careerData={careerData} setCareerData={setCareerData} />
-        <EducationForm
-          educationData={educationData}
-          setEducationData={setEducationData}
-        />
-        <CertificateForm
-          certificateData={certificateData}
-          setCertificateData={setCertificateData}
-        />
-        <SkillForm skillData={skillData} setSkillData={setSkillData} />
+        <div>
+          <button
+            className={styles.submitButton}
+            onClick={handleSubmit}
+            disabled={isButtonDisabled}
+          >
+            {isButtonDisabled ? "측정완료" : "측정하기"}
+          </button>
+        </div>
       </div>
-      <div>
-        <button
-          className={styles.submitButton}
-          onClick={handleSubmit}
-          disabled={isButtonDisabled}
-        >
-          {isButtonDisabled ? "측정완료" : "측정하기"}
-        </button>
-      </div>
-    </div>
+    </>
   );
 }
 

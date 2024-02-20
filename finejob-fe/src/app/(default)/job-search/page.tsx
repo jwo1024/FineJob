@@ -1,5 +1,5 @@
-import JobSearch from "@/containers/job-search/JobSearch";
+import JobSearchPage from "@/containers/job-search/JobSearchPage";
 
 export default function Page() {
-  return <JobSearch />;
+  return <JobSearchPage />;
 }

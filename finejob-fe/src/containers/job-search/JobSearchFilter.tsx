@@ -11,7 +11,7 @@ import {
   IconToogleRight,
 } from "@/components/Icons";
 import { useEffect, useState } from "react";
-import { ISearchResult } from "./JobSearch";
+import { ISearchResult } from "./JobSearchPage";
 
 export default function JobSearchFilter({
   setSearchResultList,

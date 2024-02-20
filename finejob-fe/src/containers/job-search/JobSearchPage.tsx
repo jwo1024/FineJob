@@ -55,7 +55,7 @@ const dummyData: ISearchResult[] = [
   },
 ];
 
-export default function JobSearch() {
+export default function JobSearchPage() {
   // const [searchResultList, setSearchResultList] = useState<ISearchResult[]>([]);
   // const [searchResultCnt, setSearchResultCnt] = useState<number>(0);
 
