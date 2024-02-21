@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "@/styles/components/Cardslider.module.scss";
+import styles from "@/styles/components/CardSlider.module.scss";
 import { useState, useRef, ReactNode, useEffect } from "react";
 
 export default function CardSlider({
