@@ -167,8 +167,8 @@
       margin : 0.2rem;
       .tag {
         margin : 0;
-        color: $fontGray;
-        border-color: $fontGray;
+        color: rgba($fontGray, 0.7);
+        border-color: rgba($fontGray, 0.7);
         border-radius: 5px;
       }
     }
