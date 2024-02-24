@@ -117,20 +117,6 @@ export default function JobSuitabilityPage() {
         setErrMsg("서버 통신 오류");
         setIsButtonDisabled(false);
       });
-
-    // For Frontend test
-    // setResultChartData({
-    //   careerData: 50,
-    //   educationData: 50,
-    //   certificateData: 0,
-    //   skillData: 100,
-    //   careerRequirements: ["경력1", "경력2"],
-    //   educationRequirements: ["학력1", "학력2"],
-    //   certificateRequirements: ["자격증1", "자격증2"],
-    //   skillRequirements: ["스킬1", "스킬2"],
-    // });
-    // setIsButtonDisabled(true);
-    // setComplete(true);
   };
 
   return (
