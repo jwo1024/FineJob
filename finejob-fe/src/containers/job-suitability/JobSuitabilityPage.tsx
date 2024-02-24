@@ -36,7 +36,7 @@ export interface ISkillData {
   skill: string; // 스킬
 }
 
-export interface IResultresultChartData {
+export interface IResultChartData {
   careerData?: number;
   educationData?: number;
   certificateData?: number;
@@ -58,7 +58,7 @@ export default function JobSuitabilityPage() {
   const [skillData, setSkillData] = useState<ISkillData[]>([]);
 
   const [resultChartData, setResultChartData] =
-    useState<IResultresultChartData | null>(null);
+    useState<IResultChartData | null>(null);
 
   const [companyRecruitmentId, setCompanyRecruitmentId] = useState<
     number | null

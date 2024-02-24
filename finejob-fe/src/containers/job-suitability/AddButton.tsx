@@ -21,7 +21,11 @@ export default function AddButton({
         <button className={styles.addButton} disabled>
           <IconCheckCircle />
           <span className={achivePercent === 100 ? styles.active : undefined}>
-            {achivePercent === 100 ? "요건 충족" : `${achivePercent}% 달성`}
+            {achivePercent === 100
+              ? "요건 충족"
+              : achivePercent
+              ? `${achivePercent}% 달성`
+              : "무관"}
           </span>
         </button>
       )}

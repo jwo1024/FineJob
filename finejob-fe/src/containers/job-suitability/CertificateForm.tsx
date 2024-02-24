@@ -3,7 +3,7 @@
 import styles from "@/styles/container-job-suitability/SuitabilityForms.module.scss";
 import { useRef } from "react";
 import AddButton from "./AddButton";
-import { ICertificateData, IResultresultChartData } from "./JobSuitabilityPage";
+import { ICertificateData, IResultChartData } from "./JobSuitabilityPage";
 
 export default function CertificateForm({
   complete,
@@ -13,7 +13,7 @@ export default function CertificateForm({
 }: {
   complete: boolean;
   certificateData: ICertificateData[];
-  resultChartData: IResultresultChartData | null;
+  resultChartData: IResultChartData | null;
   setCertificateData: React.Dispatch<React.SetStateAction<ICertificateData[]>>;
 }) {
   const qualificationRef = useRef<HTMLInputElement>(null);

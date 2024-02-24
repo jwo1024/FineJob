@@ -195,11 +195,11 @@
   align-content: flex-start;
   margin: 0;
   gap : 0.5rem;
-
+  flex-wrap: wrap;
   .tag {
     height: fit-content;
     color: $activeTextBlue;
-    padding: 0 1rem;
+    padding: 0 0.725rem;
     margin: 0;
     width: fit-content;
     border-radius: 99px;

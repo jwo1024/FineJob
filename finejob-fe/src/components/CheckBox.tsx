@@ -15,6 +15,12 @@ export default function CheckBox({
   id: string;
   onChange?: (checked: boolean) => void;
 }) {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (onChange) {
+      onChange(e.target.checked);
+    }
+  };
+
   return (
     <label className={styles.label} htmlFor={id}>
       <input
@@ -22,8 +28,8 @@ export default function CheckBox({
         className={styles.checkBox}
         type="checkbox"
         disabled={disabled}
-        checked={checked}
-        // onChange={() => onChange(!checked)}
+        checked={checked}//
+        onChange={handleChange}
       />
       {children}
     </label>

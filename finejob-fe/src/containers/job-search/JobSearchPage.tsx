@@ -60,11 +60,8 @@ export default function JobSearchPage() {
   // const [searchResultCnt, setSearchResultCnt] = useState<number>(0);
 
   //dummyData 적용
-  const [searchResultList, setSearchResultList] =
-    useState<ISearchResult[]>(dummyData);
-  const [searchResultCnt, setSearchResultCnt] = useState<number>(
-    dummyData.length
-  );
+  const [searchResultList, setSearchResultList] = useState<ISearchResult[]>([]);
+  const [searchResultCnt, setSearchResultCnt] = useState<number>(0);
 
   return (
     <>

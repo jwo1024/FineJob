@@ -3,7 +3,7 @@
 import styles from "@/styles/container-job-suitability/SuitabilityForms.module.scss";
 import { useRef } from "react";
 import AddButton from "./AddButton";
-import { IEducationData, IResultresultChartData } from "./JobSuitabilityPage";
+import { IEducationData, IResultChartData } from "./JobSuitabilityPage";
 
 export default function EducationForm({
   complete,
@@ -13,7 +13,7 @@ export default function EducationForm({
 }: {
   complete: boolean;
   educationData: IEducationData[];
-  resultChartData: IResultresultChartData | null;
+  resultChartData: IResultChartData | null;
   setEducationData: React.Dispatch<React.SetStateAction<IEducationData[]>>;
 }) {
   const schoolClassificationRef = useRef<HTMLSelectElement>(null);

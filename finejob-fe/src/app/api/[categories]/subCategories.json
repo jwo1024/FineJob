@@ -1,0 +1,3018 @@
+[
+    {
+        "id": 1,
+        "typeOfBusiness": "작물 재배업",
+        "relatedMaJorCategory": {
+            "id": 1,
+            "typeOfBusiness": "농업",
+            "relatedMainCategory": {
+                "id": 1,
+                "typeOfBusinessCode": "A",
+                "typeOfBusiness": "농업 임업 및 어업"
+            }
+        }
+    },
+    {
+        "id": 2,
+        "typeOfBusiness": "축산업",
+        "relatedMaJorCategory": {
+            "id": 1,
+            "typeOfBusiness": "농업",
+            "relatedMainCategory": {
+                "id": 1,
+                "typeOfBusinessCode": "A",
+                "typeOfBusiness": "농업 임업 및 어업"
+            }
+        }
+    },
+    {
+        "id": 3,
+        "typeOfBusiness": "작물재배 및 축산 복합농업",
+        "relatedMaJorCategory": {
+            "id": 1,
+            "typeOfBusiness": "농업",
+            "relatedMainCategory": {
+                "id": 1,
+                "typeOfBusinessCode": "A",
+                "typeOfBusiness": "농업 임업 및 어업"
+            }
+        }
+    },
+    {
+        "id": 4,
+        "typeOfBusiness": "작물재배 및 축산 관련 서비스업",
+        "relatedMaJorCategory": {
+            "id": 1,
+            "typeOfBusiness": "농업",
+            "relatedMainCategory": {
+                "id": 1,
+                "typeOfBusinessCode": "A",
+                "typeOfBusiness": "농업 임업 및 어업"
+            }
+        }
+    },
+    {
+        "id": 5,
+        "typeOfBusiness": "수렵 및 관련 서비스업",
+        "relatedMaJorCategory": {
+            "id": 1,
+            "typeOfBusiness": "농업",
+            "relatedMainCategory": {
+                "id": 1,
+                "typeOfBusinessCode": "A",
+                "typeOfBusiness": "농업 임업 및 어업"
+            }
+        }
+    },
+    {
+        "id": 6,
+        "typeOfBusiness": "임업",
+        "relatedMaJorCategory": {
+            "id": 2,
+            "typeOfBusiness": "임업",
+            "relatedMainCategory": {
+                "id": 1,
+                "typeOfBusinessCode": "A",
+                "typeOfBusiness": "농업 임업 및 어업"
+            }
+        }
+    },
+    {
+        "id": 7,
+        "typeOfBusiness": "어로 어업",
+        "relatedMaJorCategory": {
+            "id": 3,
+            "typeOfBusiness": "어업",
+            "relatedMainCategory": {
+                "id": 1,
+                "typeOfBusinessCode": "A",
+                "typeOfBusiness": "농업 임업 및 어업"
+            }
+        }
+    },
+    {
+        "id": 8,
+        "typeOfBusiness": "양식어업 및 어업관련 서비스업",
+        "relatedMaJorCategory": {
+            "id": 3,
+            "typeOfBusiness": "어업",
+            "relatedMainCategory": {
+                "id": 1,
+                "typeOfBusinessCode": "A",
+                "typeOfBusiness": "농업 임업 및 어업"
+            }
+        }
+    },
+    {
+        "id": 9,
+        "typeOfBusiness": "석탄 광업",
+        "relatedMaJorCategory": {
+            "id": 4,
+            "typeOfBusiness": "석탄 원유 및 천연가스 광업",
+            "relatedMainCategory": {
+                "id": 2,
+                "typeOfBusinessCode": "B",
+                "typeOfBusiness": "광업"
+            }
+        }
+    },
+    {
+        "id": 10,
+        "typeOfBusiness": "원유 및 천연가스 채굴업",
+        "relatedMaJorCategory": {
+            "id": 4,
+            "typeOfBusiness": "석탄 원유 및 천연가스 광업",
+            "relatedMainCategory": {
+                "id": 2,
+                "typeOfBusinessCode": "B",
+                "typeOfBusiness": "광업"
+            }
+        }
+    },
+    {
+        "id": 11,
+        "typeOfBusiness": "철 광업",
+        "relatedMaJorCategory": {
+            "id": 5,
+            "typeOfBusiness": "금속 광업",
+            "relatedMainCategory": {
+                "id": 2,
+                "typeOfBusinessCode": "B",
+                "typeOfBusiness": "광업"
+            }
+        }
+    },
+    {
+        "id": 12,
+        "typeOfBusiness": "비철금속 광업",
+        "relatedMaJorCategory": {
+            "id": 5,
+            "typeOfBusiness": "금속 광업",
+            "relatedMainCategory": {
+                "id": 2,
+                "typeOfBusinessCode": "B",
+                "typeOfBusiness": "광업"
+            }
+        }
+    },
+    {
+        "id": 13,
+        "typeOfBusiness": "토사석 광업",
+        "relatedMaJorCategory": {
+            "id": 6,
+            "typeOfBusiness": "비금속광물 광업; 연료용 제외",
+            "relatedMainCategory": {
+                "id": 2,
+                "typeOfBusinessCode": "B",
+                "typeOfBusiness": "광업"
+            }
+        }
+    },
+    {
+        "id": 14,
+        "typeOfBusiness": "기타 비금속광물 광업",
+        "relatedMaJorCategory": {
+            "id": 6,
+            "typeOfBusiness": "비금속광물 광업; 연료용 제외",
+            "relatedMainCategory": {
+                "id": 2,
+                "typeOfBusinessCode": "B",
+                "typeOfBusiness": "광업"
+            }
+        }
+    },
+    {
+        "id": 15,
+        "typeOfBusiness": "광업 지원 서비스업",
+        "relatedMaJorCategory": {
+            "id": 7,
+            "typeOfBusiness": "광업 지원 서비스업",
+            "relatedMainCategory": {
+                "id": 2,
+                "typeOfBusinessCode": "B",
+                "typeOfBusiness": "광업"
+            }
+        }
+    },
+    {
+        "id": 16,
+        "typeOfBusiness": "도축 육류 가공 및 저장 처리업",
+        "relatedMaJorCategory": {
+            "id": 8,
+            "typeOfBusiness": "식료품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 17,
+        "typeOfBusiness": "수산물 가공 및 저장 처리업",
+        "relatedMaJorCategory": {
+            "id": 8,
+            "typeOfBusiness": "식료품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 18,
+        "typeOfBusiness": "과실 채소 가공 및 저장 처리업",
+        "relatedMaJorCategory": {
+            "id": 8,
+            "typeOfBusiness": "식료품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 19,
+        "typeOfBusiness": "동물성 및 식물성 유지 제조업",
+        "relatedMaJorCategory": {
+            "id": 8,
+            "typeOfBusiness": "식료품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 20,
+        "typeOfBusiness": "낙농제품 및 식용 빙과류 제조업",
+        "relatedMaJorCategory": {
+            "id": 8,
+            "typeOfBusiness": "식료품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 21,
+        "typeOfBusiness": "곡물 가공품 전분 및 전분제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 8,
+            "typeOfBusiness": "식료품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 22,
+        "typeOfBusiness": "기타 식품 제조업",
+        "relatedMaJorCategory": {
+            "id": 8,
+            "typeOfBusiness": "식료품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 23,
+        "typeOfBusiness": "동물용 사료 및 조제식품 제조업",
+        "relatedMaJorCategory": {
+            "id": 8,
+            "typeOfBusiness": "식료품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 24,
+        "typeOfBusiness": "알코올 음료 제조업",
+        "relatedMaJorCategory": {
+            "id": 9,
+            "typeOfBusiness": "음료 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 25,
+        "typeOfBusiness": "비알코올 음료 및 얼음 제조업",
+        "relatedMaJorCategory": {
+            "id": 9,
+            "typeOfBusiness": "음료 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 26,
+        "typeOfBusiness": "담배 제조업",
+        "relatedMaJorCategory": {
+            "id": 10,
+            "typeOfBusiness": "담배 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 27,
+        "typeOfBusiness": "방적 및 가공사 제조업",
+        "relatedMaJorCategory": {
+            "id": 11,
+            "typeOfBusiness": "섬유제품 제조업; 의복 제외",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 28,
+        "typeOfBusiness": "직물 직조 및 직물제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 11,
+            "typeOfBusiness": "섬유제품 제조업; 의복 제외",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 29,
+        "typeOfBusiness": "편조 원단 제조업",
+        "relatedMaJorCategory": {
+            "id": 11,
+            "typeOfBusiness": "섬유제품 제조업; 의복 제외",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 30,
+        "typeOfBusiness": "섬유제품 염색 정리 및 마무리 가공업",
+        "relatedMaJorCategory": {
+            "id": 11,
+            "typeOfBusiness": "섬유제품 제조업; 의복 제외",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 31,
+        "typeOfBusiness": "기타 섬유제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 11,
+            "typeOfBusiness": "섬유제품 제조업; 의복 제외",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 32,
+        "typeOfBusiness": "봉제의복 제조업",
+        "relatedMaJorCategory": {
+            "id": 12,
+            "typeOfBusiness": "의복 의복 액세서리 및 모피제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 33,
+        "typeOfBusiness": "모피제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 12,
+            "typeOfBusiness": "의복 의복 액세서리 및 모피제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 34,
+        "typeOfBusiness": "편조의복 제조업",
+        "relatedMaJorCategory": {
+            "id": 12,
+            "typeOfBusiness": "의복 의복 액세서리 및 모피제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 35,
+        "typeOfBusiness": "의복 액세서리 제조업",
+        "relatedMaJorCategory": {
+            "id": 12,
+            "typeOfBusiness": "의복 의복 액세서리 및 모피제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 36,
+        "typeOfBusiness": "가죽 가방 및 유사 제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 13,
+            "typeOfBusiness": "가죽 가방 및 신발 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 37,
+        "typeOfBusiness": "신발 및 신발 부분품 제조업",
+        "relatedMaJorCategory": {
+            "id": 13,
+            "typeOfBusiness": "가죽 가방 및 신발 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 38,
+        "typeOfBusiness": "제재 및 목재 가공업",
+        "relatedMaJorCategory": {
+            "id": 14,
+            "typeOfBusiness": "목재 및 나무제품 제조업; 가구 제외",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 39,
+        "typeOfBusiness": "나무제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 14,
+            "typeOfBusiness": "목재 및 나무제품 제조업; 가구 제외",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 40,
+        "typeOfBusiness": "코르크 및 조물 제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 14,
+            "typeOfBusiness": "목재 및 나무제품 제조업; 가구 제외",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 41,
+        "typeOfBusiness": "펄프 종이 및 판지 제조업",
+        "relatedMaJorCategory": {
+            "id": 15,
+            "typeOfBusiness": "펄프 종이 및 종이제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 42,
+        "typeOfBusiness": "골판지 종이 상자 및 종이 용기 제조업",
+        "relatedMaJorCategory": {
+            "id": 15,
+            "typeOfBusiness": "펄프 종이 및 종이제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 43,
+        "typeOfBusiness": "기타 종이 및 판지 제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 15,
+            "typeOfBusiness": "펄프 종이 및 종이제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 44,
+        "typeOfBusiness": "인쇄 및 인쇄관련 산업",
+        "relatedMaJorCategory": {
+            "id": 16,
+            "typeOfBusiness": "인쇄 및 기록매체 복제업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 45,
+        "typeOfBusiness": "코크스 및 연탄 제조업",
+        "relatedMaJorCategory": {
+            "id": 17,
+            "typeOfBusiness": "코크스 연탄 및 석유정제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 46,
+        "typeOfBusiness": "석유 정제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 17,
+            "typeOfBusiness": "코크스 연탄 및 석유정제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 47,
+        "typeOfBusiness": "기초 화학물질 제조업",
+        "relatedMaJorCategory": {
+            "id": 18,
+            "typeOfBusiness": "화학 물질 및 화학제품 제조업; 의약품 제외",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 48,
+        "typeOfBusiness": "합성고무 및 플라스틱 물질 제조업",
+        "relatedMaJorCategory": {
+            "id": 18,
+            "typeOfBusiness": "화학 물질 및 화학제품 제조업; 의약품 제외",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 49,
+        "typeOfBusiness": "비료 농약 및 살균ㆍ살충제 제조업",
+        "relatedMaJorCategory": {
+            "id": 18,
+            "typeOfBusiness": "화학 물질 및 화학제품 제조업; 의약품 제외",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 50,
+        "typeOfBusiness": "기타 화학제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 18,
+            "typeOfBusiness": "화학 물질 및 화학제품 제조업; 의약품 제외",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 51,
+        "typeOfBusiness": "화학섬유 제조업",
+        "relatedMaJorCategory": {
+            "id": 18,
+            "typeOfBusiness": "화학 물질 및 화학제품 제조업; 의약품 제외",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 52,
+        "typeOfBusiness": "기초 의약 물질 및 생물학적 제제 제조업",
+        "relatedMaJorCategory": {
+            "id": 19,
+            "typeOfBusiness": "의료용 물질 및 의약품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 53,
+        "typeOfBusiness": "의약품 제조업",
+        "relatedMaJorCategory": {
+            "id": 19,
+            "typeOfBusiness": "의료용 물질 및 의약품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 54,
+        "typeOfBusiness": "의료용품 및 기타 의약 관련제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 19,
+            "typeOfBusiness": "의료용 물질 및 의약품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 55,
+        "typeOfBusiness": "고무제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 20,
+            "typeOfBusiness": "고무 및 플라스틱제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 56,
+        "typeOfBusiness": "플라스틱 제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 20,
+            "typeOfBusiness": "고무 및 플라스틱제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 57,
+        "typeOfBusiness": "유리 및 유리제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 21,
+            "typeOfBusiness": "비금속 광물제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 58,
+        "typeOfBusiness": "내화 비내화 요업제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 21,
+            "typeOfBusiness": "비금속 광물제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 59,
+        "typeOfBusiness": "시멘트 석회 플라스터 및 그 제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 21,
+            "typeOfBusiness": "비금속 광물제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 60,
+        "typeOfBusiness": "기타 비금속 광물제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 21,
+            "typeOfBusiness": "비금속 광물제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 61,
+        "typeOfBusiness": "1차 철강 제조업",
+        "relatedMaJorCategory": {
+            "id": 22,
+            "typeOfBusiness": "1차 금속 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 62,
+        "typeOfBusiness": "1차 비철금속 제조업",
+        "relatedMaJorCategory": {
+            "id": 22,
+            "typeOfBusiness": "1차 금속 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 63,
+        "typeOfBusiness": "금속 주조업",
+        "relatedMaJorCategory": {
+            "id": 22,
+            "typeOfBusiness": "1차 금속 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 64,
+        "typeOfBusiness": "구조용 금속제품 탱크 및 증기발생기 제조업",
+        "relatedMaJorCategory": {
+            "id": 23,
+            "typeOfBusiness": "금속 가공제품 제조업; 기계 및 가구 제외",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 65,
+        "typeOfBusiness": "무기 및 총포탄 제조업",
+        "relatedMaJorCategory": {
+            "id": 23,
+            "typeOfBusiness": "금속 가공제품 제조업; 기계 및 가구 제외",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 66,
+        "typeOfBusiness": "기타 금속 가공제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 23,
+            "typeOfBusiness": "금속 가공제품 제조업; 기계 및 가구 제외",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 67,
+        "typeOfBusiness": "반도체 제조업",
+        "relatedMaJorCategory": {
+            "id": 24,
+            "typeOfBusiness": "전자 부품 컴퓨터 영상 음향 및 통신장비 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 68,
+        "typeOfBusiness": "전자 부품 제조업",
+        "relatedMaJorCategory": {
+            "id": 24,
+            "typeOfBusiness": "전자 부품 컴퓨터 영상 음향 및 통신장비 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 69,
+        "typeOfBusiness": "컴퓨터 및 주변 장치 제조업",
+        "relatedMaJorCategory": {
+            "id": 24,
+            "typeOfBusiness": "전자 부품 컴퓨터 영상 음향 및 통신장비 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 70,
+        "typeOfBusiness": "통신 및 방송장비 제조업",
+        "relatedMaJorCategory": {
+            "id": 24,
+            "typeOfBusiness": "전자 부품 컴퓨터 영상 음향 및 통신장비 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 71,
+        "typeOfBusiness": "영상 및 음향 기기 제조업",
+        "relatedMaJorCategory": {
+            "id": 24,
+            "typeOfBusiness": "전자 부품 컴퓨터 영상 음향 및 통신장비 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 72,
+        "typeOfBusiness": "마그네틱 및 광학 매체 제조업",
+        "relatedMaJorCategory": {
+            "id": 24,
+            "typeOfBusiness": "전자 부품 컴퓨터 영상 음향 및 통신장비 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 73,
+        "typeOfBusiness": "의료용 기기 제조업",
+        "relatedMaJorCategory": {
+            "id": 25,
+            "typeOfBusiness": "의료 정밀 광학 기기 및 시계 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 74,
+        "typeOfBusiness": "측정 시험 항해 제어 및 기타 정밀 기기 제조업; 광학 기기 제외",
+        "relatedMaJorCategory": {
+            "id": 25,
+            "typeOfBusiness": "의료 정밀 광학 기기 및 시계 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 75,
+        "typeOfBusiness": "사진장비 및 광학 기기 제조업",
+        "relatedMaJorCategory": {
+            "id": 25,
+            "typeOfBusiness": "의료 정밀 광학 기기 및 시계 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 76,
+        "typeOfBusiness": "시계 및 시계 부품 제조업",
+        "relatedMaJorCategory": {
+            "id": 25,
+            "typeOfBusiness": "의료 정밀 광학 기기 및 시계 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 77,
+        "typeOfBusiness": "전동기 발전기 및 전기 변환ㆍ공급ㆍ제어 장치 제조업",
+        "relatedMaJorCategory": {
+            "id": 26,
+            "typeOfBusiness": "전기장비 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 78,
+        "typeOfBusiness": "일차전지 및 축전지 제조업",
+        "relatedMaJorCategory": {
+            "id": 26,
+            "typeOfBusiness": "전기장비 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 79,
+        "typeOfBusiness": "절연선 및 케이블 제조업",
+        "relatedMaJorCategory": {
+            "id": 26,
+            "typeOfBusiness": "전기장비 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 80,
+        "typeOfBusiness": "전구 및 조명장치 제조업",
+        "relatedMaJorCategory": {
+            "id": 26,
+            "typeOfBusiness": "전기장비 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 81,
+        "typeOfBusiness": "가정용 기기 제조업",
+        "relatedMaJorCategory": {
+            "id": 26,
+            "typeOfBusiness": "전기장비 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 82,
+        "typeOfBusiness": "기타 전기장비 제조업",
+        "relatedMaJorCategory": {
+            "id": 26,
+            "typeOfBusiness": "전기장비 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 83,
+        "typeOfBusiness": "일반 목적용 기계 제조업",
+        "relatedMaJorCategory": {
+            "id": 27,
+            "typeOfBusiness": "기타 기계 및 장비 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 84,
+        "typeOfBusiness": "특수 목적용 기계 제조업",
+        "relatedMaJorCategory": {
+            "id": 27,
+            "typeOfBusiness": "기타 기계 및 장비 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 85,
+        "typeOfBusiness": "자동차용 엔진 및 자동차 제조업",
+        "relatedMaJorCategory": {
+            "id": 28,
+            "typeOfBusiness": "자동차 및 트레일러 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 86,
+        "typeOfBusiness": "자동차 차체 및 트레일러 제조업",
+        "relatedMaJorCategory": {
+            "id": 28,
+            "typeOfBusiness": "자동차 및 트레일러 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 87,
+        "typeOfBusiness": "자동차 신품 부품 제조업",
+        "relatedMaJorCategory": {
+            "id": 28,
+            "typeOfBusiness": "자동차 및 트레일러 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 88,
+        "typeOfBusiness": "자동차 재제조 부품 제조업",
+        "relatedMaJorCategory": {
+            "id": 28,
+            "typeOfBusiness": "자동차 및 트레일러 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 89,
+        "typeOfBusiness": "선박 및 보트 건조업",
+        "relatedMaJorCategory": {
+            "id": 29,
+            "typeOfBusiness": "기타 운송장비 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 90,
+        "typeOfBusiness": "철도장비 제조업",
+        "relatedMaJorCategory": {
+            "id": 29,
+            "typeOfBusiness": "기타 운송장비 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 91,
+        "typeOfBusiness": "항공기 우주선 및 부품 제조업",
+        "relatedMaJorCategory": {
+            "id": 29,
+            "typeOfBusiness": "기타 운송장비 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 92,
+        "typeOfBusiness": "그 외 기타 운송장비 제조업",
+        "relatedMaJorCategory": {
+            "id": 29,
+            "typeOfBusiness": "기타 운송장비 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 93,
+        "typeOfBusiness": "가구 제조업",
+        "relatedMaJorCategory": {
+            "id": 30,
+            "typeOfBusiness": "가구 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 94,
+        "typeOfBusiness": "귀금속 및 장신용품 제조업",
+        "relatedMaJorCategory": {
+            "id": 31,
+            "typeOfBusiness": "기타 제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 95,
+        "typeOfBusiness": "악기 제조업",
+        "relatedMaJorCategory": {
+            "id": 31,
+            "typeOfBusiness": "기타 제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 96,
+        "typeOfBusiness": "운동 및 경기용구 제조업",
+        "relatedMaJorCategory": {
+            "id": 31,
+            "typeOfBusiness": "기타 제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 97,
+        "typeOfBusiness": "인형 장난감 및 오락용품 제조업",
+        "relatedMaJorCategory": {
+            "id": 31,
+            "typeOfBusiness": "기타 제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 98,
+        "typeOfBusiness": "그 외 기타 제품 제조업",
+        "relatedMaJorCategory": {
+            "id": 31,
+            "typeOfBusiness": "기타 제품 제조업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 99,
+        "typeOfBusiness": "산업용 기계 및 장비 수리업",
+        "relatedMaJorCategory": {
+            "id": 32,
+            "typeOfBusiness": "산업용 기계 및 장비 수리업",
+            "relatedMainCategory": {
+                "id": 3,
+                "typeOfBusinessCode": "C",
+                "typeOfBusiness": "제조업"
+            }
+        }
+    },
+    {
+        "id": 100,
+        "typeOfBusiness": "전기업",
+        "relatedMaJorCategory": {
+            "id": 33,
+            "typeOfBusiness": "전기 가스 증기 및 공기 조절 공급업",
+            "relatedMainCategory": {
+                "id": 4,
+                "typeOfBusinessCode": "D",
+                "typeOfBusiness": "전기 가스 증기 및 공기 조절 공급업"
+            }
+        }
+    },
+    {
+        "id": 101,
+        "typeOfBusiness": "연료용 가스 제조 및 배관공급업",
+        "relatedMaJorCategory": {
+            "id": 33,
+            "typeOfBusiness": "전기 가스 증기 및 공기 조절 공급업",
+            "relatedMainCategory": {
+                "id": 4,
+                "typeOfBusinessCode": "D",
+                "typeOfBusiness": "전기 가스 증기 및 공기 조절 공급업"
+            }
+        }
+    },
+    {
+        "id": 102,
+        "typeOfBusiness": "증기 냉ㆍ온수 및 공기 조절 공급업",
+        "relatedMaJorCategory": {
+            "id": 33,
+            "typeOfBusiness": "전기 가스 증기 및 공기 조절 공급업",
+            "relatedMainCategory": {
+                "id": 4,
+                "typeOfBusinessCode": "D",
+                "typeOfBusiness": "전기 가스 증기 및 공기 조절 공급업"
+            }
+        }
+    },
+    {
+        "id": 103,
+        "typeOfBusiness": "수도업",
+        "relatedMaJorCategory": {
+            "id": 34,
+            "typeOfBusiness": "수도업",
+            "relatedMainCategory": {
+                "id": 5,
+                "typeOfBusinessCode": "E",
+                "typeOfBusiness": "수도 하수 및 폐기물 처리 원료 재생업"
+            }
+        }
+    },
+    {
+        "id": 104,
+        "typeOfBusiness": "하수 폐수 및 분뇨 처리업",
+        "relatedMaJorCategory": {
+            "id": 35,
+            "typeOfBusiness": "하수 폐수 및 분뇨 처리업",
+            "relatedMainCategory": {
+                "id": 5,
+                "typeOfBusinessCode": "E",
+                "typeOfBusiness": "수도 하수 및 폐기물 처리 원료 재생업"
+            }
+        }
+    },
+    {
+        "id": 105,
+        "typeOfBusiness": "폐기물 수집 운반업",
+        "relatedMaJorCategory": {
+            "id": 36,
+            "typeOfBusiness": "폐기물 수집 운반 처리 및 원료 재생업",
+            "relatedMainCategory": {
+                "id": 5,
+                "typeOfBusinessCode": "E",
+                "typeOfBusiness": "수도 하수 및 폐기물 처리 원료 재생업"
+            }
+        }
+    },
+    {
+        "id": 106,
+        "typeOfBusiness": "폐기물 처리업",
+        "relatedMaJorCategory": {
+            "id": 36,
+            "typeOfBusiness": "폐기물 수집 운반 처리 및 원료 재생업",
+            "relatedMainCategory": {
+                "id": 5,
+                "typeOfBusinessCode": "E",
+                "typeOfBusiness": "수도 하수 및 폐기물 처리 원료 재생업"
+            }
+        }
+    },
+    {
+        "id": 107,
+        "typeOfBusiness": "해체 선별 및 원료 재생업",
+        "relatedMaJorCategory": {
+            "id": 36,
+            "typeOfBusiness": "폐기물 수집 운반 처리 및 원료 재생업",
+            "relatedMainCategory": {
+                "id": 5,
+                "typeOfBusinessCode": "E",
+                "typeOfBusiness": "수도 하수 및 폐기물 처리 원료 재생업"
+            }
+        }
+    },
+    {
+        "id": 108,
+        "typeOfBusiness": "환경 정화 및 복원업",
+        "relatedMaJorCategory": {
+            "id": 37,
+            "typeOfBusiness": "환경 정화 및 복원업",
+            "relatedMainCategory": {
+                "id": 5,
+                "typeOfBusinessCode": "E",
+                "typeOfBusiness": "수도 하수 및 폐기물 처리 원료 재생업"
+            }
+        }
+    },
+    {
+        "id": 109,
+        "typeOfBusiness": "건물 건설업",
+        "relatedMaJorCategory": {
+            "id": 38,
+            "typeOfBusiness": "종합 건설업",
+            "relatedMainCategory": {
+                "id": 6,
+                "typeOfBusinessCode": "F",
+                "typeOfBusiness": "건설업"
+            }
+        }
+    },
+    {
+        "id": 110,
+        "typeOfBusiness": "토목 건설업",
+        "relatedMaJorCategory": {
+            "id": 38,
+            "typeOfBusiness": "종합 건설업",
+            "relatedMainCategory": {
+                "id": 6,
+                "typeOfBusinessCode": "F",
+                "typeOfBusiness": "건설업"
+            }
+        }
+    },
+    {
+        "id": 111,
+        "typeOfBusiness": "건설업",
+        "relatedMaJorCategory": {
+            "id": 38,
+            "typeOfBusiness": "종합 건설업",
+            "relatedMainCategory": {
+                "id": 6,
+                "typeOfBusinessCode": "F",
+                "typeOfBusiness": "건설업"
+            }
+        }
+    },
+    {
+        "id": 112,
+        "typeOfBusiness": "기반조성 및 시설물 축조관련 전문공사업",
+        "relatedMaJorCategory": {
+            "id": 39,
+            "typeOfBusiness": "전문직별 공사업",
+            "relatedMainCategory": {
+                "id": 6,
+                "typeOfBusinessCode": "F",
+                "typeOfBusiness": "건설업"
+            }
+        }
+    },
+    {
+        "id": 113,
+        "typeOfBusiness": "건물설비 설치 공사업",
+        "relatedMaJorCategory": {
+            "id": 39,
+            "typeOfBusiness": "전문직별 공사업",
+            "relatedMainCategory": {
+                "id": 6,
+                "typeOfBusinessCode": "F",
+                "typeOfBusiness": "건설업"
+            }
+        }
+    },
+    {
+        "id": 114,
+        "typeOfBusiness": "전기 및 통신 공사업",
+        "relatedMaJorCategory": {
+            "id": 39,
+            "typeOfBusiness": "전문직별 공사업",
+            "relatedMainCategory": {
+                "id": 6,
+                "typeOfBusinessCode": "F",
+                "typeOfBusiness": "건설업"
+            }
+        }
+    },
+    {
+        "id": 115,
+        "typeOfBusiness": "실내건축 및 건축마무리 공사업",
+        "relatedMaJorCategory": {
+            "id": 39,
+            "typeOfBusiness": "전문직별 공사업",
+            "relatedMainCategory": {
+                "id": 6,
+                "typeOfBusinessCode": "F",
+                "typeOfBusiness": "건설업"
+            }
+        }
+    },
+    {
+        "id": 116,
+        "typeOfBusiness": "시설물 유지관리 공사업",
+        "relatedMaJorCategory": {
+            "id": 39,
+            "typeOfBusiness": "전문직별 공사업",
+            "relatedMainCategory": {
+                "id": 6,
+                "typeOfBusinessCode": "F",
+                "typeOfBusiness": "건설업"
+            }
+        }
+    },
+    {
+        "id": 117,
+        "typeOfBusiness": "건설장비 운영업",
+        "relatedMaJorCategory": {
+            "id": 39,
+            "typeOfBusiness": "전문직별 공사업",
+            "relatedMainCategory": {
+                "id": 6,
+                "typeOfBusinessCode": "F",
+                "typeOfBusiness": "건설업"
+            }
+        }
+    },
+    {
+        "id": 118,
+        "typeOfBusiness": "자동차 판매업",
+        "relatedMaJorCategory": {
+            "id": 40,
+            "typeOfBusiness": "자동차 및 부품 판매업",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 119,
+        "typeOfBusiness": "자동차 부품 및 내장품 판매업",
+        "relatedMaJorCategory": {
+            "id": 40,
+            "typeOfBusiness": "자동차 및 부품 판매업",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 120,
+        "typeOfBusiness": "모터사이클 및 부품 판매업",
+        "relatedMaJorCategory": {
+            "id": 40,
+            "typeOfBusiness": "자동차 및 부품 판매업",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 121,
+        "typeOfBusiness": "상품 중개업",
+        "relatedMaJorCategory": {
+            "id": 41,
+            "typeOfBusiness": "도매 및 상품 중개업",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 122,
+        "typeOfBusiness": "산업용 농ㆍ축산물 및 동ㆍ식물 도매업",
+        "relatedMaJorCategory": {
+            "id": 41,
+            "typeOfBusiness": "도매 및 상품 중개업",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 123,
+        "typeOfBusiness": "음ㆍ식료품 및 담배 도매업",
+        "relatedMaJorCategory": {
+            "id": 41,
+            "typeOfBusiness": "도매 및 상품 중개업",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 124,
+        "typeOfBusiness": "생활용품 도매업",
+        "relatedMaJorCategory": {
+            "id": 41,
+            "typeOfBusiness": "도매 및 상품 중개업",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 125,
+        "typeOfBusiness": "기계장비 및 관련 물품 도매업",
+        "relatedMaJorCategory": {
+            "id": 41,
+            "typeOfBusiness": "도매 및 상품 중개업",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 126,
+        "typeOfBusiness": "건축 자재 철물 및 난방장치 도매업",
+        "relatedMaJorCategory": {
+            "id": 41,
+            "typeOfBusiness": "도매 및 상품 중개업",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 127,
+        "typeOfBusiness": "기타 전문 도매업",
+        "relatedMaJorCategory": {
+            "id": 41,
+            "typeOfBusiness": "도매 및 상품 중개업",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 128,
+        "typeOfBusiness": "상품 종합 도매업",
+        "relatedMaJorCategory": {
+            "id": 41,
+            "typeOfBusiness": "도매 및 상품 중개업",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 129,
+        "typeOfBusiness": "종합 소매업",
+        "relatedMaJorCategory": {
+            "id": 42,
+            "typeOfBusiness": "소매업; 자동차 제외",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 130,
+        "typeOfBusiness": "음ㆍ식료품 및 담배 소매업",
+        "relatedMaJorCategory": {
+            "id": 42,
+            "typeOfBusiness": "소매업; 자동차 제외",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 131,
+        "typeOfBusiness": "가전제품 및 정보 통신장비 소매업",
+        "relatedMaJorCategory": {
+            "id": 42,
+            "typeOfBusiness": "소매업; 자동차 제외",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 132,
+        "typeOfBusiness": "섬유 의복 신발 및 가죽제품 소매업",
+        "relatedMaJorCategory": {
+            "id": 42,
+            "typeOfBusiness": "소매업; 자동차 제외",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 133,
+        "typeOfBusiness": "기타 생활용품 소매업",
+        "relatedMaJorCategory": {
+            "id": 42,
+            "typeOfBusiness": "소매업; 자동차 제외",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 134,
+        "typeOfBusiness": "문화 오락 및 여가 용품 소매업",
+        "relatedMaJorCategory": {
+            "id": 42,
+            "typeOfBusiness": "소매업; 자동차 제외",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 135,
+        "typeOfBusiness": "연료 소매업",
+        "relatedMaJorCategory": {
+            "id": 42,
+            "typeOfBusiness": "소매업; 자동차 제외",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 136,
+        "typeOfBusiness": "기타 상품 전문 소매업",
+        "relatedMaJorCategory": {
+            "id": 42,
+            "typeOfBusiness": "소매업; 자동차 제외",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 137,
+        "typeOfBusiness": "무점포 소매업",
+        "relatedMaJorCategory": {
+            "id": 42,
+            "typeOfBusiness": "소매업; 자동차 제외",
+            "relatedMainCategory": {
+                "id": 7,
+                "typeOfBusinessCode": "G",
+                "typeOfBusiness": "도매 및 소매업"
+            }
+        }
+    },
+    {
+        "id": 138,
+        "typeOfBusiness": "철도 운송업",
+        "relatedMaJorCategory": {
+            "id": 43,
+            "typeOfBusiness": "육상 운송 및 파이프라인 운송업",
+            "relatedMainCategory": {
+                "id": 8,
+                "typeOfBusinessCode": "H",
+                "typeOfBusiness": "운수 및 창고업"
+            }
+        }
+    },
+    {
+        "id": 139,
+        "typeOfBusiness": "육상 여객 운송업",
+        "relatedMaJorCategory": {
+            "id": 43,
+            "typeOfBusiness": "육상 운송 및 파이프라인 운송업",
+            "relatedMainCategory": {
+                "id": 8,
+                "typeOfBusinessCode": "H",
+                "typeOfBusiness": "운수 및 창고업"
+            }
+        }
+    },
+    {
+        "id": 140,
+        "typeOfBusiness": "도로 화물 운송업",
+        "relatedMaJorCategory": {
+            "id": 43,
+            "typeOfBusiness": "육상 운송 및 파이프라인 운송업",
+            "relatedMainCategory": {
+                "id": 8,
+                "typeOfBusinessCode": "H",
+                "typeOfBusiness": "운수 및 창고업"
+            }
+        }
+    },
+    {
+        "id": 141,
+        "typeOfBusiness": "소화물 전문 운송업",
+        "relatedMaJorCategory": {
+            "id": 43,
+            "typeOfBusiness": "육상 운송 및 파이프라인 운송업",
+            "relatedMainCategory": {
+                "id": 8,
+                "typeOfBusinessCode": "H",
+                "typeOfBusiness": "운수 및 창고업"
+            }
+        }
+    },
+    {
+        "id": 142,
+        "typeOfBusiness": "파이프라인 운송업",
+        "relatedMaJorCategory": {
+            "id": 43,
+            "typeOfBusiness": "육상 운송 및 파이프라인 운송업",
+            "relatedMainCategory": {
+                "id": 8,
+                "typeOfBusinessCode": "H",
+                "typeOfBusiness": "운수 및 창고업"
+            }
+        }
+    },
+    {
+        "id": 143,
+        "typeOfBusiness": "해상 운송업",
+        "relatedMaJorCategory": {
+            "id": 44,
+            "typeOfBusiness": "수상 운송업",
+            "relatedMainCategory": {
+                "id": 8,
+                "typeOfBusinessCode": "H",
+                "typeOfBusiness": "운수 및 창고업"
+            }
+        }
+    },
+    {
+        "id": 144,
+        "typeOfBusiness": "내륙 수상 및 항만 내 운송업",
+        "relatedMaJorCategory": {
+            "id": 44,
+            "typeOfBusiness": "수상 운송업",
+            "relatedMainCategory": {
+                "id": 8,
+                "typeOfBusinessCode": "H",
+                "typeOfBusiness": "운수 및 창고업"
+            }
+        }
+    },
+    {
+        "id": 145,
+        "typeOfBusiness": "항공 여객 운송업",
+        "relatedMaJorCategory": {
+            "id": 45,
+            "typeOfBusiness": "항공 운송업",
+            "relatedMainCategory": {
+                "id": 8,
+                "typeOfBusinessCode": "H",
+                "typeOfBusiness": "운수 및 창고업"
+            }
+        }
+    },
+    {
+        "id": 146,
+        "typeOfBusiness": "항공 화물 운송업",
+        "relatedMaJorCategory": {
+            "id": 45,
+            "typeOfBusiness": "항공 운송업",
+            "relatedMainCategory": {
+                "id": 8,
+                "typeOfBusinessCode": "H",
+                "typeOfBusiness": "운수 및 창고업"
+            }
+        }
+    },
+    {
+        "id": 147,
+        "typeOfBusiness": "보관 및 창고업",
+        "relatedMaJorCategory": {
+            "id": 46,
+            "typeOfBusiness": "창고 및 운송관련 서비스업",
+            "relatedMainCategory": {
+                "id": 8,
+                "typeOfBusinessCode": "H",
+                "typeOfBusiness": "운수 및 창고업"
+            }
+        }
+    },
+    {
+        "id": 148,
+        "typeOfBusiness": "기타 운송관련 서비스업",
+        "relatedMaJorCategory": {
+            "id": 46,
+            "typeOfBusiness": "창고 및 운송관련 서비스업",
+            "relatedMainCategory": {
+                "id": 8,
+                "typeOfBusinessCode": "H",
+                "typeOfBusiness": "운수 및 창고업"
+            }
+        }
+    },
+    {
+        "id": 149,
+        "typeOfBusiness": "일반 및 생활 숙박시설 운영업",
+        "relatedMaJorCategory": {
+            "id": 47,
+            "typeOfBusiness": "숙박업",
+            "relatedMainCategory": {
+                "id": 9,
+                "typeOfBusinessCode": "I",
+                "typeOfBusiness": "숙박 및 음식점업"
+            }
+        }
+    },
+    {
+        "id": 150,
+        "typeOfBusiness": "기타 숙박업",
+        "relatedMaJorCategory": {
+            "id": 47,
+            "typeOfBusiness": "숙박업",
+            "relatedMainCategory": {
+                "id": 9,
+                "typeOfBusinessCode": "I",
+                "typeOfBusiness": "숙박 및 음식점업"
+            }
+        }
+    },
+    {
+        "id": 151,
+        "typeOfBusiness": "음식점업",
+        "relatedMaJorCategory": {
+            "id": 48,
+            "typeOfBusiness": "음식점 및 주점업",
+            "relatedMainCategory": {
+                "id": 9,
+                "typeOfBusinessCode": "I",
+                "typeOfBusiness": "숙박 및 음식점업"
+            }
+        }
+    },
+    {
+        "id": 152,
+        "typeOfBusiness": "주점 및 비알코올 음료점업",
+        "relatedMaJorCategory": {
+            "id": 48,
+            "typeOfBusiness": "음식점 및 주점업",
+            "relatedMainCategory": {
+                "id": 9,
+                "typeOfBusinessCode": "I",
+                "typeOfBusiness": "숙박 및 음식점업"
+            }
+        }
+    },
+    {
+        "id": 153,
+        "typeOfBusiness": "서적 잡지 및 기타 인쇄물 출판업",
+        "relatedMaJorCategory": {
+            "id": 49,
+            "typeOfBusiness": "출판업",
+            "relatedMainCategory": {
+                "id": 10,
+                "typeOfBusinessCode": "J",
+                "typeOfBusiness": "정보통신업"
+            }
+        }
+    },
+    {
+        "id": 154,
+        "typeOfBusiness": "소프트웨어 개발 및 공급업",
+        "relatedMaJorCategory": {
+            "id": 49,
+            "typeOfBusiness": "출판업",
+            "relatedMainCategory": {
+                "id": 10,
+                "typeOfBusinessCode": "J",
+                "typeOfBusiness": "정보통신업"
+            }
+        }
+    },
+    {
+        "id": 155,
+        "typeOfBusiness": "영화 비디오물 방송 프로그램 제작 및 배급업",
+        "relatedMaJorCategory": {
+            "id": 50,
+            "typeOfBusiness": "영상ㆍ오디오 기록물 제작 및 배급업",
+            "relatedMainCategory": {
+                "id": 10,
+                "typeOfBusinessCode": "J",
+                "typeOfBusiness": "정보통신업"
+            }
+        }
+    },
+    {
+        "id": 156,
+        "typeOfBusiness": "오디오물 출판 및 원판 녹음업",
+        "relatedMaJorCategory": {
+            "id": 50,
+            "typeOfBusiness": "영상ㆍ오디오 기록물 제작 및 배급업",
+            "relatedMainCategory": {
+                "id": 10,
+                "typeOfBusinessCode": "J",
+                "typeOfBusiness": "정보통신업"
+            }
+        }
+    },
+    {
+        "id": 157,
+        "typeOfBusiness": "라디오 방송업",
+        "relatedMaJorCategory": {
+            "id": 51,
+            "typeOfBusiness": "방송업",
+            "relatedMainCategory": {
+                "id": 10,
+                "typeOfBusinessCode": "J",
+                "typeOfBusiness": "정보통신업"
+            }
+        }
+    },
+    {
+        "id": 158,
+        "typeOfBusiness": "텔레비전 방송업",
+        "relatedMaJorCategory": {
+            "id": 51,
+            "typeOfBusiness": "방송업",
+            "relatedMainCategory": {
+                "id": 10,
+                "typeOfBusinessCode": "J",
+                "typeOfBusiness": "정보통신업"
+            }
+        }
+    },
+    {
+        "id": 159,
+        "typeOfBusiness": "공영 우편업",
+        "relatedMaJorCategory": {
+            "id": 52,
+            "typeOfBusiness": "우편 및 통신업",
+            "relatedMainCategory": {
+                "id": 10,
+                "typeOfBusinessCode": "J",
+                "typeOfBusiness": "정보통신업"
+            }
+        }
+    },
+    {
+        "id": 160,
+        "typeOfBusiness": "전기 통신업",
+        "relatedMaJorCategory": {
+            "id": 52,
+            "typeOfBusiness": "우편 및 통신업",
+            "relatedMainCategory": {
+                "id": 10,
+                "typeOfBusinessCode": "J",
+                "typeOfBusiness": "정보통신업"
+            }
+        }
+    },
+    {
+        "id": 161,
+        "typeOfBusiness": "컴퓨터 프로그래밍 시스템 통합 및 관리업",
+        "relatedMaJorCategory": {
+            "id": 53,
+            "typeOfBusiness": "컴퓨터 프로그래밍 시스템 통합 및 관리업",
+            "relatedMainCategory": {
+                "id": 10,
+                "typeOfBusinessCode": "J",
+                "typeOfBusiness": "정보통신업"
+            }
+        }
+    },
+    {
+        "id": 162,
+        "typeOfBusiness": "자료 처리 호스팅 포털 및 기타 인터넷 정보 매개 서비스업",
+        "relatedMaJorCategory": {
+            "id": 54,
+            "typeOfBusiness": "정보서비스업",
+            "relatedMainCategory": {
+                "id": 10,
+                "typeOfBusinessCode": "J",
+                "typeOfBusiness": "정보통신업"
+            }
+        }
+    },
+    {
+        "id": 163,
+        "typeOfBusiness": "기타 정보 서비스업",
+        "relatedMaJorCategory": {
+            "id": 54,
+            "typeOfBusiness": "정보서비스업",
+            "relatedMainCategory": {
+                "id": 10,
+                "typeOfBusinessCode": "J",
+                "typeOfBusiness": "정보통신업"
+            }
+        }
+    },
+    {
+        "id": 164,
+        "typeOfBusiness": "은행 및 저축기관",
+        "relatedMaJorCategory": {
+            "id": 55,
+            "typeOfBusiness": "금융업",
+            "relatedMainCategory": {
+                "id": 11,
+                "typeOfBusinessCode": "K",
+                "typeOfBusiness": "금융 및 보험업"
+            }
+        }
+    },
+    {
+        "id": 165,
+        "typeOfBusiness": "신탁업 및 집합 투자업",
+        "relatedMaJorCategory": {
+            "id": 55,
+            "typeOfBusiness": "금융업",
+            "relatedMainCategory": {
+                "id": 11,
+                "typeOfBusinessCode": "K",
+                "typeOfBusiness": "금융 및 보험업"
+            }
+        }
+    },
+    {
+        "id": 166,
+        "typeOfBusiness": "기타 금융업",
+        "relatedMaJorCategory": {
+            "id": 55,
+            "typeOfBusiness": "금융업",
+            "relatedMainCategory": {
+                "id": 11,
+                "typeOfBusinessCode": "K",
+                "typeOfBusiness": "금융 및 보험업"
+            }
+        }
+    },
+    {
+        "id": 167,
+        "typeOfBusiness": "보험업",
+        "relatedMaJorCategory": {
+            "id": 56,
+            "typeOfBusiness": "보험 및 연금업",
+            "relatedMainCategory": {
+                "id": 11,
+                "typeOfBusinessCode": "K",
+                "typeOfBusiness": "금융 및 보험업"
+            }
+        }
+    },
+    {
+        "id": 168,
+        "typeOfBusiness": "재보험업",
+        "relatedMaJorCategory": {
+            "id": 56,
+            "typeOfBusiness": "보험 및 연금업",
+            "relatedMainCategory": {
+                "id": 11,
+                "typeOfBusinessCode": "K",
+                "typeOfBusiness": "금융 및 보험업"
+            }
+        }
+    },
+    {
+        "id": 169,
+        "typeOfBusiness": "연금 및 공제업",
+        "relatedMaJorCategory": {
+            "id": 56,
+            "typeOfBusiness": "보험 및 연금업",
+            "relatedMainCategory": {
+                "id": 11,
+                "typeOfBusinessCode": "K",
+                "typeOfBusiness": "금융 및 보험업"
+            }
+        }
+    },
+    {
+        "id": 170,
+        "typeOfBusiness": "금융 지원 서비스업",
+        "relatedMaJorCategory": {
+            "id": 57,
+            "typeOfBusiness": "금융 및 보험관련 서비스업",
+            "relatedMainCategory": {
+                "id": 11,
+                "typeOfBusinessCode": "K",
+                "typeOfBusiness": "금융 및 보험업"
+            }
+        }
+    },
+    {
+        "id": 171,
+        "typeOfBusiness": "보험 및 연금관련 서비스업",
+        "relatedMaJorCategory": {
+            "id": 57,
+            "typeOfBusiness": "금융 및 보험관련 서비스업",
+            "relatedMainCategory": {
+                "id": 11,
+                "typeOfBusinessCode": "K",
+                "typeOfBusiness": "금융 및 보험업"
+            }
+        }
+    },
+    {
+        "id": 172,
+        "typeOfBusiness": "부동산 임대 및 공급업",
+        "relatedMaJorCategory": {
+            "id": 58,
+            "typeOfBusiness": "부동산업",
+            "relatedMainCategory": {
+                "id": 12,
+                "typeOfBusinessCode": "L",
+                "typeOfBusiness": "부동산업"
+            }
+        }
+    },
+    {
+        "id": 173,
+        "typeOfBusiness": "부동산관련 서비스업",
+        "relatedMaJorCategory": {
+            "id": 58,
+            "typeOfBusiness": "부동산업",
+            "relatedMainCategory": {
+                "id": 12,
+                "typeOfBusinessCode": "L",
+                "typeOfBusiness": "부동산업"
+            }
+        }
+    },
+    {
+        "id": 174,
+        "typeOfBusiness": "자연과학 및 공학 연구개발업",
+        "relatedMaJorCategory": {
+            "id": 59,
+            "typeOfBusiness": "연구개발업",
+            "relatedMainCategory": {
+                "id": 13,
+                "typeOfBusinessCode": "M",
+                "typeOfBusiness": "전문 과학 및 기술 서비스업"
+            }
+        }
+    },
+    {
+        "id": 175,
+        "typeOfBusiness": "인문 및 사회과학 연구개발업",
+        "relatedMaJorCategory": {
+            "id": 59,
+            "typeOfBusiness": "연구개발업",
+            "relatedMainCategory": {
+                "id": 13,
+                "typeOfBusinessCode": "M",
+                "typeOfBusiness": "전문 과학 및 기술 서비스업"
+            }
+        }
+    },
+    {
+        "id": 176,
+        "typeOfBusiness": "법무관련 서비스업",
+        "relatedMaJorCategory": {
+            "id": 60,
+            "typeOfBusiness": "전문 서비스업",
+            "relatedMainCategory": {
+                "id": 13,
+                "typeOfBusinessCode": "M",
+                "typeOfBusiness": "전문 과학 및 기술 서비스업"
+            }
+        }
+    },
+    {
+        "id": 177,
+        "typeOfBusiness": "회계 및 세무관련 서비스업",
+        "relatedMaJorCategory": {
+            "id": 60,
+            "typeOfBusiness": "전문 서비스업",
+            "relatedMainCategory": {
+                "id": 13,
+                "typeOfBusinessCode": "M",
+                "typeOfBusiness": "전문 과학 및 기술 서비스업"
+            }
+        }
+    },
+    {
+        "id": 178,
+        "typeOfBusiness": "광고업",
+        "relatedMaJorCategory": {
+            "id": 60,
+            "typeOfBusiness": "전문 서비스업",
+            "relatedMainCategory": {
+                "id": 13,
+                "typeOfBusinessCode": "M",
+                "typeOfBusiness": "전문 과학 및 기술 서비스업"
+            }
+        }
+    },
+    {
+        "id": 179,
+        "typeOfBusiness": "시장 조사 및 여론 조사업",
+        "relatedMaJorCategory": {
+            "id": 60,
+            "typeOfBusiness": "전문 서비스업",
+            "relatedMainCategory": {
+                "id": 13,
+                "typeOfBusinessCode": "M",
+                "typeOfBusiness": "전문 과학 및 기술 서비스업"
+            }
+        }
+    },
+    {
+        "id": 180,
+        "typeOfBusiness": "회사 본부 및 경영 컨설팅 서비스업",
+        "relatedMaJorCategory": {
+            "id": 60,
+            "typeOfBusiness": "전문 서비스업",
+            "relatedMainCategory": {
+                "id": 13,
+                "typeOfBusinessCode": "M",
+                "typeOfBusiness": "전문 과학 및 기술 서비스업"
+            }
+        }
+    },
+    {
+        "id": 181,
+        "typeOfBusiness": "기타 전문 서비스업",
+        "relatedMaJorCategory": {
+            "id": 60,
+            "typeOfBusiness": "전문 서비스업",
+            "relatedMainCategory": {
+                "id": 13,
+                "typeOfBusinessCode": "M",
+                "typeOfBusiness": "전문 과학 및 기술 서비스업"
+            }
+        }
+    },
+    {
+        "id": 182,
+        "typeOfBusiness": "건축 기술 엔지니어링 및 관련 기술 서비스업",
+        "relatedMaJorCategory": {
+            "id": 61,
+            "typeOfBusiness": "건축 기술 엔지니어링 및 기타 과학기술 서비스업",
+            "relatedMainCategory": {
+                "id": 13,
+                "typeOfBusinessCode": "M",
+                "typeOfBusiness": "전문 과학 및 기술 서비스업"
+            }
+        }
+    },
+    {
+        "id": 183,
+        "typeOfBusiness": "기타 과학기술 서비스업",
+        "relatedMaJorCategory": {
+            "id": 61,
+            "typeOfBusiness": "건축 기술 엔지니어링 및 기타 과학기술 서비스업",
+            "relatedMainCategory": {
+                "id": 13,
+                "typeOfBusinessCode": "M",
+                "typeOfBusiness": "전문 과학 및 기술 서비스업"
+            }
+        }
+    },
+    {
+        "id": 184,
+        "typeOfBusiness": "수의업",
+        "relatedMaJorCategory": {
+            "id": 62,
+            "typeOfBusiness": "기타 전문 과학 및 기술 서비스업",
+            "relatedMainCategory": {
+                "id": 13,
+                "typeOfBusinessCode": "M",
+                "typeOfBusiness": "전문 과학 및 기술 서비스업"
+            }
+        }
+    },
+    {
+        "id": 185,
+        "typeOfBusiness": "전문 디자인업",
+        "relatedMaJorCategory": {
+            "id": 62,
+            "typeOfBusiness": "기타 전문 과학 및 기술 서비스업",
+            "relatedMainCategory": {
+                "id": 13,
+                "typeOfBusinessCode": "M",
+                "typeOfBusiness": "전문 과학 및 기술 서비스업"
+            }
+        }
+    },
+    {
+        "id": 186,
+        "typeOfBusiness": "사진 촬영 및 처리업",
+        "relatedMaJorCategory": {
+            "id": 62,
+            "typeOfBusiness": "기타 전문 과학 및 기술 서비스업",
+            "relatedMainCategory": {
+                "id": 13,
+                "typeOfBusinessCode": "M",
+                "typeOfBusiness": "전문 과학 및 기술 서비스업"
+            }
+        }
+    },
+    {
+        "id": 187,
+        "typeOfBusiness": "그 외 기타 전문 과학 및 기술 서비스업",
+        "relatedMaJorCategory": {
+            "id": 62,
+            "typeOfBusiness": "기타 전문 과학 및 기술 서비스업",
+            "relatedMainCategory": {
+                "id": 13,
+                "typeOfBusinessCode": "M",
+                "typeOfBusiness": "전문 과학 및 기술 서비스업"
+            }
+        }
+    },
+    {
+        "id": 188,
+        "typeOfBusiness": "사업시설 유지ㆍ관리 서비스업",
+        "relatedMaJorCategory": {
+            "id": 63,
+            "typeOfBusiness": "사업시설 관리 및 조경 서비스업",
+            "relatedMainCategory": {
+                "id": 14,
+                "typeOfBusinessCode": "N",
+                "typeOfBusiness": "사업시설 관리 사업 지원 및 임대 서비스업"
+            }
+        }
+    },
+    {
+        "id": 189,
+        "typeOfBusiness": "건물ㆍ산업설비 청소 및 방제 서비스업",
+        "relatedMaJorCategory": {
+            "id": 63,
+            "typeOfBusiness": "사업시설 관리 및 조경 서비스업",
+            "relatedMainCategory": {
+                "id": 14,
+                "typeOfBusinessCode": "N",
+                "typeOfBusiness": "사업시설 관리 사업 지원 및 임대 서비스업"
+            }
+        }
+    },
+    {
+        "id": 190,
+        "typeOfBusiness": "조경관리 및 유지 서비스업",
+        "relatedMaJorCategory": {
+            "id": 63,
+            "typeOfBusiness": "사업시설 관리 및 조경 서비스업",
+            "relatedMainCategory": {
+                "id": 14,
+                "typeOfBusinessCode": "N",
+                "typeOfBusiness": "사업시설 관리 사업 지원 및 임대 서비스업"
+            }
+        }
+    },
+    {
+        "id": 191,
+        "typeOfBusiness": "고용 알선 및 인력 공급업",
+        "relatedMaJorCategory": {
+            "id": 64,
+            "typeOfBusiness": "사업 지원 서비스업",
+            "relatedMainCategory": {
+                "id": 14,
+                "typeOfBusinessCode": "N",
+                "typeOfBusiness": "사업시설 관리 사업 지원 및 임대 서비스업"
+            }
+        }
+    },
+    {
+        "id": 192,
+        "typeOfBusiness": "여행사 및 기타 여행 보조 서비스업",
+        "relatedMaJorCategory": {
+            "id": 64,
+            "typeOfBusiness": "사업 지원 서비스업",
+            "relatedMainCategory": {
+                "id": 14,
+                "typeOfBusinessCode": "N",
+                "typeOfBusiness": "사업시설 관리 사업 지원 및 임대 서비스업"
+            }
+        }
+    },
+    {
+        "id": 193,
+        "typeOfBusiness": "경비 경호 및 탐정업",
+        "relatedMaJorCategory": {
+            "id": 64,
+            "typeOfBusiness": "사업 지원 서비스업",
+            "relatedMainCategory": {
+                "id": 14,
+                "typeOfBusinessCode": "N",
+                "typeOfBusiness": "사업시설 관리 사업 지원 및 임대 서비스업"
+            }
+        }
+    },
+    {
+        "id": 194,
+        "typeOfBusiness": "기타 사업 지원 서비스업",
+        "relatedMaJorCategory": {
+            "id": 64,
+            "typeOfBusiness": "사업 지원 서비스업",
+            "relatedMainCategory": {
+                "id": 14,
+                "typeOfBusinessCode": "N",
+                "typeOfBusiness": "사업시설 관리 사업 지원 및 임대 서비스업"
+            }
+        }
+    },
+    {
+        "id": 195,
+        "typeOfBusiness": "운송장비 임대업",
+        "relatedMaJorCategory": {
+            "id": 65,
+            "typeOfBusiness": "임대업; 부동산 제외",
+            "relatedMainCategory": {
+                "id": 14,
+                "typeOfBusinessCode": "N",
+                "typeOfBusiness": "사업시설 관리 사업 지원 및 임대 서비스업"
+            }
+        }
+    },
+    {
+        "id": 196,
+        "typeOfBusiness": "개인 및 가정용품 임대업",
+        "relatedMaJorCategory": {
+            "id": 65,
+            "typeOfBusiness": "임대업; 부동산 제외",
+            "relatedMainCategory": {
+                "id": 14,
+                "typeOfBusinessCode": "N",
+                "typeOfBusiness": "사업시설 관리 사업 지원 및 임대 서비스업"
+            }
+        }
+    },
+    {
+        "id": 197,
+        "typeOfBusiness": "산업용 기계 및 장비 임대업",
+        "relatedMaJorCategory": {
+            "id": 65,
+            "typeOfBusiness": "임대업; 부동산 제외",
+            "relatedMainCategory": {
+                "id": 14,
+                "typeOfBusinessCode": "N",
+                "typeOfBusiness": "사업시설 관리 사업 지원 및 임대 서비스업"
+            }
+        }
+    },
+    {
+        "id": 198,
+        "typeOfBusiness": "무형 재산권 임대업",
+        "relatedMaJorCategory": {
+            "id": 65,
+            "typeOfBusiness": "임대업; 부동산 제외",
+            "relatedMainCategory": {
+                "id": 14,
+                "typeOfBusinessCode": "N",
+                "typeOfBusiness": "사업시설 관리 사업 지원 및 임대 서비스업"
+            }
+        }
+    },
+    {
+        "id": 199,
+        "typeOfBusiness": "입법 및 일반 정부 행정",
+        "relatedMaJorCategory": {
+            "id": 66,
+            "typeOfBusiness": "공공 행정 국방 및 사회보장 행정",
+            "relatedMainCategory": {
+                "id": 15,
+                "typeOfBusinessCode": "O",
+                "typeOfBusiness": "공공 행정 국방 및 사회보장 행정"
+            }
+        }
+    },
+    {
+        "id": 200,
+        "typeOfBusiness": "사회 및 산업정책 행정",
+        "relatedMaJorCategory": {
+            "id": 66,
+            "typeOfBusiness": "공공 행정 국방 및 사회보장 행정",
+            "relatedMainCategory": {
+                "id": 15,
+                "typeOfBusinessCode": "O",
+                "typeOfBusiness": "공공 행정 국방 및 사회보장 행정"
+            }
+        }
+    },
+    {
+        "id": 201,
+        "typeOfBusiness": "외무 및 국방 행정",
+        "relatedMaJorCategory": {
+            "id": 66,
+            "typeOfBusiness": "공공 행정 국방 및 사회보장 행정",
+            "relatedMainCategory": {
+                "id": 15,
+                "typeOfBusinessCode": "O",
+                "typeOfBusiness": "공공 행정 국방 및 사회보장 행정"
+            }
+        }
+    },
+    {
+        "id": 202,
+        "typeOfBusiness": "사법 및 공공 질서 행정",
+        "relatedMaJorCategory": {
+            "id": 66,
+            "typeOfBusiness": "공공 행정 국방 및 사회보장 행정",
+            "relatedMainCategory": {
+                "id": 15,
+                "typeOfBusinessCode": "O",
+                "typeOfBusiness": "공공 행정 국방 및 사회보장 행정"
+            }
+        }
+    },
+    {
+        "id": 203,
+        "typeOfBusiness": "사회보장 행정",
+        "relatedMaJorCategory": {
+            "id": 66,
+            "typeOfBusiness": "공공 행정 국방 및 사회보장 행정",
+            "relatedMainCategory": {
+                "id": 15,
+                "typeOfBusinessCode": "O",
+                "typeOfBusiness": "공공 행정 국방 및 사회보장 행정"
+            }
+        }
+    },
+    {
+        "id": 204,
+        "typeOfBusiness": "초등 교육기관",
+        "relatedMaJorCategory": {
+            "id": 67,
+            "typeOfBusiness": "교육 서비스업",
+            "relatedMainCategory": {
+                "id": 16,
+                "typeOfBusinessCode": "P",
+                "typeOfBusiness": "교육 서비스업"
+            }
+        }
+    },
+    {
+        "id": 205,
+        "typeOfBusiness": "중등 교육기관",
+        "relatedMaJorCategory": {
+            "id": 67,
+            "typeOfBusiness": "교육 서비스업",
+            "relatedMainCategory": {
+                "id": 16,
+                "typeOfBusinessCode": "P",
+                "typeOfBusiness": "교육 서비스업"
+            }
+        }
+    },
+    {
+        "id": 206,
+        "typeOfBusiness": "고등 교육기관",
+        "relatedMaJorCategory": {
+            "id": 67,
+            "typeOfBusiness": "교육 서비스업",
+            "relatedMainCategory": {
+                "id": 16,
+                "typeOfBusinessCode": "P",
+                "typeOfBusiness": "교육 서비스업"
+            }
+        }
+    },
+    {
+        "id": 207,
+        "typeOfBusiness": "특수학교 외국인학교 및 대안학교",
+        "relatedMaJorCategory": {
+            "id": 67,
+            "typeOfBusiness": "교육 서비스업",
+            "relatedMainCategory": {
+                "id": 16,
+                "typeOfBusinessCode": "P",
+                "typeOfBusiness": "교육 서비스업"
+            }
+        }
+    },
+    {
+        "id": 208,
+        "typeOfBusiness": "일반 교습학원",
+        "relatedMaJorCategory": {
+            "id": 67,
+            "typeOfBusiness": "교육 서비스업",
+            "relatedMainCategory": {
+                "id": 16,
+                "typeOfBusinessCode": "P",
+                "typeOfBusiness": "교육 서비스업"
+            }
+        }
+    },
+    {
+        "id": 209,
+        "typeOfBusiness": "기타 교육기관",
+        "relatedMaJorCategory": {
+            "id": 67,
+            "typeOfBusiness": "교육 서비스업",
+            "relatedMainCategory": {
+                "id": 16,
+                "typeOfBusinessCode": "P",
+                "typeOfBusiness": "교육 서비스업"
+            }
+        }
+    },
+    {
+        "id": 210,
+        "typeOfBusiness": "교육 지원 서비스업",
+        "relatedMaJorCategory": {
+            "id": 67,
+            "typeOfBusiness": "교육 서비스업",
+            "relatedMainCategory": {
+                "id": 16,
+                "typeOfBusinessCode": "P",
+                "typeOfBusiness": "교육 서비스업"
+            }
+        }
+    },
+    {
+        "id": 211,
+        "typeOfBusiness": "병원",
+        "relatedMaJorCategory": {
+            "id": 68,
+            "typeOfBusiness": "보건업",
+            "relatedMainCategory": {
+                "id": 17,
+                "typeOfBusinessCode": "Q",
+                "typeOfBusiness": "보건업 및 사회복지 서비스업"
+            }
+        }
+    },
+    {
+        "id": 212,
+        "typeOfBusiness": "의원",
+        "relatedMaJorCategory": {
+            "id": 68,
+            "typeOfBusiness": "보건업",
+            "relatedMainCategory": {
+                "id": 17,
+                "typeOfBusinessCode": "Q",
+                "typeOfBusiness": "보건업 및 사회복지 서비스업"
+            }
+        }
+    },
+    {
+        "id": 213,
+        "typeOfBusiness": "공중 보건 의료업",
+        "relatedMaJorCategory": {
+            "id": 68,
+            "typeOfBusiness": "보건업",
+            "relatedMainCategory": {
+                "id": 17,
+                "typeOfBusinessCode": "Q",
+                "typeOfBusiness": "보건업 및 사회복지 서비스업"
+            }
+        }
+    },
+    {
+        "id": 214,
+        "typeOfBusiness": "기타 보건업",
+        "relatedMaJorCategory": {
+            "id": 68,
+            "typeOfBusiness": "보건업",
+            "relatedMainCategory": {
+                "id": 17,
+                "typeOfBusinessCode": "Q",
+                "typeOfBusiness": "보건업 및 사회복지 서비스업"
+            }
+        }
+    },
+    {
+        "id": 215,
+        "typeOfBusiness": "거주 복지시설 운영업",
+        "relatedMaJorCategory": {
+            "id": 69,
+            "typeOfBusiness": "사회복지 서비스업",
+            "relatedMainCategory": {
+                "id": 17,
+                "typeOfBusinessCode": "Q",
+                "typeOfBusiness": "보건업 및 사회복지 서비스업"
+            }
+        }
+    },
+    {
+        "id": 216,
+        "typeOfBusiness": "비거주 복지시설 운영업",
+        "relatedMaJorCategory": {
+            "id": 69,
+            "typeOfBusiness": "사회복지 서비스업",
+            "relatedMainCategory": {
+                "id": 17,
+                "typeOfBusinessCode": "Q",
+                "typeOfBusiness": "보건업 및 사회복지 서비스업"
+            }
+        }
+    },
+    {
+        "id": 217,
+        "typeOfBusiness": "창작 및 예술관련 서비스업",
+        "relatedMaJorCategory": {
+            "id": 70,
+            "typeOfBusiness": "창작 예술 및 여가관련 서비스업",
+            "relatedMainCategory": {
+                "id": 18,
+                "typeOfBusinessCode": "R",
+                "typeOfBusiness": "예술 스포츠 및 여가관련 서비스업"
+            }
+        }
+    },
+    {
+        "id": 218,
+        "typeOfBusiness": "도서관 사적지 및 유사 여가관련 서비스업",
+        "relatedMaJorCategory": {
+            "id": 70,
+            "typeOfBusiness": "창작 예술 및 여가관련 서비스업",
+            "relatedMainCategory": {
+                "id": 18,
+                "typeOfBusinessCode": "R",
+                "typeOfBusiness": "예술 스포츠 및 여가관련 서비스업"
+            }
+        }
+    },
+    {
+        "id": 219,
+        "typeOfBusiness": "스포츠 서비스업",
+        "relatedMaJorCategory": {
+            "id": 71,
+            "typeOfBusiness": "스포츠 및 오락관련 서비스업",
+            "relatedMainCategory": {
+                "id": 18,
+                "typeOfBusinessCode": "R",
+                "typeOfBusiness": "예술 스포츠 및 여가관련 서비스업"
+            }
+        }
+    },
+    {
+        "id": 220,
+        "typeOfBusiness": "유원지 및 기타 오락관련 서비스업",
+        "relatedMaJorCategory": {
+            "id": 71,
+            "typeOfBusiness": "스포츠 및 오락관련 서비스업",
+            "relatedMainCategory": {
+                "id": 18,
+                "typeOfBusinessCode": "R",
+                "typeOfBusiness": "예술 스포츠 및 여가관련 서비스업"
+            }
+        }
+    },
+    {
+        "id": 221,
+        "typeOfBusiness": "산업 및 전문가 단체",
+        "relatedMaJorCategory": {
+            "id": 72,
+            "typeOfBusiness": "협회 및 단체",
+            "relatedMainCategory": {
+                "id": 19,
+                "typeOfBusinessCode": "S",
+                "typeOfBusiness": "협회 및 단체 수리 및 기타 개인 서비스업"
+            }
+        }
+    },
+    {
+        "id": 222,
+        "typeOfBusiness": "노동조합",
+        "relatedMaJorCategory": {
+            "id": 72,
+            "typeOfBusiness": "협회 및 단체",
+            "relatedMainCategory": {
+                "id": 19,
+                "typeOfBusinessCode": "S",
+                "typeOfBusiness": "협회 및 단체 수리 및 기타 개인 서비스업"
+            }
+        }
+    },
+    {
+        "id": 223,
+        "typeOfBusiness": "기타 협회 및 단체",
+        "relatedMaJorCategory": {
+            "id": 72,
+            "typeOfBusiness": "협회 및 단체",
+            "relatedMainCategory": {
+                "id": 19,
+                "typeOfBusinessCode": "S",
+                "typeOfBusiness": "협회 및 단체 수리 및 기타 개인 서비스업"
+            }
+        }
+    },
+    {
+        "id": 224,
+        "typeOfBusiness": "컴퓨터 및 통신장비 수리업",
+        "relatedMaJorCategory": {
+            "id": 73,
+            "typeOfBusiness": "개인 및 소비용품 수리업",
+            "relatedMainCategory": {
+                "id": 19,
+                "typeOfBusinessCode": "S",
+                "typeOfBusiness": "협회 및 단체 수리 및 기타 개인 서비스업"
+            }
+        }
+    },
+    {
+        "id": 225,
+        "typeOfBusiness": "자동차 및 모터사이클 수리업",
+        "relatedMaJorCategory": {
+            "id": 73,
+            "typeOfBusiness": "개인 및 소비용품 수리업",
+            "relatedMainCategory": {
+                "id": 19,
+                "typeOfBusinessCode": "S",
+                "typeOfBusiness": "협회 및 단체 수리 및 기타 개인 서비스업"
+            }
+        }
+    },
+    {
+        "id": 226,
+        "typeOfBusiness": "개인 및 가정용품 수리업",
+        "relatedMaJorCategory": {
+            "id": 73,
+            "typeOfBusiness": "개인 및 소비용품 수리업",
+            "relatedMainCategory": {
+                "id": 19,
+                "typeOfBusinessCode": "S",
+                "typeOfBusiness": "협회 및 단체 수리 및 기타 개인 서비스업"
+            }
+        }
+    },
+    {
+        "id": 227,
+        "typeOfBusiness": "미용 욕탕 및 유사 서비스업",
+        "relatedMaJorCategory": {
+            "id": 74,
+            "typeOfBusiness": "기타 개인 서비스업",
+            "relatedMainCategory": {
+                "id": 19,
+                "typeOfBusinessCode": "S",
+                "typeOfBusiness": "협회 및 단체 수리 및 기타 개인 서비스업"
+            }
+        }
+    },
+    {
+        "id": 228,
+        "typeOfBusiness": "그 외 기타 개인 서비스업",
+        "relatedMaJorCategory": {
+            "id": 74,
+            "typeOfBusiness": "기타 개인 서비스업",
+            "relatedMainCategory": {
+                "id": 19,
+                "typeOfBusinessCode": "S",
+                "typeOfBusiness": "협회 및 단체 수리 및 기타 개인 서비스업"
+            }
+        }
+    },
+    {
+        "id": 229,
+        "typeOfBusiness": "가구 내 고용활동",
+        "relatedMaJorCategory": {
+            "id": 75,
+            "typeOfBusiness": "가구 내 고용활동",
+            "relatedMainCategory": {
+                "id": 20,
+                "typeOfBusinessCode": "T",
+                "typeOfBusiness": "가구 내 고용활동 및 달리 분류되지 않은 자가 소비 생산활동"
+            }
+        }
+    },
+    {
+        "id": 230,
+        "typeOfBusiness": "자가 소비를 위한 가사 생산 활동",
+        "relatedMaJorCategory": {
+            "id": 76,
+            "typeOfBusiness": "달리 분류되지 않은 자가 소비를 위한 가구의 재화 및 서비스 생산활동",
+            "relatedMainCategory": {
+                "id": 20,
+                "typeOfBusinessCode": "T",
+                "typeOfBusiness": "가구 내 고용활동 및 달리 분류되지 않은 자가 소비 생산활동"
+            }
+        }
+    },
+    {
+        "id": 231,
+        "typeOfBusiness": "자가 소비를 위한 가사 서비스 활동",
+        "relatedMaJorCategory": {
+            "id": 76,
+            "typeOfBusiness": "달리 분류되지 않은 자가 소비를 위한 가구의 재화 및 서비스 생산활동",
+            "relatedMainCategory": {
+                "id": 20,
+                "typeOfBusinessCode": "T",
+                "typeOfBusiness": "가구 내 고용활동 및 달리 분류되지 않은 자가 소비 생산활동"
+            }
+        }
+    },
+    {
+        "id": 232,
+        "typeOfBusiness": "국제 및 외국기관",
+        "relatedMaJorCategory": {
+            "id": 77,
+            "typeOfBusiness": "국제 및 외국기관",
+            "relatedMainCategory": {
+                "id": 21,
+                "typeOfBusinessCode": "U",
+                "typeOfBusiness": "국제 및 외국기관"
+            }
+        }
+    }
+]

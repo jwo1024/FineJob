@@ -3,7 +3,7 @@
 import styles from "@/styles/container-job-suitability/SuitabilityForms.module.scss";
 import { useRef } from "react";
 import AddButton from "./AddButton";
-import { IResultresultChartData, ISkillData } from "./JobSuitabilityPage";
+import { IResultChartData, ISkillData } from "./JobSuitabilityPage";
 
 export default function SkillForm({
   complete,
@@ -13,7 +13,7 @@ export default function SkillForm({
 }: {
   complete: boolean;
   skillData: ISkillData[];
-  resultChartData: IResultresultChartData | null;
+  resultChartData: IResultChartData | null;
   setSkillData: React.Dispatch<React.SetStateAction<ISkillData[]>>;
 }) {
   const skillRef = useRef<HTMLInputElement>(null);
@@ -83,12 +83,11 @@ export default function SkillForm({
             <div className={styles.tag}>분석능력</div>
           </div>
           <div className={styles.tagContainer}>
-            <div className={styles.tag}>공감능력</div>
-            <div className={styles.tag}>문제해결능력</div>
-            <div className={styles.tag}>컴퓨터활용능력</div>
-            <div className={styles.tag}>고객지향성</div>
-            <div className={styles.tag}>계획성</div>
-            <div className={styles.tag}>분석능력</div>
+            <div className={styles.tag}>영업역량</div>
+            <div className={styles.tag}>외국어 능력</div>
+            <div className={styles.tag}>디자인 역할</div>
+            <div className={styles.tag}>기술 능력</div>
+            <div className={styles.tag}>글쓰기 능력</div>
           </div>
         </div>
       )}

@@ -1,0 +1,24 @@
+{
+  "careerData": 70,
+  "educationData": 50,
+  "certificateData": 30,
+  "skillData": 90,
+  "careerRequirements": [
+    "5년 이상의 관련 분야 경력",
+    "팀 관리 경험"
+  ],
+  "educationRequirements": [
+    "컴퓨터 과학 학사 학위",
+    "관련 분야의 석사 학위 우대"
+  ],
+  "certificateRequirements": [
+    "정보 처리 기사",
+    "PMP(프로젝트 관리 전문가)"
+  ],
+  "skillRequirements": [
+    "React, Vue.js 등 프론트엔드 기술 스택",
+    "Node.js 및 Express 경험",
+    "AWS, Azure 클라우드 서비스 사용 경험",
+    "Agile 및 Scrum 방법론 이해"
+  ]
+}

@@ -3,7 +3,7 @@
 import styles from "@/styles/container-job-suitability/SuitabilityForms.module.scss";
 import { useRef } from "react";
 import AddButton from "./AddButton";
-import { ICareerData, IResultresultChartData } from "./JobSuitabilityPage";
+import { ICareerData, IResultChartData } from "./JobSuitabilityPage";
 
 export default function CareerForm({
   complete,
@@ -13,7 +13,7 @@ export default function CareerForm({
 }: {
   complete: boolean;
   careerData: ICareerData[];
-  resultChartData: IResultresultChartData | null;
+  resultChartData: IResultChartData | null;
   setCareerData: React.Dispatch<React.SetStateAction<ICareerData[]>>;
 }) {
   const companyNameRef = useRef<HTMLInputElement>(null);

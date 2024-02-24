@@ -59,21 +59,24 @@ export default function JobSearchFilter({
     })
       .then((res) => res.json())
       .then((data) => {
-        const resultData = data.map((item: any) => {
+        console.log("selectCompany", data);
+        const resultData: ISearchResult[] = data.map((item: any) => {
           // 결과 데이터 형식에 맞게 수정
-          item.companyRecruitmentId = item.companyRecruitmentId; // TODO id 추가
-          item.companyName = item.companyName;
-          item.companyGroup = item.companyGroup;
-          item.jobTitle = item.jobTitle;
-          item.jobTag = item.jobTag;
-          item.region = item.region;
-          item.career = item.career;
-          item.education = item.education;
-          item.date = item.date;
-          item.tag = item.tag;
+          return {
+            companyRecruitmentId: item.id,
+            companyName: item.companyName,
+            companyGroup: item.companyGroup,
+            jobTitle: item.jobTitle,
+            jobTag: item.jobTag,
+            region: item.region,
+            career: item.career,
+            education: item.education,
+            date: item.date,
+            tag: item.tag,
+          };
         });
-        setSearchResultList(resultData);
-        setSearchResultCnt(resultData.length); // 총 검색 결과 개수
+        setSearchResultList(resultData || []);
+        setSearchResultCnt(resultData.length);
       })
       .catch((err) => {
         console.log(err);
@@ -167,7 +170,7 @@ function FilterLists({
       .then((res) => res.json())
       .then((data) => {
         setMainList(data);
-        console.log(data);
+        // console.log("mainCategories", data);
       })
       .catch((err) => {
         console.log(err);
@@ -178,7 +181,7 @@ function FilterLists({
       .then((res) => res.json())
       .then((data) => {
         setMajorList(data);
-        console.log(data);
+        // console.log("majorCategories", data);
       })
       .catch((err) => {
         console.log(err);
@@ -189,7 +192,7 @@ function FilterLists({
       .then((res) => res.json())
       .then((data) => {
         setSubList(data);
-        console.log(data);
+        // console.log("subCategories", data);
       })
       .catch((err) => {
         console.log(err);
