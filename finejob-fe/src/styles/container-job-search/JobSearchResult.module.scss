@@ -63,19 +63,11 @@
     }
 
     .section {
-      // &:first-child {
-      // }
-      // &:nth-child(2) {
-      // }
-      // &:nth-child(3) {
-      // }
-      // &:nth-child(4) {
-      // }
+      
     }
     .title {
       font-size: x-large;
-      // font-size: 1rem;
-      // font-size: 100%;
+      font-weight: 600;
       margin-bottom: 8px;
       color: $activeTextBlue;
       display: flex;
