@@ -50,7 +50,7 @@ export default function JobSearchFilter({
   };
   function searchHandler() {
     // TODO BE api 연결
-    fetch(`http://localhost:8080/api/selectCompany`, {
+    fetch(`http://localhost:3000/api/selectCompany`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -166,7 +166,7 @@ function FilterLists({
 
   useEffect(() => {
     const mainCategories = "mainCategories";
-    fetch(`http://localhost:8080/api/${mainCategories}`)
+    fetch(`http://localhost:3000/api/${mainCategories}`)
       .then((res) => res.json())
       .then((data) => {
         setMainList(data);
@@ -177,7 +177,7 @@ function FilterLists({
       });
 
     const majorCategories = "majorCategories";
-    fetch(`http://localhost:8080/api/${majorCategories}`)
+    fetch(`http://localhost:3000/api/${majorCategories}`)
       .then((res) => res.json())
       .then((data) => {
         setMajorList(data);
@@ -188,7 +188,7 @@ function FilterLists({
       });
 
     const subCategories = "subCategories";
-    fetch(`http://localhost:8080/api/${subCategories}`)
+    fetch(`http://localhost:3000/api/${subCategories}`)
       .then((res) => res.json())
       .then((data) => {
         setSubList(data);

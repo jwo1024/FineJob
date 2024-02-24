@@ -86,7 +86,7 @@ export default function JobSuitabilityPage() {
     console.log(requestData);
 
     setIsButtonDisabled(true);
-    fetch(`http://localhost:8080/api/somewhere`, {
+    fetch(`http://localhost:3000/api/somewhere`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
