@@ -235,6 +235,7 @@
       }
   }
   .requirementsSquare {
+    @extend .requirements;
     margin : 0;
     gap : 0.5rem;
     .tagContainer {
