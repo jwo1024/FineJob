@@ -1,8 +1,8 @@
 {
-  "careerData": 70,
-  "educationData": 50,
-  "certificateData": 30,
-  "skillData": 90,
+  "careerData": null,
+  "educationData": null,
+  "certificateData": 85,
+  "skillData": 70,
   "careerRequirements": [
     "5년 이상의 관련 분야 경력",
     "팀 관리 경험"
