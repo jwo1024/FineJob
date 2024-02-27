@@ -17,7 +17,10 @@ export default function HomePage() {
 function RecruitmentSection({ titleText }: { titleText: string }) {
   return (
     <section className={styles.recruitmentSection}>
-      <h3>{titleText}</h3>
+      <div className={styles.title}>
+        <h3>{titleText}</h3>
+        <a>{"상세 정보 >"}</a>
+      </div>
       <ul>
         <RecruitmentCard
           companyImg=""
@@ -132,7 +135,7 @@ function RecruitmentCard({
           src="https://via.placeholder.com/300x140.png"
           alt=""
           width={300}
-          height={140}
+          height={10}
         />
       </Link>
       <section>

@@ -2,13 +2,30 @@
 
 .recruitmentSection {
   padding-top: 62px;
+  margin-bottom: 16px;
   padding-bottom: 16px;
 
-  h3 {
-    font-size: 20px;
-    font-weight: 600;
+  .title {
+    display: flex;
     padding-bottom: 42px;
-  }
+    justify-content: space-between;
+    height: fit-content;
+    align-items: end;
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    a {
+      height: fit-content;
+      font-size: 14px;
+      color: $fontGray;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+ }
 
   ul {
     display: grid;

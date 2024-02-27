@@ -58,8 +58,13 @@ export default function SuitabilityChart({
         endAngle={450}
         stroke="none"
       >
-        {valueCarrer ? undefined : <Cell fill="#BABABA" values="800" />}
-        <Cell fill="#78B4FE" values="800" />
+        {!valueCarrer ? (
+          <Cell fill="#BABABA" values="800" />
+        ) : valueCarrer && valueCarrer >= 80 ? (
+          <Cell fill="#3F96FE" values="800" />
+        ) : (
+          <Cell fill="#78B4FE" values="800" />
+        )}
         <Cell fill="#FFFFFF" values="800" />
       </Pie>
 
@@ -76,8 +81,13 @@ export default function SuitabilityChart({
         endAngle={450}
         stroke="none"
       >
-        {valueEducation ? undefined : <Cell fill="#BABABA" values="800" />}
-        <Cell fill="#78B4FE" values="800" />
+        {!valueEducation ? (
+          <Cell fill="#BABABA" values="800" />
+        ) : valueEducation && valueEducation >= 80 ? (
+          <Cell fill="#3F96FE" values="800" />
+        ) : (
+          <Cell fill="#78B4FE" values="800" />
+        )}
         <Cell fill="#FFFFFF" values="800" />
       </Pie>
       <Pie
@@ -93,8 +103,13 @@ export default function SuitabilityChart({
         endAngle={450}
         stroke="none"
       >
-        {valueCertificate ? undefined : <Cell fill="#BABABA" values="800" />}
-        <Cell fill="#78B4FE" values="800" />
+        {valueCertificate === undefined ? (
+          <Cell fill="#BABABA" values="800" />
+        ) : valueCertificate && valueCertificate >= 80 ? (
+          <Cell fill="#3F96FE" values="800" />
+        ) : (
+          <Cell fill="#78B4FE" values="800" />
+        )}
         <Cell fill="#FFFFFF" values="800" />
       </Pie>
       <Pie
@@ -110,8 +125,13 @@ export default function SuitabilityChart({
         endAngle={450}
         stroke="none"
       >
-        {valueSkill ? undefined : <Cell fill="#BABABA" values="800" />}
-        <Cell fill="#78B4FE" values="800" />
+        {valueSkill === undefined ? (
+          <Cell fill="#BABABA" values="800" />
+        ) : valueSkill && valueSkill >= 80 ? (
+          <Cell fill="#3F96FE" values="800" />
+        ) : (
+          <Cell fill="#78B4FE" values="800" />
+        )}
         <Cell fill="#FFFFFF" values="800" />
       </Pie>
     </PieChart>
