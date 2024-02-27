@@ -85,11 +85,11 @@ $card-width: 48rem;
     @extend %sliderButton;
     left: 50%;
     transform: translateX(-($card-width / 2) - 1.5rem);
-    background-color: $default-gray;
+    background-color: #f2f2f2;
     border: 0px;
     svg {
       margin-right: 2px;
-      color: $button-disabled-gray;
+      color: #7E7E7E;
     }
   }
 
@@ -97,11 +97,12 @@ $card-width: 48rem;
     @extend %sliderButton;
     right: 50%;
     transform: translateX(+($card-width / 2) + 1.5rem);
-    background-color: $default-gray;
+    background-color: #f2f2f2;
     border: 0px;
+  
     svg {
       margin-left: 2px;
-      color: $button-disabled-gray;
+      color: #7E7E7E;
     }
   }
 }
