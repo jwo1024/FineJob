@@ -58,8 +58,8 @@ $card-width: 48rem;
 
     svg {
       color: $activeTextBlue;
-      width: 24px;
-      height: 24px;
+      width: 1.75rem;
+      height: 1.75rem;
     }
   }
 
@@ -78,6 +78,30 @@ $card-width: 48rem;
     transform: translateX(+($card-width / 2) + 1.5rem);
     svg {
       margin-left: 2px;
+    }
+  }
+
+  .leftButtonDisabled {
+    @extend %sliderButton;
+    left: 50%;
+    transform: translateX(-($card-width / 2) - 1.5rem);
+    background-color: $default-gray;
+    border: 0px;
+    svg {
+      margin-right: 2px;
+      color: $button-disabled-gray;
+    }
+  }
+
+  .rightButtonDisabled{
+    @extend %sliderButton;
+    right: 50%;
+    transform: translateX(+($card-width / 2) + 1.5rem);
+    background-color: $default-gray;
+    border: 0px;
+    svg {
+      margin-left: 2px;
+      color: $button-disabled-gray;
     }
   }
 }

@@ -104,8 +104,24 @@ export default function CardSlider({
         })}
       </div>
       {/* Left Button */}
-      {!isFirstCard && (
+      {!isFirstCard ? (
         <button className={styles.leftButton} onClick={handleLeftClick}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+          </svg>
+        </button>
+      ) : (
+        <button className={styles.leftButtonDisabled} onClick={handleLeftClick}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -122,8 +138,25 @@ export default function CardSlider({
         </button>
       )}
       {/* Right Button */}
-      {!isLastCard && (
+      {!isLastCard ? (
         <button className={styles.rightButton} onClick={handleRightClick}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fillRule="evenodd"
+              d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </button>
+      ) : (
+        <button
+          className={styles.rightButtonDisabled}
+          onClick={handleRightClick}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
