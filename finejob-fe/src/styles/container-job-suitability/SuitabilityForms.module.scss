@@ -212,6 +212,9 @@
       }
     }
   }
+  .requirements {
+    margin: 0;
+  }
 }
 
 .skillForm {
@@ -231,7 +234,7 @@
         }
       }
   }
-  .requirements {
+  .requirementsSquare {
     margin : 0;
     gap : 0.5rem;
     .tagContainer {
@@ -252,7 +255,6 @@
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-
   .text{
     color: $fontGray;
   }
@@ -268,7 +270,7 @@
   flex-wrap: wrap;
   .tag {
     height: fit-content;
-    color: $activeTextBlue;
+    color: rgba($activeTextBlue, 0.8);
     padding: 0 0.725rem;
     margin: 0;
     width: fit-content;

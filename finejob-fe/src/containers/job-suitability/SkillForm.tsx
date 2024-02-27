@@ -73,7 +73,7 @@ export default function SkillForm({
         </>
       )}
       {!complete && (
-        <div className={styles.requirements}>
+        <div className={styles.requirementsSquare}>
           <span className={styles.text}>
             현재 인기있는 직무 스킬을 추천해 드려요!
           </span>
@@ -96,7 +96,7 @@ export default function SkillForm({
       )}
 
       {complete && resultChartData?.skillRequirements && (
-        <fieldset className={styles.fieldset}>
+        <fieldset className={styles.requirements}>
           <span className={styles.text}>
             현재 필요하신 스킬을 알려드릴께요!
           </span>
@@ -109,6 +109,7 @@ export default function SkillForm({
           </div>
         </fieldset>
       )}
+
 
       <AddButton
         achivePercent={resultChartData?.skillData}
