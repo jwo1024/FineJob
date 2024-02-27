@@ -4,6 +4,7 @@ import styles from "@/styles/container-job-suitability/SuitabilityForms.module.s
 import { useRef } from "react";
 import AddButton from "./AddButton";
 import { IResultChartData, ISkillData } from "./JobSuitabilityPage";
+import { IconSearch } from "@/components/Icons";
 
 export default function SkillForm({
   complete,
@@ -53,13 +54,15 @@ export default function SkillForm({
         <>
           <form className={styles.form}>
             <fieldset className={styles.fieldset}>
-              <input
-                className={styles.input}
-                placeholder="자신만의 스킬을 입력해보세요!"
-                type="text"
-                name="skill"
-                ref={skillRef}
-              />
+              <div className={styles.input}>
+                <input
+                  placeholder="자신만의 스킬을 입력해보세요!"
+                  type="text"
+                  name="skill"
+                  ref={skillRef}
+                />
+                <IconSearch />
+              </div>
               <div className={styles.tagContainer}>
                 <div className={styles.tag}>고객응대</div>
                 <div className={styles.tag}>엑셀</div>
@@ -93,9 +96,9 @@ export default function SkillForm({
       )}
 
       {complete && resultChartData?.skillRequirements && (
-        <div className={styles.requirements}>
+        <fieldset className={styles.fieldset}>
           <span className={styles.text}>
-            현재 필요하신 자격증을 알려드릴께요!
+            현재 필요하신 스킬을 알려드릴께요!
           </span>
           <div className={styles.tagContainer}>
             {resultChartData.skillRequirements.map((data, index) => (
@@ -104,7 +107,7 @@ export default function SkillForm({
               </div>
             ))}
           </div>
-        </div>
+        </fieldset>
       )}
 
       <AddButton

@@ -149,6 +149,19 @@
           width: 15%;
         }
       }
+      .input:first-child {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        input {
+          width: 100%;
+        }
+        svg {
+          width: fit-content;
+          color: rgba($fontGray, 0.7);
+        }
+      }
     }
   }
 }
@@ -159,6 +172,15 @@
       grid-column : 1 / 2;
       display: flex;
       flex-direction: column;
+      .input {
+        display: flex;
+        input {
+          width: 100%;
+        }
+        svg {
+          color: rgba($fontGray, 0.7);
+        }
+      }
   }
   .requirements {
     margin : 0;
@@ -174,7 +196,6 @@
     }
   }
 }
-
 
 // Tag
 .requirements {

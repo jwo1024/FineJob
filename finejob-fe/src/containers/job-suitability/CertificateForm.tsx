@@ -4,6 +4,7 @@ import styles from "@/styles/container-job-suitability/SuitabilityForms.module.s
 import { useRef } from "react";
 import AddButton from "./AddButton";
 import { ICertificateData, IResultChartData } from "./JobSuitabilityPage";
+import { IconSearch } from "@/components/Icons";
 
 export default function CertificateForm({
   complete,
@@ -74,13 +75,16 @@ export default function CertificateForm({
       {!complete && (
         <form className={styles.form}>
           <fieldset className={styles.fieldset}>
-            <input
-              className={styles.input}
-              placeholder="자격증 명 *"
-              type="text"
-              name="qualification"
-              ref={qualificationRef}
-            />
+            <div className={styles.input}>
+              <input
+                // className={styles.input}
+                placeholder="자격증 명 *"
+                type="text"
+                name="qualification"
+                ref={qualificationRef}
+              />
+              <IconSearch />
+            </div>
             <input
               className={styles.input}
               placeholder="발행처"
