@@ -210,19 +210,19 @@ function ChartCaption({
       data-height={height}
     >
       <span>
-        <div>경력</div>
+        <div className={styles.title}>경력</div>
         <div>{careerStatus ? `${careerStatus}% 달성` : "무관"}</div>
       </span>
       <span>
-        <div>학력</div>
+        <div className={styles.title}>학력</div>
         <div>{educationStatus ? `${educationStatus}% 달성` : "무관"}</div>
       </span>
       <span>
-        <div>자격증</div>
+        <div className={styles.title}>자격증</div>
         <div>{certificateStatus ? `${certificateStatus}% 달성` : "무관"}</div>
       </span>
       <span>
-        <div>스킬</div>
+        <div className={styles.title}>스킬</div>
         <div>{skillStatus ? `${skillStatus}% 달성` : "무관"}</div>
       </span>
     </div>

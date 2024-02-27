@@ -68,16 +68,18 @@ export default function EducationForm({
       {!complete && (
         <form className={styles.form}>
           <fieldset className={styles.fieldset}>
-            <select
-              className={styles.select}
-              name="school_classification"
-              ref={schoolClassificationRef}
-            >
-              <option value="고등학교 졸업">고등학교 졸업</option>
-              <option value="대학 졸업">학사 졸업</option>
-              <option value="석사 졸업">석사 졸업</option>
-              <option value="박사 졸업">박사 졸업</option>
-            </select>
+            <div className={styles.select}>
+              <select
+                name="school_classification"
+                ref={schoolClassificationRef}
+              >
+                <option value="고등학교 졸업">고등학교 졸업</option>
+                <option value="대학 졸업">학사 졸업</option>
+                <option value="석사 졸업">석사 졸업</option>
+                <option value="박사 졸업">박사 졸업</option>
+              </select>
+              <div className={styles.toggleIcon}>▾</div>
+            </div>
             <input
               className={styles.input}
               placeholder="학교명 *"

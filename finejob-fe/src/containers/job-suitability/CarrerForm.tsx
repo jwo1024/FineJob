@@ -188,27 +188,33 @@ export default function CareerForm({
               name="annual_income"
               ref={annualIncomeRef}
             />
-            <select
-              className={styles.select}
-              name="career"
-              ref={careerRef}
-              required
-            >
-              <option value="신입 1년 미만">신입 1년 미만</option>
-              <option value="1년 이상 3년 미만">1년 이상 3년 미만</option>
-              <option value="3년 이상 7년 미만">3년 이상 7년 미만</option>
-              <option value="7년 이상 10년 미만">7년 이상 10년 미만</option>
-              <option value="10년 이상">10년 이상</option>
-            </select>
+            <div className={styles.select}>
+              <select
+                // className={styles.select}
+                name="career"
+                ref={careerRef}
+                required
+              >
+                <option value="신입 1년 미만">신입 1년 미만</option>
+                <option value="1년 이상 3년 미만">1년 이상 3년 미만</option>
+                <option value="3년 이상 7년 미만">3년 이상 7년 미만</option>
+                <option value="7년 이상 10년 미만">7년 이상 10년 미만</option>
+                <option value="10년 이상">10년 이상</option>
+              </select>
+              <div className={styles.toggleIcon}>▾</div>
+            </div>
           </fieldset>
           <fieldset className={styles.fieldset}>
-            <textarea
-              className={styles.textarea}
-              placeholder={`담당직무\n담당하신 업무와 성과에 대해 작성해주세요`}
-              rows={5}
-              name="duty_in_charge_text"
-              ref={dutyInChargeTextRef}
-            />
+            <div className={styles.textareaBox}>
+              <label className={styles.label}>담당직무</label>
+              <textarea
+                className={styles.textarea}
+                placeholder={`담당하신 업무와 성과에 대해 작성해주세요`}
+                rows={5}
+                name="duty_in_charge_text"
+                ref={dutyInChargeTextRef}
+              />
+            </div>
           </fieldset>
         </form>
       )}

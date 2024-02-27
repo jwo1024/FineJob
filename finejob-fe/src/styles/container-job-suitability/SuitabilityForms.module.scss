@@ -13,7 +13,8 @@
   h4 {
     grid-column: span 2;
     border-bottom: 2px solid $borderGray;
-    font-size: large;
+    font-size: larger;
+    font-weight: 500;
     line-height: 2;
   }
 
@@ -30,6 +31,7 @@
 
       .input,
       .textarea,
+      .textareaBox,
       .select {
         width: 100%;
         min-height: 46px;
@@ -50,9 +52,38 @@
         &[type="month"]:valid::before {
           display: none;
         }
+        ::placeholder {
+          color: #A5A5A5;
+          line-height: 2;
+        }
       }
       .select {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+  
         color: $fontGray;
+        display: flex;
+        position: relative;
+        align-items: center;
+        select {
+          width: 100%;
+          height: 100%;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          position: relative;
+        }
+        .toggleIcon {
+          position: absolute;
+          width: fit-content;
+          margin: 0;
+          padding: 0;
+          right: 0.5rem;
+          // top: 0;
+          color: black;
+          // cursor: pointer;
+        }
       }
       .label {
         color: $fontGray;
@@ -107,6 +138,23 @@
       }
       &:nth-child(5) {
         grid-column: span 2;
+      }
+    }
+    .textareaBox {
+      // border: 0px;
+      .textarea {
+        width: 100%;
+        min-height: 46px;
+        padding: 0;
+        border: 0px ;
+        resize: none;
+      }
+      .textarea::placeholder {
+        color: #DEDEDE;
+        line-height: 2;
+      }
+      .label {
+        color: #A5A5A5;
       }
     }
   }
