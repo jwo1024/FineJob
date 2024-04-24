@@ -3,16 +3,12 @@ import styles from "@/styles/components/CheckBox.module.scss";
 export default function CheckBox({
   children,
   disabled,
-  value,
   checked,
-  id,
   onChange,
 }: {
   children?: React.ReactNode;
   disabled?: boolean;
-  value?: string;
   checked?: boolean;
-  id: string;
   onChange?: (checked: boolean) => void;
 }) {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -22,13 +18,12 @@ export default function CheckBox({
   };
 
   return (
-    <label className={styles.label} htmlFor={id}>
+    <label className={styles.label}>
       <input
-        id={id}
         className={styles.checkBox}
         type="checkbox"
         disabled={disabled}
-        checked={checked}//
+        checked={checked ?? false}
         onChange={handleChange}
       />
       {children}

@@ -59,7 +59,6 @@ export default function JobSearchFilter({
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log("selectCompany", data);
         const resultData: ISearchResult[] = data.map((item: any) => {
           // 결과 데이터 형식에 맞게 수정
           return {
@@ -129,14 +128,14 @@ interface IMainCategory {
 
 interface IMajorCategory {
   id: number;
-  typeOfBusiness: string; //이부분 변경
+  typeOfBusiness: string;
   relatedMainCategory: IMainCategory;
 }
 
 interface ISubCategory {
   id: number;
   typeOfBusiness: string;
-  relatedMaJorCategory: IMajorCategory; // TODO MaJor 일부로 이렇게 수정하신건지 확인하기
+  relatedMaJorCategory: IMajorCategory;
 }
 
 function FilterLists({
@@ -154,23 +153,13 @@ function FilterLists({
   const [checkedMajorId, setCheckedMajorId] = useState<number[] | null>(null);
   const [checkedSubId, setCheckedSubId] = useState<number[] | null>(null);
 
-  // useEffect(() => {
-  //   // 임시 json 파일 연결
-  //   setMainList(mainCategorylist);
-  //   setMajorList(majorCategorylist);
-  //   setSubList(subCategoryList);
-  //   setCheckedMainId(0);
-  //   setCheckedMajorId([0]);
-  //   setCheckedSubId([0]);
-  // }, []);
-
   useEffect(() => {
     const mainCategories = "mainCategories";
     fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/${mainCategories}`)
       .then((res) => res.json())
-      .then((data) => {
+      .then((data: IMainCategory[]) => {
         setMainList(data);
-        // console.log("mainCategories", data);
+        setCheckedMainId(data[0]?.id);
       })
       .catch((err) => {
         console.log(err);
@@ -179,9 +168,9 @@ function FilterLists({
     const majorCategories = "majorCategories";
     fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/${majorCategories}`)
       .then((res) => res.json())
-      .then((data) => {
+      .then((data: IMajorCategory[]) => {
         setMajorList(data);
-        // console.log("majorCategories", data);
+        setCheckedMajorId(data.map((mayjor) => mayjor.id));
       })
       .catch((err) => {
         console.log(err);
@@ -190,9 +179,9 @@ function FilterLists({
     const subCategories = "subCategories";
     fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/${subCategories}`)
       .then((res) => res.json())
-      .then((data) => {
+      .then((data: ISubCategory[]) => {
         setSubList(data);
-        // console.log("subCategories", data);
+        setCheckedSubId(data.map((sub) => sub.id));
       })
       .catch((err) => {
         console.log(err);
@@ -208,19 +197,41 @@ function FilterLists({
     );
   };
 
-  const handleMajorClick = (id: number) => {
+  const handleMajorClick = (id: number, checked: boolean) => {
+    if (
+      (checked && checkedMajorId?.includes(id)) ||
+      (!checked && !checkedMajorId?.includes(id))
+    )
+      return;
     setCheckedMajorId((checkedMajorId) => {
-      if (checkedMajorId?.includes(id)) {
-        return checkedMajorId.filter((checkedId) => checkedId !== id);
+      if (!checked) {
+        return checkedMajorId?.filter((checkedId) => checkedId !== id) || null;
       } else {
         return checkedMajorId ? [...checkedMajorId, id] : [id];
       }
     });
+    setCheckedSubId((checkedSubId) => {
+      const uncheckedSubIdList = subList
+        .filter(
+          (sub) =>
+            sub.relatedMaJorCategory.id === id &&
+            !checkedSubId?.includes(sub.id)
+        )
+        .map((sub) => sub.id);
+      return checkedSubId
+        ? [...checkedSubId, ...uncheckedSubIdList]
+        : uncheckedSubIdList;
+    });
   };
 
-  const handleSubClick = (id: number) => {
-    setCheckedSubId((checkedSubid) => {
-      if (checkedSubId?.includes(id)) {
+  const handleSubClick = (id: number, checked: boolean) => {
+    if (
+      (checked && checkedSubId?.includes(id)) ||
+      (!checked && !checkedSubId?.includes(id))
+    )
+      return;
+    setCheckedSubId((checkedSubId) => {
+      if (!checked && checkedSubId?.includes(id)) {
         return checkedSubId.filter((checkedId) => checkedId !== id);
       } else {
         return checkedSubId ? [...checkedSubId, id] : [id];
@@ -255,10 +266,12 @@ function FilterLists({
         {majorList
           ?.filter((major) => checkedMainId === major.relatedMainCategory.id)
           .map((major) => (
-            <li key={major.id} onClick={() => handleMajorClick(major.id)}>
+            <li key={major.id}>
               <CheckBox
                 checked={checkedMajorId?.includes(major.id)}
-                id={`major.${major.id}`}
+                onChange={(checked: boolean) => {
+                  handleMajorClick(major.id, checked);
+                }}
               >
                 <span className={styles.name}>{major.typeOfBusiness}</span>
                 <span className={styles.number}>(54,232)</span>
@@ -275,11 +288,12 @@ function FilterLists({
               checkedMajorId.includes(sub.relatedMaJorCategory.id)
             )
             .map((sub) => (
-              <li key={sub.id} onClick={() => handleSubClick(sub.id)}>
-                {/* checked={true} */}
+              <li key={sub.id}>
                 <CheckBox
                   checked={checkedSubId?.includes(sub.id)}
-                  id={`sub${sub.id}`}
+                  onChange={(checked: boolean) => {
+                    handleSubClick(sub.id, checked);
+                  }}
                 >
                   <span className={styles.name}>{sub.typeOfBusiness}</span>
                   <span className={styles.number}>(54,232)</span>
