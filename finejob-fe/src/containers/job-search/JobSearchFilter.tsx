@@ -48,7 +48,7 @@ export default function JobSearchFilter({
       return nowCategory;
     });
   };
-  function searchHandler() {
+  function hanldeClickSearch() {
     // TODO BE api 연결
     fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/selectCompany`, {
       method: "POST",
@@ -62,7 +62,7 @@ export default function JobSearchFilter({
         const resultData: ISearchResult[] = data.map((item: any) => {
           // 결과 데이터 형식에 맞게 수정
           return {
-            companyRecruitmentId: item.id,
+            companyRecruitmentId: item.companyRecruitmentId, // id
             companyName: item.companyName,
             companyGroup: item.companyGroup,
             jobTitle: item.jobTitle,
@@ -109,7 +109,7 @@ export default function JobSearchFilter({
 
       <FilterLists category={category} setSelectedData={setSelectedData} />
       <div className={styles.searchButton}>
-        <button onClick={searchHandler}>선택된 조건의 채용공고 검색하기</button>
+        <button onClick={hanldeClickSearch}>선택된 조건의 채용공고 검색하기</button>
       </div>
     </section>
   );
